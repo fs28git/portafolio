@@ -3,79 +3,48 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Portafolio de Andrés Felipe Solano Moreno, Ingeniero de Software.">
   <title>Andrés Felipe Solano Moreno - Portafolio</title>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
   <script src="https://kit.fontawesome.com/a2d9d6c11b.js" crossorigin="anonymous"></script>
   <style>
-    /* Reset de márgenes y paddings */
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-
     body {
       font-family: 'Poppins', sans-serif;
       background-color: #f5f7fa;
+      margin: 0;
+      padding: 0;
       color: #333;
-      line-height: 1.6;
-      padding-top: 50px;
     }
-
     header {
       background-color: #1f2937;
       color: white;
       padding: 2rem 0;
       text-align: center;
-      position: fixed;
-      width: 100%;
-      top: 0;
-      z-index: 100;
     }
-
-    header h1 {
-      margin-bottom: 1rem;
-      font-size: 2.5rem;
-      font-weight: 600;
-    }
-
     nav ul {
       list-style: none;
       padding: 0;
       margin: 1rem 0 0;
-      display: flex;
-      justify-content: center;
     }
-
     nav li {
-      margin: 0 1.5rem;
+      display: inline;
+      margin: 0 1rem;
     }
-
     nav a {
       color: white;
       text-decoration: none;
       font-weight: 600;
-      transition: color 0.3s ease;
     }
-
-    nav a:hover {
-      color: #3b82f6;
-    }
-
     .container {
       max-width: 900px;
-      margin: 80px auto 3rem auto; /* Ajuste de margen superior para evitar que se solape con el header fijo */
+      margin: 2rem auto;
       background: white;
       padding: 2rem;
       border-radius: 12px;
       box-shadow: 0 8px 20px rgba(0,0,0,0.1);
     }
-
     section {
       margin-bottom: 2rem;
     }
-
     section h2 {
       font-size: 1.8rem;
       margin-bottom: 1rem;
@@ -83,15 +52,12 @@
       border-bottom: 2px solid #3b82f6;
       padding-bottom: 0.5rem;
     }
-
     ul {
       padding-left: 1rem;
     }
-
     ul li {
       margin-bottom: 0.5rem;
     }
-
     footer {
       text-align: center;
       padding: 1rem;
@@ -99,7 +65,6 @@
       color: white;
       font-size: 0.9rem;
     }
-
     .btn-contacto {
       display: inline-block;
       background-color: #3b82f6;
@@ -111,11 +76,9 @@
       margin-top: 1.5rem;
       transition: background-color 0.3s ease;
     }
-
     .btn-contacto:hover {
       background-color: #2563eb;
     }
-
     @media (max-width: 600px) {
       nav li {
         display: block;
@@ -157,7 +120,9 @@
         <li><strong>Localidad:</strong> Engativá, Bogotá</li>
         <li><strong>Dirección:</strong> Diagonal 82ª #110-93, Barrio Bolivia Real</li>
       </ul>
-      <a href="mailto:Fsolano2509@gmail.com" class="btn-contacto">Contáctame</a>
+      <!-- Botones de contacto -->
+      <a href="mailto:Fsolano2509@gmail.com" class="btn-contacto">Contáctame por Email</a>
+      <a href="tel:+573246339042" class="btn-contacto">Llamar Ahora</a>
     </section>
 
     <section id="educacion">
