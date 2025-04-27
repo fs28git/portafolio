@@ -1,130 +1,193 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Andrés Felipe Solano Moreno - Portafolio</title>
-    <style>
-        /* Estilos básicos */
-        body {
-            font-family: Arial, sans-serif;
-            line-height: 1.6;
-            margin: 0;
-            padding: 0;
-            background: #f4f4f4;
-            color: #333;
-        }
-        header {
-            background: #35424a;
-            color: #ffffff;
-            padding: 2rem 0;
-            text-align: center;
-        }
-        header h1 {
-            margin: 0;
-            font-size: 2rem;
-        }
-        nav ul {
-            list-style: none;
-            padding: 0;
-        }
-        nav li {
-            display: inline;
-            margin: 0 1rem;
-        }
-        nav a {
-            color: #ffffff;
-            text-decoration: none;
-        }
-        .container {
-            max-width: 800px;
-            margin: 2rem auto;
-            padding: 0 1rem;
-            background: #ffffff;
-            border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0,0,0,0.1);
-        }
-        section h2 {
-            border-bottom: 2px solid #e8491d;
-            padding-bottom: 0.5rem;
-            margin-bottom: 1rem;
-        }
-        ul {
-            list-style: disc inside;
-        }
-        footer {
-            text-align: center;
-            padding: 1rem 0;
-            background: #35424a;
-            color: #ffffff;
-            margin-top: 2rem;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portafolio de Andrés Felipe Solano Moreno, Ingeniero de Software.">
+  <title>Andrés Felipe Solano Moreno - Portafolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/a2d9d6c11b.js" crossorigin="anonymous"></script>
+  <style>
+    /* Reset de márgenes y paddings */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background-color: #f5f7fa;
+      color: #333;
+      line-height: 1.6;
+      padding-top: 50px;
+    }
+
+    header {
+      background-color: #1f2937;
+      color: white;
+      padding: 2rem 0;
+      text-align: center;
+      position: fixed;
+      width: 100%;
+      top: 0;
+      z-index: 100;
+    }
+
+    header h1 {
+      margin-bottom: 1rem;
+      font-size: 2.5rem;
+      font-weight: 600;
+    }
+
+    nav ul {
+      list-style: none;
+      padding: 0;
+      margin: 1rem 0 0;
+      display: flex;
+      justify-content: center;
+    }
+
+    nav li {
+      margin: 0 1.5rem;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: 600;
+      transition: color 0.3s ease;
+    }
+
+    nav a:hover {
+      color: #3b82f6;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: 80px auto 3rem auto; /* Ajuste de margen superior para evitar que se solape con el header fijo */
+      background: white;
+      padding: 2rem;
+      border-radius: 12px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+    }
+
+    section {
+      margin-bottom: 2rem;
+    }
+
+    section h2 {
+      font-size: 1.8rem;
+      margin-bottom: 1rem;
+      color: #1f2937;
+      border-bottom: 2px solid #3b82f6;
+      padding-bottom: 0.5rem;
+    }
+
+    ul {
+      padding-left: 1rem;
+    }
+
+    ul li {
+      margin-bottom: 0.5rem;
+    }
+
+    footer {
+      text-align: center;
+      padding: 1rem;
+      background-color: #1f2937;
+      color: white;
+      font-size: 0.9rem;
+    }
+
+    .btn-contacto {
+      display: inline-block;
+      background-color: #3b82f6;
+      color: white;
+      padding: 0.8rem 1.5rem;
+      border-radius: 50px;
+      text-decoration: none;
+      font-weight: 600;
+      margin-top: 1.5rem;
+      transition: background-color 0.3s ease;
+    }
+
+    .btn-contacto:hover {
+      background-color: #2563eb;
+    }
+
+    @media (max-width: 600px) {
+      nav li {
+        display: block;
+        margin: 0.5rem 0;
+      }
+      .container {
+        margin: 1rem;
+        padding: 1.5rem;
+      }
+    }
+  </style>
 </head>
 <body>
-    <header>
-        <h1>Andrés Felipe Solano Moreno</h1>
-        <nav>
-            <ul>
-                <li><a href="#perfil">Perfil</a></li>
-                <li><a href="#contacto">Contacto</a></li>
-                <li><a href="#educacion">Educación</a></li>
-                <li><a href="#experiencia">Experiencia</a></li>
-                <li><a href="#referencias-familiares">Referencias</a></li>
-            </ul>
-        </nav>
-    </header>
+  <header>
+    <h1>Andrés Felipe Solano Moreno</h1>
+    <nav>
+      <ul>
+        <li><a href="#perfil">Perfil</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+        <li><a href="#educacion">Educación</a></li>
+        <li><a href="#experiencia">Experiencia</a></li>
+        <li><a href="#referencias">Referencias</a></li>
+      </ul>
+    </nav>
+  </header>
 
-    <div class="container">
-        <section id="perfil">
-            <h2>Perfil</h2>
-            <p>Me identifico como una persona responsable, eficiente, respetuosa y constante en mi trabajo. Me caracterizo por cumplir las metas que me son asignadas por la empresa.</p>
-        </section>
+  <div class="container">
+    <section id="perfil">
+      <h2><i class="fas fa-user"></i> Perfil</h2>
+      <p>Me identifico como una persona responsable, eficiente, respetuosa y constante en mi trabajo. Me caracterizo por cumplir las metas asignadas por la empresa.</p>
+    </section>
 
-        <section id="contacto">
-            <h2>Contacto</h2>
-            <ul>
-                <li><strong>Teléfono:</strong> 324 633 9042</li>
-                <li><strong>Cédula:</strong> 1000286812</li>
-                <li><strong>Email:</strong> <a href="mailto:Fsolano2509@gmail.com">Fsolano2509@gmail.com</a></li>
-                <li><strong>Localidad:</strong> Engativá, Bogotá</li>
-                <li><strong>Dirección:</strong> Diagonal 82ª # 110-93, Barrio Bolivia Real</li>
-            </ul>
-        </section>
+    <section id="contacto">
+      <h2><i class="fas fa-envelope"></i> Contacto</h2>
+      <ul>
+        <li><strong>Teléfono:</strong> 324 633 9042</li>
+        <li><strong>Cédula:</strong> 1000286812</li>
+        <li><strong>Email:</strong> <a href="mailto:Fsolano2509@gmail.com">Fsolano2509@gmail.com</a></li>
+        <li><strong>Localidad:</strong> Engativá, Bogotá</li>
+        <li><strong>Dirección:</strong> Diagonal 82ª #110-93, Barrio Bolivia Real</li>
+      </ul>
+      <a href="mailto:Fsolano2509@gmail.com" class="btn-contacto">Contáctame</a>
+    </section>
 
-        <section id="educacion">
-            <h2>Educación</h2>
-            <ul>
-                <li><strong>Colegio Americano de Bogotá</strong> – Estudios secundarios</li>
-                <li><strong>Universidad Manuela Beltrán</strong> – Ingeniería de Software</li>
-            </ul>
-        </section>
+    <section id="educacion">
+      <h2><i class="fas fa-graduation-cap"></i> Educación</h2>
+      <ul>
+        <li><strong>Colegio Americano de Bogotá:</strong> Estudios secundarios</li>
+        <li><strong>Universidad Manuela Beltrán:</strong> Ingeniería de Software</li>
+      </ul>
+    </section>
 
-        <section id="experiencia">
-            <h2>Experiencia Laboral</h2>
-            <ul>
-                <li>Surtifriss – Cajero y Mesero (1 año de experiencia)</li>
-                <li>Promotor de Eventos</li>
-                <li>Asesor de Ventas</li>
-            </ul>
-        </section>
+    <section id="experiencia">
+      <h2><i class="fas fa-briefcase"></i> Experiencia Laboral</h2>
+      <ul>
+        <li>Surtifriss – Cajero y Mesero (1 año de experiencia)</li>
+        <li>Promotor de Eventos</li>
+        <li>Asesor de Ventas</li>
+      </ul>
+    </section>
 
-        <section id="referencias-familiares">
-            <h2>Referencias Familiares</h2>
-            <ul>
-                <li>Gloria Moreno – Docente – 310 218 0485</li>
-                <li>Jairo Solano – Contador – 316 335 5421</li>
-            </ul>
-        </section>
+    <section id="referencias">
+      <h2><i class="fas fa-users"></i> Referencias</h2>
+      <ul>
+        <li>Gloria Moreno – Docente – 310 218 0485</li>
+        <li>Jairo Solano – Contador – 316 335 5421</li>
+      </ul>
+    </section>
+  </div>
 
-        <section id="referencias-laborales">
-            <h2>Referencias Laborales</h2>
-            <p>Referencias disponibles a solicitud.</p>
-        </section>
-    </div>
-
-    <footer>
-        <p>&copy; 2025 Andrés Felipe Solano Moreno</p>
-    </footer>
+  <footer>
+    <p>&copy; 2025 Andrés Felipe Solano Moreno | Todos los derechos reservados</p>
+  </footer>
 </body>
 </html>
