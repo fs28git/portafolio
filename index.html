@@ -1,171 +1,61 @@
+
 <!DOCTYPE html>
 <html lang="es">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Andres Felipe Solano Moreno - Portafolio</title>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
-  <script src="https://kit.fontawesome.com/a2d9d6c11b.js" crossorigin="anonymous"></script>
-  <style>
-    body {
-      font-family: 'Poppins', sans-serif;
-      background-color: #f5f7fa;
-      margin: 0;
-      padding: 0;
-      color: #333;
-    }
-    header {
-      background-color: #1f2937;
-      color: white;
-      padding: 2rem 0;
-      text-align: center;
-    }
-    nav ul {
-      list-style: none;
-      padding: 0;
-      margin: 1rem 0 0;
-    }
-    nav li {
-      display: inline;
-      margin: 0 1rem;
-    }
-    nav a {
-      color: white;
-      text-decoration: none;
-      font-weight: 600;
-    }
-    .container {
-      max-width: 900px;
-      margin: 2rem auto;
-      background: white;
-      padding: 2rem;
-      border-radius: 12px;
-      box-shadow: 0 8px 20px rgba(0,0,0,0.1);
-    }
-    section {
-      margin-bottom: 2rem;
-    }
-    section h2 {
-      font-size: 1.8rem;
-      margin-bottom: 1rem;
-      color: #1f2937;
-      border-bottom: 2px solid #3b82f6;
-      padding-bottom: 0.5rem;
-    }
-    ul {
-      padding-left: 1rem;
-    }
-    ul li {
-      margin-bottom: 0.5rem;
-    }
-    footer {
-      text-align: center;
-      padding: 1rem;
-      background-color: #1f2937;
-      color: white;
-      font-size: 0.9rem;
-    }
-    .btn-contacto {
-      display: inline-block;
-      background-color: #3b82f6;
-      color: white;
-      padding: 0.8rem 1.5rem;
-      border-radius: 50px;
-      text-decoration: none;
-      font-weight: 600;
-      margin-top: 1.5rem;
-      transition: background-color 0.3s ease;
-    }
-    .btn-contacto:hover {
-      background-color: #2563eb;
-    }
-    @media (max-width: 600px) {
-      nav li {
-        display: block;
-        margin: 0.5rem 0;
-      }
-      .container {
-        margin: 1rem;
-        padding: 1.5rem;
-      }
-    }
-  </style>
-</head>
-<body>
-  <header>
-    <h1>Andres Felipe Solano Moreno</h1>
-    <nav>
-      <ul>
-        <li><a href="#perfil">Perfil</a></li>
-        <li><a href="#contacto">Contacto</a></li>
-        <li><a href="#educacion">Educación</a></li>
-        <li><a href="#experiencia">Experiencia</a></li>
-        <li><a href="#referencias">Referencias</a></li>
-        <li><a href="#certificados">Certificados</a></li>
-      </ul>
-    </nav>
-  </header>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portafolio | [Tu Nombre]</title>
 
-  <div class="container">
-    <section id="perfil">
-      <h2><i class="fas fa-user"></i> Perfil</h2>
-      <p>Me identifico como una persona responsable, eficiente, respetuosa y constante en mi trabajo. Me caracterizo por cumplir las metas asignadas por la empresa.</p>
+    <!-- Microetiquetado Schema.org tipo Person -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "[Tu Nombre]",
+      "url": "https://fs28git.github.io/portafolio",
+      "image": "https://fs28git.github.io/portafolio/assets/profile.jpg",
+      "sameAs": [
+        "https://github.com/fs28git",
+        "https://www.linkedin.com/in/tuusuario",
+        "https://twitter.com/tuusuario"
+      ],
+      "jobTitle": "Desarrollador Web / Ingeniero de Software",
+      "worksFor": {
+        "@type": "Organization",
+        "name": "[Tu empresa actual o 'Freelancer']"
+      },
+      "alumniOf": {
+        "@type": "EducationalOrganization",
+        "name": "[Tu Universidad o Instituto]"
+      },
+      "description": "Soy un desarrollador especializado en tecnologías web modernas, diseño responsivo y experiencia de usuario."
+    }
+    </script>
+
+    <!-- Estilos y otros recursos -->
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <h1>¡Hola! Soy [Tu Nombre]</h1>
+      <p>Desarrollador web apasionado por crear soluciones eficientes y elegantes.</p>
+    </header>
+
+    <section>
+      <h2>Sobre mí</h2>
+      <p>Tengo experiencia en desarrollo frontend y backend, con un enfoque en tecnologías como HTML, CSS, JavaScript, React y Node.js.</p>
     </section>
 
-    <section id="contacto">
-      <h2><i class="fas fa-envelope"></i> Contacto</h2>
+    <section>
+      <h2>Proyectos</h2>
       <ul>
-        <li><strong>Teléfono:</strong> 324 633 9042</li>
-        <li><strong>Cédula:</strong> 1000286812</li>
-        <li><strong>Email:</strong> <a href="mailto:Fsolano2509@gmail.com">Fsolano2509@gmail.com</a></li>
-        <li><strong>Localidad:</strong> Engativá, Bogotá</li>
-        <li><strong>Dirección:</strong> Diagonal 82ª #110-93, Barrio Bolivia Real</li>
-      </ul>
-      <a href="tel:+573246339042" class="btn-contacto">Contáctame por Teléfono</a>
-      <a href="mailto:Fsolano2509@gmail.com" class="btn-contacto">Contáctame por Email</a>
-      <a href="https://www.linkedin.com/in/felipe-solano-95655b363/" target="_blank" class="btn-contacto">Contáctame por LinkedIn</a>
-    </section>
-
-    <section id="educacion">
-      <h2><i class="fas fa-graduation-cap"></i> Educación</h2>
-      <ul>
-        <li><strong>Colegio Americano de Bogotá:</strong> Estudios secundarios</li>
-        <li><strong>Universidad Manuela Beltrán:</strong> Ingeniería de Software</li>
+        <li><a href="https://github.com/fs28git/proyecto1">Proyecto 1</a></li>
+        <li><a href="https://github.com/fs28git/proyecto2">Proyecto 2</a></li>
       </ul>
     </section>
 
-    <section id="experiencia">
-      <h2><i class="fas fa-briefcase"></i> Experiencia Laboral</h2>
-      <ul>
-        <li>Surtifriss – Cajero y Mesero (1 año de experiencia)</li>
-        <li>Promotor de Eventos</li>
-        <li>Asesor de Ventas</li>
-      </ul>
-    </section>
-
-    <section id="referencias">
-      <h2><i class="fas fa-users"></i> Referencias</h2>
-      <ul>
-        <li>Gloria Moreno – Magíster en Educación – 310 218 0485</li>
-        <li>Jairo Solano – Contador Público – 316 335 5421</li>
-      </ul>
-    </section>
-
-    <section id="certificados">
-      <h2><i class="fas fa-certificate"></i> Certificados</h2>
-      <ul>
-        <li><a href="https://fs28git.github.io/portafolio/CCNA-_Introduction_to_Networks_certificate_fsolano2509-gmail-com_5c511102-d5bf-4ec7-978e-9ccabe1e7512.pdf" target="_blank">CCNA - Introduction to Networks</a></li>
-        <li><a href="https://fs28git.github.io/portafolio/Ethical_Hacker_certificate_fsolano2509-gmail-com_c9e923dd-5d0a-4eef-b17f-f6ffc930d448.pdf" target="_blank">Ethical Hacker</a></li>
-        <li><a href="https://fs28git.github.io/portafolio/Partner-_NDG_Linux_Essentials_certificate_fsolano2509-gmail-com_4063a1d7-dfe4-4911-98d4-b33f71507573.pdf" target="_blank">Partner - NDG Linux Essentials</a></li>
-        <li><a href="https://fs28git.github.io/portafolio/Partner-_NDG_Linux_Unhatched_certificate_fsolano2509-gmail-com_6ed94c47-5bf4-4310-9c25-570e44241ce4.pdf" target="_blank">Partner - NDG Linux Unhatched</a></li>
-        <li><a href="https://fs28git.github.io/portafolio/ciber%20seguridad.pdf" target="_blank">Ciberseguridad</a></li>
-        <li><a href="https://fs28git.github.io/portafolio/gestion%20de%20amenazas%20ciberneticas.pdf" target="_blank">Gestión de Amenazas Cibernéticas</a></li>
-      </ul>
-    </section>
-  </div>
-
-  <footer>
-    <p>&copy; 2025 Andres Felipe Solano Moreno | Todos los derechos reservados</p>
-  </footer>
-</body>
+    <footer>
+      <p>© [Tu Nombre] 2025 | <a href="mailto:tuemail@dominio.com">Contáctame</a></p>
+    </footer>
+  </body>
 </html>
