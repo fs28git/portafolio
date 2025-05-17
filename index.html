@@ -1,110 +1,191 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="es" itemscope itemtype="https://schema.org/WebPage">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Portafolio de Felipe Solano</title>
-  <meta name="description" content="Portafolio web de Felipe Solano. Diseño, desarrollo web y catálogo de productos." />
-  <meta name="keywords" content="portafolio, desarrollo web, HTML, CSS, SEO, productos, blog" />
-  <meta name="author" content="Felipe Solano" />
-  
-  <!-- Open Graph -->
-  <meta property="og:title" content="Portafolio de Felipe Solano" />
-  <meta property="og:description" content="Micro sitio profesional con catálogo de productos y blog." />
-  <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://fs28git.github.io/portafolio/" />
-  <meta property="og:image" content="https://fs28git.github.io/portafolio/images/portafolio-cover.png" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Portafolio - Andres Felipe Solano Moreno</title>
+  <meta name="description" content="Portafolio profesional de Andres Felipe Solano Moreno, Ingeniero de Software. Contacto, educación, experiencia, certificaciones, productos y blog." />
+  <meta name="author" content="Andres Felipe Solano Moreno" />
+  <link rel="canonical" href="https://miportafolio.com/" />
+  <link rel="icon" href="favicon.ico" />
 
   <!-- Google Tag Manager -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-KCEY5YMV5Q"></script>
   <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'G-KCEY5YMV5Q');
+    (function(w,d,s,l,i){
+      w[l]=w[l]||[];w[l].push({'gtm.start': new Date().getTime(),event:'gtm.js'});
+      var f=d.getElementsByTagName(s)[0], j=d.createElement(s), dl=l!='dataLayer'?'&l='+l:'';
+      j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;
+      f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-XXXXXXX'); 
   </script>
 
-  <!-- Google Tag Manager (noscript) -->
-  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-  })(window,document,'script','dataLayer','GTM-MJM9JKFN');</script>
-
-  <link rel="stylesheet" href="styles.css" />
+  <style>
+    /* Estilos básicos y accesibles */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0; padding: 0;
+      background: #f5f5f5;
+      color: #222;
+      line-height: 1.6;
+    }
+    header, main, footer {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 1rem;
+      background: #fff;
+    }
+    h1, h2, h3 {
+      color: #004080;
+    }
+    a {
+      color: #007acc;
+      text-decoration: none;
+    }
+    a:focus, a:hover {
+      text-decoration: underline;
+      outline: 2px solid #005a9c;
+      outline-offset: 2px;
+    }
+    nav ul {
+      list-style: none;
+      padding: 0;
+      display: flex;
+      gap: 1rem;
+    }
+    nav a {
+      font-weight: bold;
+    }
+    section {
+      margin-bottom: 2rem;
+    }
+    .product, .blog-post, .experience-item, .education-item, .certification-item, .reference-item {
+      border-bottom: 1px solid #ddd;
+      padding-bottom: 0.5rem;
+      margin-bottom: 0.5rem;
+    }
+    footer {
+      text-align: center;
+      font-size: 0.9rem;
+      color: #555;
+    }
+  </style>
 </head>
 <body>
-  <header>
-    <h1>Felipe Solano</h1>
-    <nav aria-label="Menú principal">
+
+  <!-- Google Tag Manager (noscript) -->
+  <noscript>
+    <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-XXXXXXX" height="0" width="0" style="display:none;visibility:hidden"></iframe>
+  </noscript>
+
+  <header role="banner" itemscope itemtype="https://schema.org/Person">
+    <h1 itemprop="name">Andres Felipe Solano Moreno</h1>
+    <p><strong>Ingeniero de Software</strong></p>
+    <p>Contacto: <a href="mailto:andres.solano@email.com" itemprop="email">andres.solano@email.com</a></p>
+    <nav role="navigation" aria-label="Menú principal">
       <ul>
-        <li><a href="#portafolio">Portafolio</a></li>
-        <li><a href="#catalogo">Catálogo</a></li>
+        <li><a href="#perfil">Perfil</a></li>
+        <li><a href="#educacion">Educación</a></li>
+        <li><a href="#experiencia">Experiencia</a></li>
+        <li><a href="#certificados">Certificados</a></li>
+        <li><a href="#productos">Productos</a></li>
         <li><a href="#blog">Blog</a></li>
-        <li><a href="404.html">Página 404</a></li>
       </ul>
     </nav>
   </header>
 
-  <main>
-    <section id="portafolio" aria-labelledby="titulo-portafolio">
-      <h2 id="titulo-portafolio">Sobre mí</h2>
-      <p>Desarrollador web apasionado por la accesibilidad, el SEO y las buenas prácticas.</p>
+  <main role="main">
+
+    <section id="perfil" itemprop="description" aria-label="Perfil profesional">
+      <h2>Perfil Profesional</h2>
+      <p>Ingeniero de software con experiencia en desarrollo web, integración de sistemas y gestión de proyectos. Apasionado por tecnologías modernas y buenas prácticas de desarrollo.</p>
     </section>
 
-    <section id="catalogo" aria-labelledby="titulo-catalogo">
-      <h2 id="titulo-catalogo">Catálogo de Productos</h2>
-      <div itemscope itemtype="https://schema.org/Product">
-        <h3 itemprop="name">Audífonos Sony WH-1000XM5</h3>
-        <img src="images/audifonos.jpg" alt="Audífonos Sony" itemprop="image" />
-        <p itemprop="description">Cancelación de ruido premium con batería de larga duración.</p>
-        <p><span itemprop="offers" itemscope itemtype="https://schema.org/Offer">
-          Precio: <span itemprop="priceCurrency" content="USD">$</span><span itemprop="price">349.99</span>
-        </span></p>
-        <a href="https://www.amazon.com/" target="_blank" rel="noopener noreferrer">Comprar en Amazon</a>
+    <section id="educacion" aria-label="Educación" itemscope itemtype="https://schema.org/EducationEvent">
+      <h2>Educación</h2>
+      <div class="education-item" itemscope itemtype="https://schema.org/EducationalOrganization">
+        <h3 itemprop="name">Universidad Nacional</h3>
+        <p><span itemprop="degree">Ingeniería de Software</span> - Graduado en 2023</p>
       </div>
-
-      <div itemscope itemtype="https://schema.org/Product">
-        <h3 itemprop="name">Teclado Mecánico Keychron K6</h3>
-        <img src="images/teclado.jpg" alt="Teclado Keychron" itemprop="image" />
-        <p itemprop="description">Compacto, con conectividad Bluetooth y retroiluminación RGB.</p>
-        <p><span itemprop="offers" itemscope itemtype="https://schema.org/Offer">
-          Precio: <span itemprop="priceCurrency" content="USD">$</span><span itemprop="price">79.99</span>
-        </span></p>
-        <a href="https://www.keychron.com/" target="_blank" rel="noopener noreferrer">Comprar en Keychron</a>
+      <div class="education-item" itemscope itemtype="https://schema.org/EducationalOrganization">
+        <h3 itemprop="name">Instituto Técnico XYZ</h3>
+        <p><span itemprop="degree">Técnico en Sistemas</span> - Graduado en 2018</p>
       </div>
     </section>
 
-    <section id="blog" aria-labelledby="titulo-blog">
-      <h2 id="titulo-blog">Noticias y Blog</h2>
+    <section id="experiencia" aria-label="Experiencia laboral">
+      <h2>Experiencia</h2>
+      <div class="experience-item" itemscope itemtype="https://schema.org/JobPosting">
+        <h3 itemprop="title">Desarrollador Web</h3>
+        <p><span itemprop="hiringOrganization" itemscope itemtype="https://schema.org/Organization">
+          <span itemprop="name">Empresa ABC</span></span> | <time itemprop="startDate" datetime="2023-01">Enero 2023</time> - <time itemprop="endDate" datetime="2025-04">Abril 2025</time></p>
+        <p itemprop="description">Desarrollo de aplicaciones web con tecnologías modernas, gestión de bases de datos y despliegue en la nube.</p>
+      </div>
+      <div class="experience-item" itemscope itemtype="https://schema.org/JobPosting">
+        <h3 itemprop="title">Practicante de Software</h3>
+        <p><span itemprop="hiringOrganization" itemscope itemtype="https://schema.org/Organization">
+          <span itemprop="name">Startup XYZ</span></span> | <time itemprop="startDate" datetime="2022-06">Junio 2022</time> - <time itemprop="endDate" datetime="2022-12">Diciembre 2022</time></p>
+        <p itemprop="description">Soporte y desarrollo de módulos para plataforma SaaS.</p>
+      </div>
+    </section>
 
-      <article itemscope itemtype="https://schema.org/BlogPosting">
-        <header>
-          <h3 itemprop="headline">Cómo mejorar tu SEO en 2025</h3>
-        </header>
-        <p itemprop="articleBody">Optimiza tu HTML semántico, estructura y rendimiento para destacar en los motores de búsqueda.</p>
-        <p>Publicado por <span itemprop="author" itemscope itemtype="https://schema.org/Person"><span itemprop="name">Felipe Solano</span></span></p>
-        <a href="https://moz.com/blog" target="_blank" rel="noopener noreferrer">Leer más en Moz</a>
+    <section id="certificados" aria-label="Certificaciones">
+      <h2>Certificados</h2>
+      <div class="certification-item" itemscope itemtype="https://schema.org/CreativeWork">
+        <h3 itemprop="name">Certificación en Desarrollo Web - Platzi</h3>
+        <p>Obtenido en 2024</p>
+      </div>
+      <div class="certification-item" itemscope itemtype="https://schema.org/CreativeWork">
+        <h3 itemprop="name">Certificado AWS Solutions Architect</h3>
+        <p>Obtenido en 2023</p>
+      </div>
+    </section>
+
+    <section id="productos" aria-label="Catálogo de productos" itemscope itemtype="https://schema.org/ItemList">
+      <h2>Productos</h2>
+      <div class="product" itemprop="itemListElement" itemscope itemtype="https://schema.org/Product">
+        <h3 itemprop="name">Moto Deportiva XYZ 200cc</h3>
+        <p itemprop="description">Moto deportiva con motor 200cc, diseño aerodinámico y sistema ABS.</p>
+        <a href="https://tiendaejemplo.com/moto-xyz" target="_blank" rel="noopener" itemprop="url">Comprar en tienda oficial</a>
+        <p><strong>Precio:</strong> 
+          <span itemprop="offers" itemscope itemtype="https://schema.org/Offer">
+            <span itemprop="priceCurrency" content="COP">COP</span> <span itemprop="price" content="8500000">8.500.000</span>
+            <link itemprop="availability" href="https://schema.org/InStock" /> Disponible
+          </span>
+        </p>
+      </div>
+      <div class="product" itemprop="itemListElement" itemscope itemtype="https://schema.org/Product">
+        <h3 itemprop="name">Casco Protector ABC</h3>
+        <p itemprop="description">Casco con certificación de seguridad y diseño aerodinámico.</p>
+        <a href="https://tiendaejemplo.com/casco-abc" target="_blank" rel="noopener" itemprop="url">Comprar en tienda oficial</a>
+        <p><strong>Precio:</strong> 
+          <span itemprop="offers" itemscope itemtype="https://schema.org/Offer">
+            <span itemprop="priceCurrency" content="COP">COP</span> <span itemprop="price" content="350000">350.000</span>
+            <link itemprop="availability" href="https://schema.org/InStock" /> Disponible
+          </span>
+        </p>
+      </div>
+    </section>
+
+    <section id="blog" aria-label="Noticias y blog" itemscope itemtype="https://schema.org/Blog">
+      <h2>Noticias / Blog</h2>
+      <article class="blog-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+        <h3 itemprop="headline"><a href="https://miportafolio.com/blog/post1" target="_blank" rel="noopener" itemprop="url">Lanzamiento de la Moto Deportiva XYZ 200cc</a></h3>
+        <p itemprop="description">Te contamos las características principales y ventajas de la nueva moto deportiva XYZ 200cc.</p>
+        <time datetime="2025-04-15" itemprop="datePublished">15 de abril de 2025</time>
       </article>
-
-      <article itemscope itemtype="https://schema.org/BlogPosting">
-        <header>
-          <h3 itemprop="headline">Accesibilidad web: lo que necesitas saber</h3>
-        </header>
-        <p itemprop="articleBody">Desde etiquetas alt hasta ARIA, todo lo que debes incluir para que todos puedan acceder a tu contenido.</p>
-        <p>Publicado por <span itemprop="author" itemscope itemtype="https://schema.org/Person"><span itemprop="name">Felipe Solano</span></span></p>
-        <a href="https://web.dev/accessibility/" target="_blank" rel="noopener noreferrer">Leer más en Web.dev</a>
+      <article class="blog-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+        <h3 itemprop="headline"><a href="https://miportafolio.com/blog/post2" target="_blank" rel="noopener" itemprop="url">Cómo elegir el casco perfecto para ti</a></h3>
+        <p itemprop="description">Tips para elegir un casco seguro, cómodo y con buen diseño.</p>
+        <time datetime="2025-04-01" itemprop="datePublished">1 de abril de 2025</time>
       </article>
     </section>
+
   </main>
 
-  <footer>
-    <p>&copy; 2025 Felipe Solano. Todos los derechos reservados.</p>
+  <footer role="contentinfo">
+    <p>© 2025 Andres Felipe Solano Moreno. Todos los derechos reservados.</p>
+    <p><a href="404.html" aria-label="Ir a página 404 personalizada">Página 404 personalizada</a></p>
   </footer>
 
-  <!-- Google Tag Manager (noscript) -->
-  <noscript>
-    <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MJM9JKFN" height="0" width="0" style="display:none;visibility:hidden"></iframe>
-  </noscript>
 </body>
 </html>
