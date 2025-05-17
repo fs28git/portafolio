@@ -1,39 +1,51 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta http-equiv="X-XSS-Protection" content="1; mode=block">
-<meta http-equiv="X-Content-Type-Options" content="nosniff">
-<meta http-equiv="X-Frame-Options" content="SAMEORIGIN">
-<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval'; style-src 'self' 'unsafe-inline'; img-src 'self' data:;">
-<!-- Enlace al favicon -->
-<link rel="icon" href="favicon.svg" type="image/svg+xml">
-<link rel="icon" href="favicon.ico" sizes="any">
+  <!-- Metadatos básicos -->
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- Encabezados de seguridad -->
+  <meta http-equiv="X-XSS-Protection" content="1; mode=block">
+  <meta http-equiv="X-Content-Type-Options" content="nosniff">
+  <meta http-equiv="X-Frame-Options" content="SAMEORIGIN">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' https://kit.fontawesome.com https://www.googletagmanager.com 'unsafe-inline' 'unsafe-eval'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; img-src 'self' data: https://cdnx.jumpseller.com https://cdn.pixabay.com https://www.initiumsoft.com; font-src 'self' https://fonts.gstatic.com; connect-src 'self' https://fonts.googleapis.com https://fonts.gstatic.com https://kit.fontawesome.com https://www.googletagmanager.com; frame-src https://www.googletagmanager.com">
+
+  <!-- Favicon -->
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="favicon.ico" sizes="any">
+  
+  <!-- Metadatos SEO -->
   <title>Andres Felipe Solano Moreno - Portafolio</title>
   <meta name="description" content="Portafolio profesional de Andres Felipe Solano Moreno, Ingeniero de Software con experiencia en desarrollo web, certificaciones en redes y ciberseguridad.">
   <meta name="keywords" content="Portafolio, Ingeniería de Software, Certificados, Blog, Productos, Andres Felipe Solano">
   <meta name="author" content="Andres Felipe Solano Moreno">
   <link rel="canonical" href="https://fs28git.github.io/portafolio/">
   
+  <!-- Preconexiones -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="preconnect" href="https://kit.fontawesome.com">
   
+  <!-- Open Graph / Redes Sociales -->
   <meta property="og:title" content="Andres Felipe Solano Moreno - Portafolio">
   <meta property="og:description" content="Portafolio profesional de Andres Felipe Solano Moreno, Ingeniero de Software con experiencia en desarrollo web y certificaciones en tecnología.">
   <meta property="og:url" content="https://fs28git.github.io/portafolio/">
   <meta property="og:type" content="website">
   <meta property="og:image" content="https://fs28git.github.io/portafolio/img/perfil.jpg">
   
+  <!-- Twitter Card -->
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Andres Felipe Solano Moreno - Portafolio">
   <meta name="twitter:description" content="Portafolio profesional de Andres Felipe Solano Moreno, certificaciones y proyectos en tecnología.">
   
+  <!-- Fuentes -->
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
   
+  <!-- Font Awesome -->
   <script src="https://kit.fontawesome.com/a2d9d6c11b.js" crossorigin="anonymous" defer></script>
 
+  <!-- Google Tag Manager -->
   <script>
     (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
     new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
@@ -41,6 +53,8 @@
     'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
     })(window,document,'script','dataLayer','G-KCEY5YMV5Q');
   </script>
+
+  <!-- Estilos CSS -->
   <style>
     :root {
       --primary-color: #0a66c2;
@@ -53,15 +67,13 @@
       --border-color: #ddd;
     }
     
-    /* Estilos para mejora de accesibilidad y diseño responsivo */
     * {
       box-sizing: border-box;
       margin: 0;
       padding: 0;
     }
     
-    body 
-{
+    body {
       font-family: 'Poppins', sans-serif;
       line-height: 1.6;
       color: var(--text-color);
@@ -179,7 +191,6 @@
       background-color: var(--secondary-color);
     }
 
-    /* Estilos para la sección de productos */
     .product-grid {
       display: grid;
       grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
@@ -234,7 +245,6 @@
       background-color: var(--secondary-color);
     }
 
-    /* Estilos para la sección de blog */
     .blog-grid {
       display: grid;
       grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
@@ -310,7 +320,6 @@
       color: white;
     }
     
-    /* Media queries para responsividad */
     @media screen and (max-width: 768px) {
       nav ul {
         flex-direction: column;
@@ -322,7 +331,6 @@
       }
     }
     
-    /* Utilidades de accesibilidad */
     .visually-hidden {
       position: absolute;
       width: 1px;
@@ -334,7 +342,6 @@
       border: 0;
     }
     
-    /* Estilos de foco para accesibilidad */
     a:focus, button:focus, input:focus, select:focus, textarea:focus {
       outline: 3px solid rgba(10, 102, 194, 0.5);
       outline-offset: 2px;
