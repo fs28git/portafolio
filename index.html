@@ -1,191 +1,265 @@
 <!DOCTYPE html>
-<html lang="es" itemscope itemtype="https://schema.org/WebPage">
+<html lang="es">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Portafolio - Andres Felipe Solano Moreno</title>
-  <meta name="description" content="Portafolio profesional de Andres Felipe Solano Moreno, Ingeniero de Software. Contacto, educación, experiencia, certificaciones, productos y blog." />
+  <title>Andres Felipe Solano Moreno - Portafolio</title>
+  <meta name="description" content="Portafolio profesional de Andres Felipe Solano Moreno, Ingeniería de Software, proyectos, experiencia y certificados." />
+  <meta name="keywords" content="Portafolio, Ingenieria de Software, Certificados, Blog, Productos, Andres Felipe Solano" />
   <meta name="author" content="Andres Felipe Solano Moreno" />
-  <link rel="canonical" href="https://miportafolio.com/" />
-  <link rel="icon" href="favicon.ico" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet" />
+  <script src="https://kit.fontawesome.com/a2d9d6c11b.js" crossorigin="anonymous"></script>
 
   <!-- Google Tag Manager -->
   <script>
-    (function(w,d,s,l,i){
-      w[l]=w[l]||[];w[l].push({'gtm.start': new Date().getTime(),event:'gtm.js'});
-      var f=d.getElementsByTagName(s)[0], j=d.createElement(s), dl=l!='dataLayer'?'&l='+l:'';
-      j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;
-      f.parentNode.insertBefore(j,f);
+    (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
     })(window,document,'script','dataLayer','GTM-XXXXXXX'); 
   </script>
 
   <style>
-    /* Estilos básicos y accesibles */
     body {
-      font-family: Arial, sans-serif;
-      margin: 0; padding: 0;
-      background: #f5f5f5;
-      color: #222;
+      font-family: 'Poppins', sans-serif;
+      background-color: #f5f7fa;
+      margin: 0;
+      padding: 0;
+      color: #333;
       line-height: 1.6;
     }
-    header, main, footer {
-      max-width: 900px;
-      margin: 0 auto;
-      padding: 1rem;
-      background: #fff;
-    }
-    h1, h2, h3 {
-      color: #004080;
-    }
-    a {
-      color: #007acc;
-      text-decoration: none;
-    }
-    a:focus, a:hover {
-      text-decoration: underline;
-      outline: 2px solid #005a9c;
-      outline-offset: 2px;
+    header {
+      background-color: #1f2937;
+      color: white;
+      padding: 2rem 0;
+      text-align: center;
     }
     nav ul {
       list-style: none;
       padding: 0;
-      display: flex;
-      gap: 1rem;
+      margin: 1rem 0 0;
+    }
+    nav li {
+      display: inline;
+      margin: 0 1rem;
     }
     nav a {
-      font-weight: bold;
+      color: white;
+      text-decoration: none;
+      font-weight: 600;
+    }
+    nav a:focus,
+    nav a:hover {
+      text-decoration: underline;
+      outline: none;
+    }
+    .container {
+      max-width: 900px;
+      margin: 2rem auto;
+      background: white;
+      padding: 2rem;
+      border-radius: 12px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
     }
     section {
       margin-bottom: 2rem;
     }
-    .product, .blog-post, .experience-item, .education-item, .certification-item, .reference-item {
-      border-bottom: 1px solid #ddd;
+    section h2 {
+      font-size: 1.8rem;
+      margin-bottom: 1rem;
+      color: #1f2937;
+      border-bottom: 2px solid #3b82f6;
       padding-bottom: 0.5rem;
+    }
+    ul {
+      padding-left: 1rem;
+    }
+    ul li {
       margin-bottom: 0.5rem;
     }
     footer {
       text-align: center;
+      padding: 1rem;
+      background-color: #1f2937;
+      color: white;
       font-size: 0.9rem;
-      color: #555;
+    }
+    .btn-contacto {
+      display: inline-block;
+      background-color: #3b82f6;
+      color: white;
+      padding: 0.8rem 1.5rem;
+      border-radius: 50px;
+      text-decoration: none;
+      font-weight: 600;
+      margin-top: 1.5rem;
+      transition: background-color 0.3s ease;
+    }
+    .btn-contacto:hover,
+    .btn-contacto:focus {
+      background-color: #2563eb;
+      outline: none;
+    }
+    .product, .blog-post {
+      border: 1px solid #ddd;
+      border-radius: 10px;
+      padding: 1rem;
+      margin-bottom: 1rem;
+    }
+    .product h3, .blog-post h3 {
+      margin-top: 0;
+      color: #2563eb;
+    }
+    .product a, .blog-post a {
+      color: #1f2937;
+      text-decoration: none;
+      font-weight: 600;
+    }
+    .product a:hover, .blog-post a:hover,
+    .product a:focus, .blog-post a:focus {
+      text-decoration: underline;
+      outline: none;
+    }
+    @media (max-width: 600px) {
+      nav li {
+        display: block;
+        margin: 0.5rem 0;
+      }
+      .container {
+        margin: 1rem;
+        padding: 1.5rem;
+      }
     }
   </style>
 </head>
 <body>
 
   <!-- Google Tag Manager (noscript) -->
-  <noscript>
-    <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-XXXXXXX" height="0" width="0" style="display:none;visibility:hidden"></iframe>
-  </noscript>
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-XXXXXXX"
+  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
-  <header role="banner" itemscope itemtype="https://schema.org/Person">
-    <h1 itemprop="name">Andres Felipe Solano Moreno</h1>
-    <p><strong>Ingeniero de Software</strong></p>
-    <p>Contacto: <a href="mailto:andres.solano@email.com" itemprop="email">andres.solano@email.com</a></p>
+  <header>
+    <h1>Andres Felipe Solano Moreno</h1>
     <nav role="navigation" aria-label="Menú principal">
       <ul>
         <li><a href="#perfil">Perfil</a></li>
+        <li><a href="#contacto">Contacto</a></li>
         <li><a href="#educacion">Educación</a></li>
         <li><a href="#experiencia">Experiencia</a></li>
+        <li><a href="#referencias">Referencias</a></li>
         <li><a href="#certificados">Certificados</a></li>
-        <li><a href="#productos">Productos</a></li>
-        <li><a href="#blog">Blog</a></li>
+        <li><a href="#productos">Catálogo de Productos</a></li>
+        <li><a href="#blog">Noticias / Blog</a></li>
       </ul>
     </nav>
   </header>
 
-  <main role="main">
+  <main class="container" role="main">
 
-    <section id="perfil" itemprop="description" aria-label="Perfil profesional">
-      <h2>Perfil Profesional</h2>
-      <p>Ingeniero de software con experiencia en desarrollo web, integración de sistemas y gestión de proyectos. Apasionado por tecnologías modernas y buenas prácticas de desarrollo.</p>
-    </section>
+    <article id="perfil">
+      <h2><i class="fas fa-user" aria-hidden="true"></i> Perfil</h2>
+      <p>Me identifico como una persona responsable, eficiente, respetuosa y constante en mi trabajo. Me caracterizo por cumplir las metas asignadas por la empresa.</p>
+    </article>
 
-    <section id="educacion" aria-label="Educación" itemscope itemtype="https://schema.org/EducationEvent">
-      <h2>Educación</h2>
-      <div class="education-item" itemscope itemtype="https://schema.org/EducationalOrganization">
-        <h3 itemprop="name">Universidad Nacional</h3>
-        <p><span itemprop="degree">Ingeniería de Software</span> - Graduado en 2023</p>
-      </div>
-      <div class="education-item" itemscope itemtype="https://schema.org/EducationalOrganization">
-        <h3 itemprop="name">Instituto Técnico XYZ</h3>
-        <p><span itemprop="degree">Técnico en Sistemas</span> - Graduado en 2018</p>
-      </div>
-    </section>
+    <article id="contacto">
+      <h2><i class="fas fa-envelope" aria-hidden="true"></i> Contacto</h2>
+      <address>
+        <ul>
+          <li><strong>Teléfono:</strong> <a href="tel:+573246339042">324 633 9042</a></li>
+          <li><strong>Cédula:</strong> 1000286812</li>
+          <li><strong>Email:</strong> <a href="mailto:Fsolano2509@gmail.com">Fsolano2509@gmail.com</a></li>
+          <li><strong>Localidad:</strong> Engativá, Bogotá</li>
+          <li><strong>Dirección:</strong> Diagonal 82ª #110-93, Barrio Bolivia Real</li>
+        </ul>
+      </address>
+      <p>
+        <a href="tel:+573246339042" class="btn-contacto">Contáctame por Teléfono</a>
+        <a href="mailto:Fsolano2509@gmail.com" class="btn-contacto">Contáctame por Email</a>
+        <a href="https://www.linkedin.com/in/felipe-solano-95655b363/" target="_blank" rel="noopener" class="btn-contacto">Contáctame por LinkedIn</a>
+      </p>
+    </article>
 
-    <section id="experiencia" aria-label="Experiencia laboral">
-      <h2>Experiencia</h2>
-      <div class="experience-item" itemscope itemtype="https://schema.org/JobPosting">
-        <h3 itemprop="title">Desarrollador Web</h3>
-        <p><span itemprop="hiringOrganization" itemscope itemtype="https://schema.org/Organization">
-          <span itemprop="name">Empresa ABC</span></span> | <time itemprop="startDate" datetime="2023-01">Enero 2023</time> - <time itemprop="endDate" datetime="2025-04">Abril 2025</time></p>
-        <p itemprop="description">Desarrollo de aplicaciones web con tecnologías modernas, gestión de bases de datos y despliegue en la nube.</p>
-      </div>
-      <div class="experience-item" itemscope itemtype="https://schema.org/JobPosting">
-        <h3 itemprop="title">Practicante de Software</h3>
-        <p><span itemprop="hiringOrganization" itemscope itemtype="https://schema.org/Organization">
-          <span itemprop="name">Startup XYZ</span></span> | <time itemprop="startDate" datetime="2022-06">Junio 2022</time> - <time itemprop="endDate" datetime="2022-12">Diciembre 2022</time></p>
-        <p itemprop="description">Soporte y desarrollo de módulos para plataforma SaaS.</p>
-      </div>
-    </section>
+    <article id="educacion">
+      <h2><i class="fas fa-graduation-cap" aria-hidden="true"></i> Educación</h2>
+      <ul>
+        <li><strong>Colegio Americano de Bogotá:</strong> Estudios secundarios</li>
+        <li><strong>Universidad Manuela Beltrán:</strong> Ingeniería de Software</li>
+      </ul>
+    </article>
 
-    <section id="certificados" aria-label="Certificaciones">
-      <h2>Certificados</h2>
-      <div class="certification-item" itemscope itemtype="https://schema.org/CreativeWork">
-        <h3 itemprop="name">Certificación en Desarrollo Web - Platzi</h3>
-        <p>Obtenido en 2024</p>
-      </div>
-      <div class="certification-item" itemscope itemtype="https://schema.org/CreativeWork">
-        <h3 itemprop="name">Certificado AWS Solutions Architect</h3>
-        <p>Obtenido en 2023</p>
-      </div>
-    </section>
+    <article id="experiencia">
+      <h2><i class="fas fa-briefcase" aria-hidden="true"></i> Experiencia Laboral</h2>
+      <ul>
+        <li>Surtifriss – Cajero y Mesero (1 año de experiencia)</li>
+        <li>Promotor de Eventos</li>
+        <li>Asesor de Ventas</li>
+      </ul>
+    </article>
 
-    <section id="productos" aria-label="Catálogo de productos" itemscope itemtype="https://schema.org/ItemList">
-      <h2>Productos</h2>
+    <article id="referencias">
+      <h2><i class="fas fa-users" aria-hidden="true"></i> Referencias</h2>
+      <ul>
+        <li>Gloria Moreno – Magíster en Educación – 310 218 0485</li>
+        <li>Jairo Solano – Contador Público – 316 335 5421</li>
+      </ul>
+    </article>
+
+    <article id="certificados">
+      <h2><i class="fas fa-certificate" aria-hidden="true"></i> Certificados</h2>
+      <ul>
+        <li><a href="https://fs28git.github.io/portafolio/CCNA-_Introduction_to_Networks_certificate_fsolano2509-gmail-com_5c511102-d5bf-4ec7-978e-9ccabe1e7512.pdf" target="_blank" rel="noopener">CCNA - Introduction to Networks</a></li>
+        <li><a href="https://fs28git.github.io/portafolio/Ethical_Hacker_certificate_fsolano2509-gmail-com_c9e923dd-5d0a-4eef-b17f-f6ffc930d448.pdf" target="_blank" rel="noopener">Ethical Hacker</a></li>
+        <li><a href="https://fs28git.github.io/portafolio/Partner-_NDG_Linux_Essentials_certificate_fsolano2509-gmail-com_4063a1d7-dfe4-4911-98d4-b33f71507573.pdf" target="_blank" rel="noopener">Partner - NDG Linux Essentials</a></li>
+        <li><a href="https://fs28git.github.io/portafolio/Partner-_NDG_Linux_Unhatched_certificate_fsolano2509-gmail-com_6ed94c47-5bf4-4310-9c25-570e44241ce4.pdf" target="_blank" rel="noopener">Partner - NDG Linux Unhatched</a></li>
+        <li><a href="https://fs28git.github.io/portafolio/ciber%20seguridad.pdf" target="_blank" rel="noopener">Certificado: Fundamentos de Ciberseguridad</a></li>
+        <li><a href="https://fs28git.github.io/portafolio/gestion%20de%20amenazas%20ciberneticas.pdf" target="_blank" rel="noopener">Certificado: Gestión de Amenazas Cibernéticas</a></li>
+      </ul>
+    </article>
+
+    <article id="productos" itemscope itemtype="https://schema.org/ItemList">
+      <h2><i class="fas fa-box-open" aria-hidden="true"></i> Catálogo de Productos</h2>
+      <meta itemprop="name" content="Catálogo de Productos" />
       <div class="product" itemprop="itemListElement" itemscope itemtype="https://schema.org/Product">
         <h3 itemprop="name">Moto Deportiva XYZ 200cc</h3>
-        <p itemprop="description">Moto deportiva con motor 200cc, diseño aerodinámico y sistema ABS.</p>
-        <a href="https://tiendaejemplo.com/moto-xyz" target="_blank" rel="noopener" itemprop="url">Comprar en tienda oficial</a>
-        <p><strong>Precio:</strong> 
-          <span itemprop="offers" itemscope itemtype="https://schema.org/Offer">
-            <span itemprop="priceCurrency" content="COP">COP</span> <span itemprop="price" content="8500000">8.500.000</span>
-            <link itemprop="availability" href="https://schema.org/InStock" /> Disponible
-          </span>
-        </p>
-      </div>
-      <div class="product" itemprop="itemListElement" itemscope itemtype="https://schema.org/Product">
-        <h3 itemprop="name">Casco Protector ABC</h3>
-        <p itemprop="description">Casco con certificación de seguridad y diseño aerodinámico.</p>
-        <a href="https://tiendaejemplo.com/casco-abc" target="_blank" rel="noopener" itemprop="url">Comprar en tienda oficial</a>
-        <p><strong>Precio:</strong> 
-          <span itemprop="offers" itemscope itemtype="https://schema.org/Offer">
-            <span itemprop="priceCurrency" content="COP">COP</span> <span itemprop="price" content="350000">350.000</span>
-            <link itemprop="availability" href="https://schema.org/InStock" /> Disponible
-          </span>
-        </p>
-      </div>
-    </section>
+        <p itemprop="description">Moto deportiva potente, ideal para la ciudad y carretera.</p>
+        <a href="https://tiendaej
 
-    <section id="blog" aria-label="Noticias y blog" itemscope itemtype="https://schema.org/Blog">
-      <h2>Noticias / Blog</h2>
-      <article class="blog-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
-        <h3 itemprop="headline"><a href="https://miportafolio.com/blog/post1" target="_blank" rel="noopener" itemprop="url">Lanzamiento de la Moto Deportiva XYZ 200cc</a></h3>
-        <p itemprop="description">Te contamos las características principales y ventajas de la nueva moto deportiva XYZ 200cc.</p>
-        <time datetime="2025-04-15" itemprop="datePublished">15 de abril de 2025</time>
-      </article>
-      <article class="blog-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
-        <h3 itemprop="headline"><a href="https://miportafolio.com/blog/post2" target="_blank" rel="noopener" itemprop="url">Cómo elegir el casco perfecto para ti</a></h3>
-        <p itemprop="description">Tips para elegir un casco seguro, cómodo y con buen diseño.</p>
-        <time datetime="2025-04-01" itemprop="datePublished">1 de abril de 2025</time>
-      </article>
-    </section>
 
-  </main>
 
-  <footer role="contentinfo">
-    <p>© 2025 Andres Felipe Solano Moreno. Todos los derechos reservados.</p>
-    <p><a href="404.html" aria-label="Ir a página 404 personalizada">Página 404 personalizada</a></p>
-  </footer>
 
-</body>
-</html>
+
+ChatGPT dijo:
+emplo.com/moto-xyz" target="_blank" rel="noopener" itemprop="url">Comprar en tienda oficial</a>
+<p><strong>Precio:</strong> <span itemprop="offers" itemscope itemtype="https://schema.org/Offer">
+<span itemprop="priceCurrency" content="COP">COP</span> <span itemprop="price" content="8500000">8.500.000</span>
+<link itemprop="availability" href="https://schema.org/InStock" />Disponible
+</span></p>
+</div>
+<div class="product" itemprop="itemListElement" itemscope itemtype="https://schema.org/Product">
+<h3 itemprop="name">Casco Protector ABC</h3>
+<p itemprop="description">Casco con certificación de seguridad y diseño aerodinámico.</p>
+<a href="https://tiendaejemplo.com/casco-abc" target="_blank" rel="noopener" itemprop="url">Comprar en tienda oficial</a>
+<p><strong>Precio:</strong> <span itemprop="offers" itemscope itemtype="https://schema.org/Offer">
+<span itemprop="priceCurrency" content="COP">COP</span> <span itemprop="price" content="350000">350.000</span>
+<link itemprop="availability" href="https://schema.org/InStock" />Disponible
+</span></p>
+</div>
+</article>
+
+php-template
+Copiar
+Editar
+<article id="blog" itemscope itemtype="https://schema.org/Blog">
+  <h2><i class="fas fa-blog" aria-hidden="true"></i> Noticias / Blog</h2>
+  <div class="blog-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+    <h3 itemprop="headline"><a href="https://miportafolio.com/blog/post1" target="_blank" rel="noopener" itemprop="url">Lanzamiento de la Moto Deportiva XYZ 200cc</a></h3>
+    <p itemprop="description">Te contamos las características principales y ventajas de la nueva moto deportiva XYZ 200cc.</p>
+    <time datetime="2025-04-15" itemprop="datePublished">15 de abril de 2025</time>
+  </div>
+  <div class="blog-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+    <h3 itemprop="headline"><a href="https://miportafolio.com/blog/post2" target="_blank" rel="noopener" itemprop="url">Cómo elegir el casco perfecto para ti</a></h3>
+    <p itemprop="description">Tips para elegir un casco seguro, cómodo y con buen diseño.</p>
+    <time datetime="2025-04-01" itemprop="datePublished">1 de abril de 2025</time>
+  </div>
+</article>
+</main> <footer role="contentinfo"> <p>© 2025 Andres Felipe Solano Moreno. Todos los derechos reservados.</p> <p><a href="404.html" aria-label="Ir a página 404 personalizada">Página 404 personalizada</a></p> </footer> </body> </html>
