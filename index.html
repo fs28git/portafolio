@@ -1,32 +1,13 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Andres Felipe Solano Moreno - Portafolio Profesional</title>
-  <meta name="description" content="Portafolio profesional de Andres Felipe Solano Moreno, especialista en Ingeniería de Software, con proyectos destacados, experiencia laboral y certificaciones técnicas.">
-  <meta name="keywords" content="Portafolio, Ingeniería de Software, Certificados, Blog, Cyberseguridad, Andres Felipe Solano">
-  <meta name="author" content="Andres Felipe Solano Moreno">
-  <link rel="canonical" href="https://fs28git.github.io/portafolio/" />
-  
-  <!-- Open Graph / Facebook -->
-  <meta property="og:type" content="website">
-  <meta property="og:url" content="https://fs28git.github.io/portafolio/">
-  <meta property="og:title" content="Andres Felipe Solano - Portafolio Profesional">
-  <meta property="og:description" content="Portafolio profesional de Andres Felipe Solano, especialista en Ingeniería de Software.">
-  <meta property="og:image" content="https://fs28git.github.io/portafolio/img/profile.jpg">
-
-  <!-- Twitter -->
-  <meta property="twitter:card" content="summary_large_image">
-  <meta property="twitter:url" content="https://fs28git.github.io/portafolio/">
-  <meta property="twitter:title" content="Andres Felipe Solano - Portafolio Profesional">
-  <meta property="twitter:description" content="Portafolio profesional de Andres Felipe Solano, especialista en Ingeniería de Software.">
-  <meta property="twitter:image" content="https://fs28git.github.io/portafolio/img/profile.jpg">
-  
-  <!-- Fuentes y recursos -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Andres Felipe Solano Moreno - Portafolio</title>
+  <meta name="description" content="Portafolio profesional de Andres Felipe Solano Moreno, Ingeniería de Software, proyectos, experiencia y certificados." />
+  <meta name="keywords" content="Portafolio, Ingenieria de Software, Certificados, Blog, Productos, Andres Felipe Solano" />
+  <meta name="author" content="Andres Felipe Solano Moreno" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet" />
   <script src="https://kit.fontawesome.com/a2d9d6c11b.js" crossorigin="anonymous"></script>
 
   <!-- Google Tag Manager -->
@@ -35,892 +16,250 @@
     new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
     j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-    })(window,document,'script','dataLayer','GTM-XXXXXXX');
+    })(window,document,'script','dataLayer','GTM-XXXXXXX'); 
   </script>
-  <!-- End Google Tag Manager -->
-
-  <!-- Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'G-XXXXXXXXXX');
-  </script>
-  <!-- End Google Analytics -->
 
   <style>
-    :root {
-      --primary-color: #2563eb;
-      --secondary-color: #1f2937;
-      --accent-color: #3b82f6;
-      --light-bg: #f8fafc;
-      --text-color: #334155;
-      --text-light: #64748b;
-      --white: #ffffff;
-      --border-color: #e2e8f0;
-      --success: #10b981;
-      --warning: #f59e0b;
-      --danger: #ef4444;
-      --border-radius: 12px;
-      --focus-shadow: 0 0 0 3px rgba(59, 130, 246, 0.5);
-    }
-
-    * {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-    }
-
     body {
       font-family: 'Poppins', sans-serif;
-      background-color: var(--light-bg);
-      color: var(--text-color);
-      line-height: 1.6;
+      background-color: #f5f7fa;
       margin: 0;
       padding: 0;
+      color: #333;
+      line-height: 1.6;
     }
-
-    /* Skip to main content for accessibility */
-    .skip-link {
-      position: absolute;
-      left: -9999px;
-      top: auto;
-      width: 1px;
-      height: 1px;
-      overflow: hidden;
-    }
-
-    .skip-link:focus {
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: auto;
-      height: auto;
-      padding: 12px 20px;
-      background: var(--accent-color);
-      color: var(--white);
-      z-index: 1000;
-      font-weight: 600;
-      text-decoration: none;
-    }
-
     header {
-      background-color: var(--secondary-color);
-      color: var(--white);
+      background-color: #1f2937;
+      color: white;
       padding: 2rem 0;
       text-align: center;
-      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     }
-
-    header h1 {
-      margin-bottom: 0.5rem;
-      font-size: 2.25rem;
-    }
-
     nav ul {
       list-style: none;
       padding: 0;
       margin: 1rem 0 0;
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
     }
-
     nav li {
-      margin: 0.5rem 1rem;
+      display: inline;
+      margin: 0 1rem;
     }
-
     nav a {
-      color: var(--white);
+      color: white;
       text-decoration: none;
       font-weight: 600;
-      padding: 0.5rem;
-      border-radius: 4px;
-      transition: all 0.3s ease;
     }
-
     nav a:focus,
     nav a:hover {
-      background-color: rgba(255, 255, 255, 0.1);
       text-decoration: underline;
       outline: none;
     }
-
     .container {
-      max-width: 1100px;
+      max-width: 900px;
       margin: 2rem auto;
-      background: var(--white);
+      background: white;
       padding: 2rem;
-      border-radius: var(--border-radius);
+      border-radius: 12px;
       box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
     }
-
-    article {
-      margin-bottom: 3rem;
-    }
-
     section {
       margin-bottom: 2rem;
     }
-
-    article h2 {
+    section h2 {
       font-size: 1.8rem;
-      margin-bottom: 1.5rem;
-      color: var(--secondary-color);
-      border-bottom: 2px solid var(--accent-color);
+      margin-bottom: 1rem;
+      color: #1f2937;
+      border-bottom: 2px solid #3b82f6;
       padding-bottom: 0.5rem;
-      display: flex;
-      align-items: center;
     }
-
-    article h2 i {
-      margin-right: 10px;
-      color: var(--primary-color);
-    }
-
-    p {
-      margin-bottom: 1rem;
-    }
-
     ul {
-      list-style-position: inside;
-      margin-bottom: 1rem;
+      padding-left: 1rem;
     }
-
-    li {
-      margin-bottom: 0.75rem;
+    ul li {
+      margin-bottom: 0.5rem;
     }
-
-    a {
-      color: var(--primary-color);
-      text-decoration: none;
-      transition: color 0.3s ease;
+    footer {
+      text-align: center;
+      padding: 1rem;
+      background-color: #1f2937;
+      color: white;
+      font-size: 0.9rem;
     }
-
-    a:hover, a:focus {
-      text-decoration: underline;
-      color: var(--secondary-color);
-      outline: none;
-    }
-
-    a:focus-visible {
-      box-shadow: var(--focus-shadow);
-      outline: none;
-    }
-
-    .btn {
+    .btn-contacto {
       display: inline-block;
-      background-color: var(--accent-color);
-      color: var(--white);
+      background-color: #3b82f6;
+      color: white;
       padding: 0.8rem 1.5rem;
       border-radius: 50px;
       text-decoration: none;
       font-weight: 600;
-      margin-right: 0.5rem;
-      margin-bottom: 0.5rem;
-      transition: all 0.3s ease;
-      border: none;
-      cursor: pointer;
+      margin-top: 1.5rem;
+      transition: background-color 0.3s ease;
     }
-
-    .btn:hover, .btn:focus {
-      background-color: var(--primary-color);
-      color: var(--white);
-      text-decoration: none;
-      transform: translateY(-2px);
-    }
-
-    .btn:focus-visible {
-      box-shadow: var(--focus-shadow);
+    .btn-contacto:hover,
+    .btn-contacto:focus {
+      background-color: #2563eb;
       outline: none;
     }
-
-    address {
-      font-style: normal;
-    }
-
-    .card {
-      border: 1px solid var(--border-color);
+    .product, .blog-post {
+      border: 1px solid #ddd;
       border-radius: 10px;
-      padding: 1.5rem;
-      margin-bottom: 1.5rem;
-      transition: transform 0.3s ease, box-shadow 0.3s ease;
-    }
-
-    .card:hover {
-      transform: translateY(-5px);
-      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
-    }
-
-    .card h3 {
-      margin-top: 0;
-      color: var(--primary-color);
-      font-size: 1.4rem;
+      padding: 1rem;
       margin-bottom: 1rem;
     }
-
-    .badge {
-      display: inline-block;
-      background-color: var(--accent-color);
-      color: var(--white);
-      font-size: 0.75rem;
-      padding: 0.25rem 0.75rem;
-      border-radius: 50px;
-      margin-right: 0.5rem;
-      margin-bottom: 0.5rem;
+    .product h3, .blog-post h3 {
+      margin-top: 0;
+      color: #2563eb;
     }
-
-    .price {
-      font-size: 1.2rem;
+    .product a, .blog-post a {
+      color: #1f2937;
+      text-decoration: none;
       font-weight: 600;
-      color: var(--secondary-color);
-      margin: 1rem 0;
     }
-
-    .availability {
-      display: inline-block;
-      padding: 0.25rem 0.75rem;
-      border-radius: 50px;
-      font-size: 0.875rem;
-      font-weight: 500;
+    .product a:hover, .blog-post a:hover,
+    .product a:focus, .blog-post a:focus {
+      text-decoration: underline;
+      outline: none;
     }
-
-    .in-stock {
-      background-color: rgba(16, 185, 129, 0.1);
-      color: var(--success);
-    }
-
-    .limited {
-      background-color: rgba(245, 158, 11, 0.1);
-      color: var(--warning);
-    }
-
-    .out-of-stock {
-      background-color: rgba(239, 68, 68, 0.1);
-      color: var(--danger);
-    }
-
-    .product-actions, .post-actions {
-      margin-top: 1rem;
-      display: flex;
-      flex-wrap: wrap;
-    }
-
-    .star-rating {
-      color: #f59e0b;
-      margin-bottom: 0.5rem;
-    }
-
-    time {
-      display: block;
-      color: var(--text-light);
-      font-size: 0.875rem;
-      margin-bottom: 0.75rem;
-    }
-
-    .tag {
-      display: inline-block;
-      background-color: rgba(59, 130, 246, 0.1);
-      color: var(--primary-color);
-      font-size: 0.75rem;
-      padding: 0.25rem 0.75rem;
-      border-radius: 50px;
-      margin-right: 0.5rem;
-      margin-bottom: 0.5rem;
-    }
-
-    footer {
-      text-align: center;
-      padding: 2rem;
-      background-color: var(--secondary-color);
-      color: var(--white);
-      font-size: 0.9rem;
-    }
-
-    footer a {
-      color: #93c5fd;
-    }
-
-    footer a:hover {
-      color: var(--white);
-    }
-
-    .social-links {
-      margin-top: 1rem;
-    }
-
-    .social-links a {
-      display: inline-block;
-      color: var(--white);
-      background-color: rgba(255, 255, 255, 0.1);
-      width: 40px;
-      height: 40px;
-      line-height: 40px;
-      text-align: center;
-      border-radius: 50%;
-      margin: 0 5px;
-      transition: all 0.3s ease;
-    }
-
-    .social-links a:hover {
-      background-color: var(--accent-color);
-      transform: translateY(-3px);
-    }
-
-    /* Grid y flex utilities */
-    .grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-      gap: 1.5rem;
-    }
-
-    .flex {
-      display: flex;
-      flex-wrap: wrap;
-    }
-
-    .flex-between {
-      justify-content: space-between;
-    }
-
-    .flex-center {
-      justify-content: center;
-      align-items: center;
-    }
-
-    @media (max-width: 768px) {
+    @media (max-width: 600px) {
+      nav li {
+        display: block;
+        margin: 0.5rem 0;
+      }
       .container {
         margin: 1rem;
         padding: 1.5rem;
       }
-
-      .grid {
-        grid-template-columns: 1fr;
-      }
-
-      header h1 {
-        font-size: 1.8rem;
-      }
-
-      nav ul {
-        flex-direction: column;
-      }
-
-      nav li {
-        margin: 0.25rem 0;
-      }
-    }
-
-    @media (prefers-reduced-motion: reduce) {
-      * {
-        animation-duration: 0.01ms !important;
-        animation-iteration-count: 1 !important;
-        transition-duration: 0.01ms !important;
-        scroll-behavior: auto !important;
-      }
-    }
-
-    @media (prefers-color-scheme: dark) {
-      /* Estilos para modo oscuro si quieres implementarlos */
     }
   </style>
 </head>
 <body>
+
   <!-- Google Tag Manager (noscript) -->
   <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-XXXXXXX"
   height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-  <!-- End Google Tag Manager (noscript) -->
-
-  <a href="#main-content" class="skip-link">Saltar al contenido principal</a>
 
   <header>
     <h1>Andres Felipe Solano Moreno</h1>
-    <p>Ingeniero de Software | Ciberseguridad</p>
     <nav role="navigation" aria-label="Menú principal">
       <ul>
-        <li><a href="#perfil" aria-label="Ir a sección de perfil">Perfil</a></li>
-        <li><a href="#contacto" aria-label="Ir a sección de contacto">Contacto</a></li>
-        <li><a href="#educacion" aria-label="Ir a sección de educación">Educación</a></li>
-        <li><a href="#experiencia" aria-label="Ir a sección de experiencia laboral">Experiencia</a></li>
-        <li><a href="#referencias" aria-label="Ir a sección de referencias">Referencias</a></li>
-        <li><a href="#certificados" aria-label="Ir a sección de certificados">Certificados</a></li>
-        <li><a href="#productos" aria-label="Ir a sección de productos">Productos</a></li>
-        <li><a href="#blog" aria-label="Ir a sección de blog">Blog</a></li>
+        <li><a href="#perfil">Perfil</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+        <li><a href="#educacion">Educación</a></li>
+        <li><a href="#experiencia">Experiencia</a></li>
+        <li><a href="#referencias">Referencias</a></li>
+        <li><a href="#certificados">Certificados</a></li>
+        <li><a href="#productos">Catálogo de Productos</a></li>
+        <li><a href="#blog">Noticias / Blog</a></li>
       </ul>
     </nav>
   </header>
 
-  <main id="main-content" class="container" role="main">
-    <article id="perfil" itemscope itemtype="https://schema.org/Person">
-      <h2><i class="fas fa-user" aria-hidden="true"></i> Perfil Profesional</h2>
-      <div>
-        <meta itemprop="name" content="Andres Felipe Solano Moreno" />
-        <meta itemprop="gender" content="Male" />
-        <meta itemprop="jobTitle" content="Ingeniero de Software" />
-        <meta itemprop="nationality" content="Colombiano" />
-        <p itemprop="description">Me identifico como una persona responsable, eficiente, respetuosa y constante en mi trabajo. Me caracterizo por cumplir las metas asignadas por la empresa y mantener un enfoque orientado a resultados. Mi pasión por la tecnología y la ciberseguridad me impulsa a mantenerme actualizado sobre las últimas tendencias del sector.</p>
-        <div class="flex">
-          <span class="tag">Desarrollo Web</span>
-          <span class="tag">Ciberseguridad</span>
-          <span class="tag">Linux</span>
-          <span class="tag">Redes</span>
-        </div>
-      </div>
+  <main class="container" role="main">
+
+    <article id="perfil">
+      <h2><i class="fas fa-user" aria-hidden="true"></i> Perfil</h2>
+      <p>Me identifico como una persona responsable, eficiente, respetuosa y constante en mi trabajo. Me caracterizo por cumplir las metas asignadas por la empresa.</p>
     </article>
 
     <article id="contacto">
-      <h2><i class="fas fa-envelope" aria-hidden="true"></i> Información de Contacto</h2>
-      <address itemscope itemtype="https://schema.org/Person">
-        <meta itemprop="name" content="Andres Felipe Solano Moreno" />
+      <h2><i class="fas fa-envelope" aria-hidden="true"></i> Contacto</h2>
+      <address>
         <ul>
-          <li><strong>Teléfono:</strong> <a href="tel:+573246339042" itemprop="telephone">324 633 9042</a></li>
-          <li><strong>Cédula:</strong> <span itemprop="identifier">1000286812</span></li>
-          <li><strong>Email:</strong> <a href="mailto:Fsolano2509@gmail.com" itemprop="email">Fsolano2509@gmail.com</a></li>
-          <li><strong>Localidad:</strong> <span itemprop="addressLocality">Engativá, Bogotá</span></li>
-          <li><strong>Dirección:</strong> <span itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-            <span itemprop="streetAddress">Diagonal 82ª #110-93, Barrio Bolivia Real</span>,
-            <span itemprop="addressLocality">Bogotá</span>,
-            <span itemprop="addressCountry">Colombia</span>
-          </span></li>
-          <li><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/felipe-solano-95655b363/" target="_blank" rel="noopener" itemprop="sameAs">Felipe Solano</a></li>
-          <li><strong>GitHub:</strong> <a href="https://github.com/fs28git" target="_blank" rel="noopener" itemprop="sameAs">fs28git</a></li>
+          <li><strong>Teléfono:</strong> <a href="tel:+573246339042">324 633 9042</a></li>
+          <li><strong>Cédula:</strong> 1000286812</li>
+          <li><strong>Email:</strong> <a href="mailto:Fsolano2509@gmail.com">Fsolano2509@gmail.com</a></li>
+          <li><strong>Localidad:</strong> Engativá, Bogotá</li>
+          <li><strong>Dirección:</strong> Diagonal 82ª #110-93, Barrio Bolivia Real</li>
         </ul>
       </address>
-      <div class="flex">
-        <a href="tel:+573246339042" class="btn" aria-label="Llamar a Felipe Solano"><i class="fas fa-phone" aria-hidden="true"></i> Llamar</a>
-        <a href="mailto:Fsolano2509@gmail.com" class="btn" aria-label="Enviar correo a Felipe Solano"><i class="fas fa-envelope" aria-hidden="true"></i> Email</a>
-        <a href="https://wa.me/573246339042" target="_blank" rel="noopener" class="btn" aria-label="Contactar por WhatsApp"><i class="fab fa-whatsapp" aria-hidden="true"></i> WhatsApp</a>
-        <a href="https://www.linkedin.com/in/felipe-solano-95655b363/" target="_blank" rel="noopener" class="btn" aria-label="Ver perfil de LinkedIn"><i class="fab fa-linkedin" aria-hidden="true"></i> LinkedIn</a>
-      </div>
+      <p>
+        <a href="tel:+573246339042" class="btn-contacto">Contáctame por Teléfono</a>
+        <a href="mailto:Fsolano2509@gmail.com" class="btn-contacto">Contáctame por Email</a>
+        <a href="https://www.linkedin.com/in/felipe-solano-95655b363/" target="_blank" rel="noopener" class="btn-contacto">Contáctame por LinkedIn</a>
+      </p>
     </article>
 
     <article id="educacion">
-      <h2><i class="fas fa-graduation-cap" aria-hidden="true"></i> Formación Académica</h2>
-      <div itemscope itemtype="https://schema.org/EducationalOrganization">
-        <h3 itemprop="name">Universidad Manuela Beltrán</h3>
-        <div itemprop="offers" itemscope itemtype="https://schema.org/EducationalOccupationalProgram">
-          <p><strong itemprop="programType">Pregrado:</strong> <span itemprop="name">Ingeniería de Software</span></p>
-          <meta itemprop="timeRequired" content="P8Y" />
-          <p><em>En curso - Fecha esperada de graduación: 2026</em></p>
-        </div>
-      </div>
-      <div itemscope itemtype="https://schema.org/EducationalOrganization">
-        <h3 itemprop="name">Colegio Americano de Bogotá</h3>
-        <p><strong>Educación Secundaria</strong></p>
-        <meta itemprop="address" content="Bogotá, Colombia" />
-        <p><em>Graduado: 2022</em></p>
-      </div>
+      <h2><i class="fas fa-graduation-cap" aria-hidden="true"></i> Educación</h2>
+      <ul>
+        <li><strong>Colegio Americano de Bogotá:</strong> Estudios secundarios</li>
+        <li><strong>Universidad Manuela Beltrán:</strong> Ingeniería de Software</li>
+      </ul>
     </article>
 
     <article id="experiencia">
       <h2><i class="fas fa-briefcase" aria-hidden="true"></i> Experiencia Laboral</h2>
-      <div itemscope itemtype="https://schema.org/WorkExperience">
-        <h3 itemprop="title">Cajero y Mesero</h3>
-        <p itemprop="employerName"><strong>Empresa:</strong> Surtifriss</p>
-        <p><strong>Periodo:</strong> <time itemprop="startDate" datetime="2023-01">Enero 2023</time> - <time itemprop="endDate" datetime="2023-12">Diciembre 2023</time> (1 año)</p>
-        <p itemprop="description">Atención al cliente, manejo de caja, gestión de pedidos y apoyo en servicio de mesas.</p>
-        <div class="flex">
-          <span class="tag">Atención al Cliente</span>
-          <span class="tag">Trabajo en Equipo</span>
-          <span class="tag">Gestión de Efectivo</span>
-        </div>
-      </div>
-      <div itemscope itemtype="https://schema.org/WorkExperience">
-        <h3 itemprop="title">Promotor de Eventos</h3>
-        <p itemprop="employerName"><strong>Empresa:</strong> Eventos Premium Bogotá</p>
-        <p><strong>Periodo:</strong> <time itemprop="startDate" datetime="2022-06">Junio 2022</time> - <time itemprop="endDate" datetime="2022-12">Diciembre 2022</time> (6 meses)</p>
-        <p itemprop="description">Promoción y organización de eventos sociales y corporativos, gestión de invitados y control de asistencia.</p>
-        <div class="flex">
-          <span class="tag">Organización</span>
-          <span class="tag">Comunicación</span>
-          <span class="tag">Logística</span>
-        </div>
-      </div>
-      <div itemscope itemtype="https://schema.org/WorkExperience">
-        <h3 itemprop="title">Asesor de Ventas</h3>
-        <p itemprop="employerName"><strong>Empresa:</strong> TechStore Colombia</p>
-        <p><strong>Periodo:</strong> <time itemprop="startDate" datetime="2022-02">Febrero 2022</time> - <time itemprop="endDate" datetime="2022-05">Mayo 2022</time> (4 meses)</p>
-        <p itemprop="description">Asesoramiento técnico para la venta de equipos electrónicos, gestión de inventario y atención personalizada.</p>
-        <div class="flex">
-          <span class="tag">Ventas</span>
-          <span class="tag">Tecnología</span>
-          <span class="tag">Servicio al Cliente</span>
-        </div>
-      </div>
+      <ul>
+        <li>Surtifriss – Cajero y Mesero (1 año de experiencia)</li>
+        <li>Promotor de Eventos</li>
+        <li>Asesor de Ventas</li>
+      </ul>
     </article>
 
     <article id="referencias">
-      <h2><i class="fas fa-users" aria-hidden="true"></i> Referencias Profesionales</h2>
-      <div itemscope itemtype="https://schema.org/Person">
-        <h3 itemprop="name">Gloria Moreno</h3>
-        <p itemprop="jobTitle"><strong>Cargo:</strong> Magíster en Educación</p>
-        <p><strong>Teléfono:</strong> <a href="tel:+573102180485" itemprop="telephone">310 218 0485</a></p>
-        <meta itemprop="knowsAbout" content="Educación, Pedagogía" />
-      </div>
-      <div itemscope itemtype="https://schema.org/Person">
-        <h3 itemprop="name">Jairo Solano</h3>
-        <p itemprop="jobTitle"><strong>Cargo:</strong> Contador Público</p>
-        <p><strong>Teléfono:</strong> <a href="tel:+573163355421" itemprop="telephone">316 335 5421</a></p>
-        <meta itemprop="knowsAbout" content="Contabilidad, Finanzas" />
-      </div>
+      <h2><i class="fas fa-users" aria-hidden="true"></i> Referencias</h2>
+      <ul>
+        <li>Gloria Moreno – Magíster en Educación – 310 218 0485</li>
+        <li>Jairo Solano – Contador Público – 316 335 5421</li>
+      </ul>
     </article>
 
     <article id="certificados">
-      <h2><i class="fas fa-certificate" aria-hidden="true"></i> Certificaciones</h2>
-      <div class="grid">
-        <div class="card" itemscope itemtype="https://schema.org/EducationalOccupationalCredential">
-          <h3 itemprop="name">CCNA - Introduction to Networks</h3>
-          <meta itemprop="educationalLevel" content="Beginner" />
-          <p itemprop="description">Fundamentos de redes, protocolos y configuración básica de dispositivos Cisco.</p>
-          <meta itemprop="validFrom" content="2023-06-15" />
-          <p><strong>Otorgado por:</strong> <span itemprop="recognizedBy">Cisco Networking Academy</span></p>
-          <div class="flex">
-            <a href="https://fs28git.github.io/portafolio/CCNA-_Introduction_to_Networks_certificate_fsolano2509-gmail-com_5c511102-d5bf-4ec7-978e-9ccabe1e7512.pdf" target="_blank" rel="noopener" class="btn" aria-label="Ver certificado CCNA">Ver Certificado</a>
-          </div>
-        </div>
-        
-        <div class="card" itemscope itemtype="https://schema.org/EducationalOccupationalCredential">
-          <h3 itemprop="name">Ethical Hacker</h3>
-          <meta itemprop="educationalLevel" content="Intermediate" />
-          <p itemprop="description">Técnicas y metodologías de hacking ético, vulnerabilidades y pruebas de penetración.</p>
-          <meta itemprop="validFrom" content="2023-09-10" />
-          <p><strong>Otorgado por:</strong> <span itemprop="recognizedBy">Cybersecurity Academy</span></p>
-          <div class="flex">
-            <a href="https://fs28git.github.io/portafolio/Ethical_Hacker_certificate_fsolano2509-gmail-com_c9e923dd-5d0a-4eef-b17f-f6ffc930d448.pdf" target="_blank" rel="noopener" class="btn" aria-label="Ver certificado Ethical Hacker">Ver Certificado</a>
-          </div>
-        </div>
-        
-        <div class="card" itemscope itemtype="https://schema.org/EducationalOccupationalCredential">
-          <h3 itemprop="name">NDG Linux Essentials</h3>
-          <meta itemprop="educationalLevel" content="Beginner" />
-          <p itemprop="description">Fundamentos del sistema operativo Linux, comandos básicos y administración.</p>
-          <meta itemprop="validFrom" content="2023-07-22" />
-          <p><strong>Otorgado por:</strong> <span itemprop="recognizedBy">NDG</span></p>
-          <div class="flex">
-            <a href="https://fs28git.github.io/portafolio/Partner-_NDG_Linux_Essentials_certificate_fsolano2509-gmail-com_4063a1d7-dfe4-4911-98d4-b33f71507573.pdf" target="_blank" rel="noopener" class="btn" aria-label="Ver certificado Linux Essentials">Ver Certificado</a>
-          </div>
-        </div>
-        
-        <div class="card" itemscope itemtype="https://schema.org/EducationalOccupationalCredential">
-          <h3 itemprop="name">NDG Linux Unhatched</h3>
-          <meta itemprop="educationalLevel" content="Beginner" />
-          <p itemprop="description">Introducción al sistema operativo Linux y sus aplicaciones básicas.</p>
-          <meta itemprop="validFrom" content="2023-05-18" />
-          <p><strong>Otorgado por:</strong> <span itemprop="recognizedBy">NDG</span></p>
-          <div class="flex">
-            <a href="https://fs28git.github.io/portafolio/Partner-_NDG_Linux_Unhatched_certificate_fsolano2509-gmail-com_6ed94c47-5bf4-4310-9c25-570e44241ce4.pdf" target="_blank" rel="noopener" class="btn" aria-label="Ver certificado Linux Unhatched">Ver Certificado</a>
-          </div>
-        </div>
-        
-        <div class="card" itemscope itemtype="https://schema.org/EducationalOccupationalCredential">
-          <h3 itemprop="name">Fundamentos de Ciberseguridad</h3>
-          <meta itemprop="educationalLevel" content="Beginner" />
-          <p itemprop="description">Conceptos básicos de ciberseguridad, amenazas comunes y buenas prácticas de protección.</p>
-          <meta itemprop="validFrom" content="2023-11-05" />
-          <p><strong>Otorgado por:</strong> <span itemprop="recognizedBy">CyberSec Institute</span></p>
-          <div class="flex">
-            <a href="https://fs28git.github.io/portafolio/ciber%20seguridad.pdf" target="_blank" rel="noopener" class="btn" aria-label="Ver certificado Fundamentos de Ciberseguridad">Ver Certificado</a>
-          </div>
-        </div>
-        
-        <div class="card" itemscope itemtype="https://schema.org/EducationalOccupationalCredential">
-          <h3 itemprop="name">Gestión de Amenazas Cibernéticas</h3>
-          <meta itemprop="educationalLevel" content="Intermediate" />
-          <p itemprop="description">Técnicas avanzadas para detectar, prevenir y responder a amenazas de ciberseguridad.</p>
-          <meta itemprop="validFrom" content="2024-01-18" />
-          <p><strong>Otorgado por:</strong> <span itemprop="recognizedBy">Security Academy</span></p>
-          <div class="flex">
-            <a href="https://fs28git.github.io/portafolio/gestion%20de%20amenazas%20ciberneticas.pdf" target="_blank" rel="noopener" class="btn" aria-label="Ver certificado Gestión de Amenazas Cibernéticas">Ver Certificado</a>
-          </div>
-        </div>
-              </div>
+      <h2><i class="fas fa-certificate" aria-hidden="true"></i> Certificados</h2>
+      <ul>
+        <li><a href="https://fs28git.github.io/portafolio/CCNA-_Introduction_to_Networks_certificate_fsolano2509-gmail-com_5c511102-d5bf-4ec7-978e-9ccabe1e7512.pdf" target="_blank" rel="noopener">CCNA - Introduction to Networks</a></li>
+        <li><a href="https://fs28git.github.io/portafolio/Ethical_Hacker_certificate_fsolano2509-gmail-com_c9e923dd-5d0a-4eef-b17f-f6ffc930d448.pdf" target="_blank" rel="noopener">Ethical Hacker</a></li>
+        <li><a href="https://fs28git.github.io/portafolio/Partner-_NDG_Linux_Essentials_certificate_fsolano2509-gmail-com_4063a1d7-dfe4-4911-98d4-b33f71507573.pdf" target="_blank" rel="noopener">Partner - NDG Linux Essentials</a></li>
+        <li><a href="https://fs28git.github.io/portafolio/Partner-_NDG_Linux_Unhatched_certificate_fsolano2509-gmail-com_6ed94c47-5bf4-4310-9c25-570e44241ce4.pdf" target="_blank" rel="noopener">Partner - NDG Linux Unhatched</a></li>
+        <li><a href="https://fs28git.github.io/portafolio/ciber%20seguridad.pdf" target="_blank" rel="noopener">Certificado: Fundamentos de Ciberseguridad</a></li>
+        <li><a href="https://fs28git.github.io/portafolio/gestion%20de%20amenazas%20ciberneticas.pdf" target="_blank" rel="noopener">Certificado: Gestión de Amenazas Cibernéticas</a></li>
+      </ul>
     </article>
 
-    <article id="productos">
-      <h2><i class="fas fa-box-open" aria-hidden="true"></i> Productos y Servicios</h2>
-      <div class="grid">
-        <div class="card" itemscope itemtype="https://schema.org/Product">
-          <h3 itemprop="name">Análisis de Vulnerabilidades</h3>
-          <p itemprop="description">Evaluación completa de la seguridad de su infraestructura IT, identificando vulnerabilidades y proponiendo soluciones.</p>
-          <meta itemprop="category" content="Cyberseguridad" />
-          <div class="price" itemprop="offers" itemscope itemtype="https://schema.org/Offer">
-            <span itemprop="price">$1,200,000</span>
-            <meta itemprop="priceCurrency" content="COP" />
-            <span class="availability in-stock" itemprop="availability">Disponible</span>
-          </div>
-          <div class="product-actions">
-            <a href="#contacto" class="btn" aria-label="Solicitar servicio de análisis de vulnerabilidades">Solicitar</a>
-            <a href="mailto:Fsolano2509@gmail.com?subject=Consulta%20sobre%20Análisis%20de%20Vulnerabilidades" class="btn" aria-label="Más información sobre análisis de vulnerabilidades">Más información</a>
-          </div>
-        </div>
-        
-        <div class="card" itemscope itemtype="https://schema.org/Product">
-          <h3 itemprop="name">Desarrollo Web Personalizado</h3>
-          <p itemprop="description">Diseño y desarrollo de sitios web a medida, optimizados para SEO y con experiencia de usuario mejorada.</p>
-          <meta itemprop="category" content="Desarrollo Web" />
-          <div class="price" itemprop="offers" itemscope itemtype="https://schema.org/Offer">
-            <span itemprop="price">Desde $800,000</span>
-            <meta itemprop="priceCurrency" content="COP" />
-            <span class="availability in-stock" itemprop="availability">Disponible</span>
-          </div>
-          <div class="product-actions">
-            <a href="#contacto" class="btn" aria-label="Solicitar servicio de desarrollo web">Solicitar</a>
-            <a href="mailto:Fsolano2509@gmail.com?subject=Consulta%20sobre%20Desarrollo%20Web" class="btn" aria-label="Más información sobre desarrollo web">Más información</a>
-          </div>
-        </div>
-        
-        <div class="card" itemscope itemtype="https://schema.org/Product">
-          <h3 itemprop="name">Taller de Ciberseguridad Básica</h3>
-          <p itemprop="description">Formación para empresas sobre fundamentos de ciberseguridad y buenas prácticas para proteger información sensible.</p>
-          <meta itemprop="category" content="Formación" />
-          <div class="price" itemprop="offers" itemscope itemtype="https://schema.org/Offer">
-            <span itemprop="price">$500,000</span>
-            <meta itemprop="priceCurrency" content="COP" />
-            <span class="availability limited" itemprop="availability">Plazas limitadas</span>
-          </div>
-          <div class="product-actions">
-            <a href="#contacto" class="btn" aria-label="Solicitar taller de ciberseguridad">Solicitar</a>
-            <a href="mailto:Fsolano2509@gmail.com?subject=Consulta%20sobre%20Taller%20de%20Ciberseguridad" class="btn" aria-label="Más información sobre taller de ciberseguridad">Más información</a>
-          </div>
-        </div>
-        
-        <div class="card" itemscope itemtype="https://schema.org/Product">
-          <h3 itemprop="name">Configuración de Redes Seguras</h3>
-          <p itemprop="description">Implementación y configuración de redes empresariales con protocolos de seguridad avanzados.</p>
-          <meta itemprop="category" content="Redes" />
-          <div class="price" itemprop="offers" itemscope itemtype="https://schema.org/Offer">
-            <span itemprop="price">$1,500,000</span>
-            <meta itemprop="priceCurrency" content="COP" />
-            <span class="availability in-stock" itemprop="availability">Disponible</span>
-          </div>
-          <div class="product-actions">
-            <a href="#contacto" class="btn" aria-label="Solicitar servicio de configuración de redes">Solicitar</a>
-            <a href="mailto:Fsolano2509@gmail.com?subject=Consulta%20sobre%20Configuración%20de%20Redes" class="btn" aria-label="Más información sobre configuración de redes">Más información</a>
-          </div>
-        </div>
-      </div>
-    </article>
+    <article id="productos" itemscope itemtype="https://schema.org/ItemList">
+      <h2><i class="fas fa-box-open" aria-hidden="true"></i> Catálogo de Productos</h2>
+      <meta itemprop="name" content="Catálogo de Productos" />
+      <div class="product" itemprop="itemListElement" itemscope itemtype="https://schema.org/Product">
+        <h3 itemprop="name">Moto Deportiva XYZ 200cc</h3>
+        <p itemprop="description">Moto deportiva potente, ideal para la ciudad y carretera.</p>
+        <a href="https://tiendaej
 
-    <article id="blog">
-      <h2><i class="fas fa-blog" aria-hidden="true"></i> Blog Técnico</h2>
-      <div class="grid">
-        <div class="card" itemscope itemtype="https://schema.org/BlogPosting">
-          <h3 itemprop="headline">Cómo proteger tu empresa de ataques ransomware</h3>
-          <time datetime="2024-03-15" itemprop="datePublished">15 de Marzo, 2024</time>
-          <p itemprop="abstract">Guía completa para empresas sobre cómo prevenir, detectar y responder ante ataques de ransomware.</p>
-          <meta itemprop="author" content="Andres Felipe Solano Moreno" />
-          <div class="flex">
-            <span class="tag">Ransomware</span>
-            <span class="tag">Seguridad</span>
-            <span class="tag">Empresas</span>
-          </div>
-          <div class="post-actions">
-            <a href="blog/ransomware-protection.html" class="btn" aria-label="Leer artículo sobre protección contra ransomware">Leer artículo</a>
-          </div>
-        </div>
-        
-        <div class="card" itemscope itemtype="https://schema.org/BlogPosting">
-          <h3 itemprop="headline">Las 5 vulnerabilidades más comunes en aplicaciones web</h3>
-          <time datetime="2024-02-20" itemprop="datePublished">20 de Febrero, 2024</time>
-          <p itemprop="abstract">Análisis de las vulnerabilidades más frecuentes en desarrollo web y cómo mitigarlas efectivamente.</p>
-          <meta itemprop="author" content="Andres Felipe Solano Moreno" />
-          <div class="flex">
-            <span class="tag">Desarrollo Web</span>
-            <span class="tag">Vulnerabilidades</span>
-            <span class="tag">OWASP</span>
-          </div>
-          <div class="post-actions">
-            <a href="blog/web-vulnerabilities.html" class="btn" aria-label="Leer artículo sobre vulnerabilidades web">Leer artículo</a>
-          </div>
-        </div>
-        
-        <div class="card" itemscope itemtype="https://schema.org/BlogPosting">
-          <h3 itemprop="headline">Configuración básica de un firewall Linux con iptables</h3>
-          <time datetime="2024-01-10" itemprop="datePublished">10 de Enero, 2024</time>
-          <p itemprop="abstract">Tutorial paso a paso para configurar un firewall básico en sistemas Linux utilizando iptables.</p>
-          <meta itemprop="author" content="Andres Felipe Solano Moreno" />
-          <div class="flex">
-            <span class="tag">Linux</span>
-            <span class="tag">Firewall</span>
-            <span class="tag">Tutorial</span>
-          </div>
-          <div class="post-actions">
-            <a href="blog/linux-firewall.html" class="btn" aria-label="Leer artículo sobre firewall de Linux">Leer artículo</a>
-          </div>
-        </div>
-        
-        <div class="card" itemscope itemtype="https://schema.org/BlogPosting">
-          <h3 itemprop="headline">Principios de DevSecOps para equipos de desarrollo</h3>
-          <time datetime="2023-12-05" itemprop="datePublished">5 de Diciembre, 2023</time>
-          <p itemprop="abstract">Integración de la seguridad en el ciclo de desarrollo de software para crear aplicaciones más seguras.</p>
-          <meta itemprop="author" content="Andres Felipe Solano Moreno" />
-          <div class="flex">
-            <span class="tag">DevSecOps</span>
-            <span class="tag">CI/CD</span>
-            <span class="tag">Desarrollo Seguro</span>
-          </div>
-          <div class="post-actions">
-            <a href="blog/devsecops.html" class="btn" aria-label="Leer artículo sobre DevSecOps">Leer artículo</a>
-          </div>
-        </div>
-      </div>
-    </article>
 
-    <article id="proyectos">
-      <h2><i class="fas fa-project-diagram" aria-hidden="true"></i> Proyectos Destacados</h2>
-      <div class="grid">
-        <div class="card" itemscope itemtype="https://schema.org/SoftwareApplication">
-          <h3 itemprop="name">Sistema de Detección de Intrusos</h3>
-          <p itemprop="description">Desarrollo de un IDS básico en Python para la detección de actividades sospechosas en redes locales.</p>
-          <meta itemprop="applicationCategory" content="SecurityApplication" />
-          <div class="flex">
-            <span class="tag">Python</span>
-            <span class="tag">Seguridad de Redes</span>
-            <span class="tag">IDS</span>
-          </div>
-          <div class="product-actions">
-            <a href="https://github.com/fs28git/network-ids" target="_blank" rel="noopener" class="btn" aria-label="Ver código del sistema de detección de intrusos">Ver código</a>
-            <a href="projects/ids-demo.html" class="btn" aria-label="Ver demostración del sistema de detección de intrusos">Demostración</a>
-          </div>
-        </div>
-        
-        <div class="card" itemscope itemtype="https://schema.org/SoftwareApplication">
-          <h3 itemprop="name">Plataforma de Gestión de Vulnerabilidades</h3>
-          <p itemprop="description">Aplicación web para el seguimiento y gestión de vulnerabilidades de seguridad en entornos empresariales.</p>
-          <meta itemprop="applicationCategory" content="BusinessApplication" />
-          <div class="flex">
-            <span class="tag">PHP</span>
-            <span class="tag">MySQL</span>
-            <span class="tag">JavaScript</span>
-          </div>
-          <div class="product-actions">
-            <a href="https://github.com/fs28git/vulnmanager" target="_blank" rel="noopener" class="btn" aria-label="Ver código de la plataforma de gestión de vulnerabilidades">Ver código</a>
-            <a href="projects/vulnmanager-demo.html" class="btn" aria-label="Ver demostración de la plataforma de gestión de vulnerabilidades">Demostración</a>
-          </div>
-        </div>
-        
-        <div class="card" itemscope itemtype="https://schema.org/SoftwareApplication">
-          <h3 itemprop="name">Analizador de Contraseñas</h3>
-          <p itemprop="description">Herramienta que evalúa la fortaleza de contraseñas y detecta si han sido comprometidas en filtraciones de datos.</p>
-          <meta itemprop="applicationCategory" content="UtilitiesApplication" />
-          <div class="flex">
-            <span class="tag">JavaScript</span>
-            <span class="tag">API</span>
-            <span class="tag">Seguridad</span>
-          </div>
-          <div class="product-actions">
-            <a href="https://github.com/fs28git/password-analyzer" target="_blank" rel="noopener" class="btn" aria-label="Ver código del analizador de contraseñas">Ver código</a>
-            <a href="projects/password-tool.html" class="btn" aria-label="Ver demostración del analizador de contraseñas">Demostración</a>
-          </div>
-        </div>
-      </div>
-    </article>
 
-    <article id="habilidades">
-      <h2><i class="fas fa-code" aria-hidden="true"></i> Habilidades Técnicas</h2>
-      <div class="grid">
-        <div class="card">
-          <h3>Desarrollo</h3>
-          <ul>
-            <li>HTML5 / CSS3 / JavaScript</li>
-            <li>PHP / MySQL</li>
-            <li>Python</li>
-            <li>Git / GitHub</li>
-            <li>Bootstrap / Tailwind CSS</li>
-          </ul>
-        </div>
-        
-        <div class="card">
-          <h3>Ciberseguridad</h3>
-          <ul>
-            <li>Análisis de vulnerabilidades</li>
-            <li>Pruebas de penetración</li>
-            <li>Respuesta a incidentes</li>
-            <li>Seguridad en aplicaciones web</li>
-            <li>Hardening de sistemas</li>
-          </ul>
-        </div>
-        
-        <div class="card">
-          <h3>Sistemas y Redes</h3>
-          <ul>
-            <li>Administración Linux</li>
-            <li>Configuración de servidores</li>
-            <li>Protocolos de red</li>
-            <li>Configuración de firewalls</li>
-            <li>VPNs y seguridad perimetral</li>
-          </ul>
-        </div>
-        
-        <div class="card">
-          <h3>Herramientas</h3>
-          <ul>
-            <li>Kali Linux</li>
-            <li>Nmap, Wireshark</li>
-            <li>Metasploit</li>
-            <li>OWASP ZAP</li>
-            <li>Docker</li>
-          </ul>
-        </div>
-      </div>
-    </article>
-  </main>
 
-  <footer>
-    <p>&copy; 2024 Andres Felipe Solano Moreno. Todos los derechos reservados.</p>
-    <div class="social-links">
-      <a href="https://www.linkedin.com/in/felipe-solano-95655b363/" target="_blank" rel="noopener" aria-label="LinkedIn de Felipe Solano"><i class="fab fa-linkedin" aria-hidden="true"></i></a>
-      <a href="https://github.com/fs28git" target="_blank" rel="noopener" aria-label="GitHub de Felipe Solano"><i class="fab fa-github" aria-hidden="true"></i></a>
-      <a href="https://wa.me/573246339042" target="_blank" rel="noopener" aria-label="WhatsApp de Felipe Solano"><i class="fab fa-whatsapp" aria-hidden="true"></i></a>
-      <a href="mailto:Fsolano2509@gmail.com" aria-label="Email de Felipe Solano"><i class="fas fa-envelope" aria-hidden="true"></i></a>
-    </div>
-    <p><small>Este sitio no utiliza cookies de seguimiento. Utilizamos Google Analytics únicamente para estadísticas anónimas de tráfico.</small></p>
-    <p><a href="privacidad.html">Política de Privacidad</a> | <a href="terminos.html">Términos de Uso</a></p>
-  </footer>
 
-  <!-- Script para funcionalidades interactivas -->
-  <script>
-    document.addEventListener('DOMContentLoaded', function() {
-      // Navegación suave para enlaces internos
-      document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-        anchor.addEventListener('click', function (e) {
-          e.preventDefault();
-          const targetId = this.getAttribute('href');
-          const targetElement = document.querySelector(targetId);
-          
-          if (targetElement) {
-            window.scrollTo({
-              top: targetElement.offsetTop - 80,
-              behavior: 'smooth'
-            });
-          }
-        });
-      });
-      
-      // Destacar sección activa en el menú durante el desplazamiento
-      const sections = document.querySelectorAll('article[id]');
-      const navLinks = document.querySelectorAll('nav a');
-      
-      window.addEventListener('scroll', function() {
-        let current = '';
-        
-        sections.forEach(section => {
-          const sectionTop = section.offsetTop;
-          const sectionHeight = section.clientHeight;
-          if (window.pageYOffset >= sectionTop - 200) {
-            current = section.getAttribute('id');
-          }
-        });
-        
-        navLinks.forEach(link => {
-          link.classList.remove('active');
-          if (link.getAttribute('href').substring(1) === current) {
-            link.classList.add('active');
-          }
-        });
-      });
-    });
-  </script>
-</body>
-</html>
+ChatGPT dijo:
+emplo.com/moto-xyz" target="_blank" rel="noopener" itemprop="url">Comprar en tienda oficial</a>
+<p><strong>Precio:</strong> <span itemprop="offers" itemscope itemtype="https://schema.org/Offer">
+<span itemprop="priceCurrency" content="COP">COP</span> <span itemprop="price" content="8500000">8.500.000</span>
+<link itemprop="availability" href="https://schema.org/InStock" />Disponible
+</span></p>
+</div>
+<div class="product" itemprop="itemListElement" itemscope itemtype="https://schema.org/Product">
+<h3 itemprop="name">Casco Protector ABC</h3>
+<p itemprop="description">Casco con certificación de seguridad y diseño aerodinámico.</p>
+<a href="https://tiendaejemplo.com/casco-abc" target="_blank" rel="noopener" itemprop="url">Comprar en tienda oficial</a>
+<p><strong>Precio:</strong> <span itemprop="offers" itemscope itemtype="https://schema.org/Offer">
+<span itemprop="priceCurrency" content="COP">COP</span> <span itemprop="price" content="350000">350.000</span>
+<link itemprop="availability" href="https://schema.org/InStock" />Disponible
+</span></p>
+</div>
+</article>
+
+php-template
+Copiar
+Editar
+<article id="blog" itemscope itemtype="https://schema.org/Blog">
+  <h2><i class="fas fa-blog" aria-hidden="true"></i> Noticias / Blog</h2>
+  <div class="blog-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+    <h3 itemprop="headline"><a href="https://miportafolio.com/blog/post1" target="_blank" rel="noopener" itemprop="url">Lanzamiento de la Moto Deportiva XYZ 200cc</a></h3>
+    <p itemprop="description">Te contamos las características principales y ventajas de la nueva moto deportiva XYZ 200cc.</p>
+    <time datetime="2025-04-15" itemprop="datePublished">15 de abril de 2025</time>
+  </div>
+  <div class="blog-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+    <h3 itemprop="headline"><a href="https://miportafolio.com/blog/post2" target="_blank" rel="noopener" itemprop="url">Cómo elegir el casco perfecto para ti</a></h3>
+    <p itemprop="description">Tips para elegir un casco seguro, cómodo y con buen diseño.</p>
+    <time datetime="2025-04-01" itemprop="datePublished">1 de abril de 2025</time>
+  </div>
+</article>
+</main> <footer role="contentinfo"> <p>© 2025 Andres Felipe Solano Moreno. Todos los derechos reservados.</p> <p><a href="404.html" aria-label="Ir a página 404 personalizada">Página 404 personalizada</a></p> </footer> </body> </html>
