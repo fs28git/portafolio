@@ -1,13 +1,15 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="es" itemscope itemtype="https://schema.org/Person">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Andres Felipe Solano Moreno - Portafolio</title>
+  <title itemprop="name">Andres Felipe Solano Moreno - Portafolio</title>
+  <meta name="description" content="Portafolio de Andres Felipe Solano Moreno, estudiante de Ingeniería de Software con experiencia en redes, ciberseguridad y desarrollo web.">
+  <link rel="canonical" href="https://fs28git.github.io/portafolio">
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
   <script src="https://kit.fontawesome.com/a2d9d6c11b.js" crossorigin="anonymous"></script>
 
-  <!-- Google Analytics (ID: G-5QV7TS9828) -->
+  <!-- Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-5QV7TS9828"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
@@ -15,7 +17,6 @@
     gtag('js', new Date());
     gtag('config', 'G-5QV7TS9828');
   </script>
-  <!-- Fin Google Analytics -->
 
   <style>
     body {
@@ -25,11 +26,11 @@
       padding: 0;
       color: #333;
     }
-    header {
+    header, footer {
       background-color: #1f2937;
       color: white;
-      padding: 2rem 0;
       text-align: center;
+      padding: 2rem 1rem;
     }
     nav ul {
       list-style: none;
@@ -69,13 +70,6 @@
     ul li {
       margin-bottom: 0.5rem;
     }
-    footer {
-      text-align: center;
-      padding: 1rem;
-      background-color: #1f2937;
-      color: white;
-      font-size: 0.9rem;
-    }
     .btn-contacto {
       display: inline-block;
       background-color: #3b82f6;
@@ -85,6 +79,7 @@
       text-decoration: none;
       font-weight: 600;
       margin-top: 1.5rem;
+      margin-right: 0.5rem;
       transition: background-color 0.3s ease;
     }
     .btn-contacto:hover {
@@ -104,7 +99,7 @@
 </head>
 <body>
   <header>
-    <h1>Andres Felipe Solano Moreno</h1>
+    <h1 itemprop="name">Andres Felipe Solano Moreno</h1>
     <nav>
       <ul>
         <li><a href="#perfil">Perfil</a></li>
@@ -113,6 +108,8 @@
         <li><a href="#experiencia">Experiencia</a></li>
         <li><a href="#referencias">Referencias</a></li>
         <li><a href="#certificados">Certificados</a></li>
+        <li><a href="#productos">Productos</a></li>
+        <li><a href="#blog">Blog</a></li>
       </ul>
     </nav>
   </header>
@@ -120,18 +117,18 @@
   <main class="container">
     <article id="perfil">
       <h2><i class="fas fa-user"></i> Perfil</h2>
-      <p>Me identifico como una persona responsable, eficiente, respetuosa y constante en mi trabajo. Me caracterizo por cumplir las metas asignadas por la empresa.</p>
+      <p itemprop="description">Me identifico como una persona responsable, eficiente, respetuosa y constante en mi trabajo. Me caracterizo por cumplir las metas asignadas por la empresa.</p>
     </article>
 
     <article id="contacto">
       <h2><i class="fas fa-envelope"></i> Contacto</h2>
-      <address>
+      <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
         <ul>
-          <li><strong>Teléfono:</strong> <a href="tel:+573246339042">324 633 9042</a></li>
+          <li><strong>Teléfono:</strong> <a href="tel:+573246339042" itemprop="telephone">324 633 9042</a></li>
           <li><strong>Cédula:</strong> 1000286812</li>
-          <li><strong>Email:</strong> <a href="mailto:Fsolano2509@gmail.com">Fsolano2509@gmail.com</a></li>
-          <li><strong>Localidad:</strong> Engativá, Bogotá</li>
-          <li><strong>Dirección:</strong> Diagonal 82ª #110-93, Barrio Bolivia Real</li>
+          <li><strong>Email:</strong> <a href="mailto:Fsolano2509@gmail.com" itemprop="email">Fsolano2509@gmail.com</a></li>
+          <li><strong>Localidad:</strong> <span itemprop="addressLocality">Engativá, Bogotá</span></li>
+          <li><strong>Dirección:</strong> <span itemprop="streetAddress">Diagonal 82ª #110-93, Barrio Bolivia Real</span></li>
         </ul>
       </address>
       <p>
@@ -173,8 +170,25 @@
         <li><a href="https://fs28git.github.io/portafolio/Ethical_Hacker_certificate_fsolano2509-gmail-com_c9e923dd-5d0a-4eef-b17f-f6ffc930d448.pdf" target="_blank">Ethical Hacker</a></li>
         <li><a href="https://fs28git.github.io/portafolio/Partner-_NDG_Linux_Essentials_certificate_fsolano2509-gmail-com_4063a1d7-dfe4-4911-98d4-b33f71507573.pdf" target="_blank">Partner - NDG Linux Essentials</a></li>
         <li><a href="https://fs28git.github.io/portafolio/Partner-_NDG_Linux_Unhatched_certificate_fsolano2509-gmail-com_6ed94c47-5bf4-4310-9c25-570e44241ce4.pdf" target="_blank">Partner - NDG Linux Unhatched</a></li>
-        <li><a href="https://fs28git.github.io/portafolio/ciber%20seguridad.pdf" target="_blank">Certificado: Fundamentos de Ciberseguridad</a></li>
-        <li><a href="https://fs28git.github.io/portafolio/gestion%20de%20amenazas%20ciberneticas.pdf" target="_blank">Certificado: Gestión de Amenazas Cibernéticas</a></li>
+        <li><a href="https://fs28git.github.io/portafolio/ciber%20seguridad.pdf" target="_blank">Fundamentos de Ciberseguridad</a></li>
+        <li><a href="https://fs28git.github.io/portafolio/gestion%20de%20amenazas%20ciberneticas.pdf" target="_blank">Gestión de Amenazas Cibernéticas</a></li>
+      </ul>
+    </article>
+
+    <article id="productos">
+      <h2><i class="fas fa-box"></i> Productos</h2>
+      <p>Aquí puedes ver algunos productos que he diseñado como parte de mi formación:</p>
+      <ul>
+        <li><a href="/portafolio/calculadora.html">Calculadora HTML</a></li>
+        <li><a href="/portafolio/pagina-de-motos.html">Landing Page - Motos Deportivas</a></li>
+      </ul>
+    </article>
+
+    <article id="blog">
+      <h2><i class="fas fa-blog"></i> Blog</h2>
+      <ul>
+        <li><a href="/portafolio/blog/github-pages.html">Cómo usar GitHub Pages para tu portafolio</a></li>
+        <li><a href="/portafolio/blog/wave-validacion.html">Cómo pasar la validación WAVE de accesibilidad</a></li>
       </ul>
     </article>
   </main>
@@ -184,4 +198,3 @@
   </footer>
 </body>
 </html>
-
