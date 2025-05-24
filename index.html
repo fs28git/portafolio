@@ -15,6 +15,10 @@
     connect-src 'self' https://fonts.googleapis.com https://fonts.gstatic.com https://kit.fontawesome.com https://www.googletagmanager.com;
     frame-src https://www.googletagmanager.com">
 
+  <!-- Protección contra click-jacking -->
+<meta http-equiv="X-Frame-Options" content="DENY">
+<meta http-equiv="X-Content-Type-Options" content="nosniff">
+<meta http-equiv="Referrer-Policy" content="strict-origin-when-cross-origin">
   <!-- Favicon -->
   <link rel="icon" href="favicon.svg" type="image/svg+xml">
   <link rel="icon" href="favicon.ico" sizes="any">
@@ -25,7 +29,10 @@
   <meta name="keywords" content="Portafolio, Ingeniería de Software, Certificados, Blog, Productos, Andres Felipe Solano">
   <meta name="author" content="Andres Felipe Solano Moreno">
   <link rel="canonical" href="https://fs28git.github.io/portafolio/">
-  
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+<meta name="googlebot" content="index, follow">
+<meta name="theme-color" content="#0a66c2">
+<meta name="msapplication-TileColor" content="#0a66c2">
   <!-- Preconexiones -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -39,9 +46,13 @@
   <meta property="og:image" content="https://fs28git.github.io/portafolio/img/perfil.jpg">
   
   <!-- Twitter Card -->
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Andres Felipe Solano Moreno - Portafolio">
-  <meta name="twitter:description" content="Portafolio profesional de Andres Felipe Solano Moreno, certificaciones y proyectos en tecnología.">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="@fs28git">
+<meta name="twitter:creator" content="@fs28git">
+<meta name="twitter:title" content="Andres Felipe Solano Moreno - Portafolio">
+<meta name="twitter:description" content="Portafolio profesional de Andres Felipe Solano Moreno, certificaciones y proyectos en tecnología.">
+<meta name="twitter:image" content="https://fs28git.github.io/portafolio/img/perfil.jpg">
+<meta name="twitter:image:alt" content="Foto de perfil de Andres Felipe Solano Moreno">
   
   <!-- Fuentes de Google -->
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
@@ -214,10 +225,12 @@
     }
     
     .product-image {
-      width: 100%;
-      height: 200px;
-      object-fit: cover;
-    }
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  aspect-ratio: 16/9;
+  background-color: #f0f0f0;
+}
     
     .product-content {
       padding: 1.5rem;
@@ -263,10 +276,12 @@
     }
     
     .blog-image {
-      width: 100%;
-      height: 200px;
-      object-fit: cover;
-    }
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  aspect-ratio: 3/2;
+  background-color: #f0f0f0;
+}
     
     .blog-content {
       padding: 1.5rem;
@@ -536,7 +551,7 @@
         <meta itemprop="name" content="Catálogo de Productos">
         
         <div class="product" itemprop="itemListElement" itemscope itemtype="https://schema.org/Product">
-          <img src="https://cdnx.jumpseller.com/cash247/image/50679665/resize/540/600?1720965756" alt="Moto Suzuki Gixxer 250 SF" class="product-image" itemprop="image">
+         <img src="https://cdnx.jumpseller.com/cash247/image/50679665/resize/540/600?1720965756" alt="Moto Suzuki Gixxer 250 SF" class="product-image" itemprop="image" width="540" height="300" loading="lazy">
           <div class="product-content">
             <h3 itemprop="name">Suzuki Gixxer 250 SF</h3>
             <div itemprop="description">
@@ -607,7 +622,7 @@
       <h2><i class="fas fa-blog" aria-hidden="true"></i> Noticias / Blog</h2>
       <div class="blog-grid">
         <article class="blog-post" itemscope itemtype="https://schema.org/BlogPosting">
-          <img src="https://cdn.pixabay.com/photo/2016/11/19/14/00/code-1839406_1280.jpg" alt="Tendencias en desarrollo web 2025" class="blog-image" itemprop="image">
+         <img src="https://cdn.pixabay.com/photo/2016/11/19/14/00/code-1839406_1280.jpg" alt="Tendencias en desarrollo web 2025" class="blog-image" itemprop="image" width="300" height="200" loading="lazy">
           <div class="blog-content">
             <h3 itemprop="headline"><a href="https://medium.com/@fsolano2509/tendencias-en-desarrollo-web-para-2025" target="_blank" rel="noopener">Tendencias en Desarrollo Web para 2025</a></h3>
             <div class="blog-meta">
@@ -624,7 +639,7 @@
           </div>
         </article>
         <article class="blog-post" itemscope itemtype="https://schema.org/BlogPosting">
-          <img src="https://cdn.pixabay.com/photo/2018/05/08/08/44/artificial-intelligence-3382507_1280.jpg" alt="Inteligencia Artificial en Ciberseguridad" class="blog-image" itemprop="image">
+          <img src="https://cdn.pixabay.com/photo/2018/05/08/08/44/artificial-intelligence-3382507_1280.jpg" alt="Inteligencia Artificial en Ciberseguridad" class="blog-image" itemprop="image" width="300" height="200" loading="lazy">
           <div class="blog-content">
             <h3 itemprop="headline"><a href="https://medium.com/@fsolano2509/la-ia-como-herramienta-en-ciberseguridad" target="_blank" rel="noopener">La IA como herramienta en Ciberseguridad</a></h3>
             <div class="blog-meta">
@@ -642,7 +657,7 @@
         </article>
         
         <article class="blog-post" itemscope itemtype="https://schema.org/BlogPosting">
-          <img src="https://www.initiumsoft.com/blog_initium/wp-content/uploads/2025/01/frameworks-java-script.webp" alt="Frameworks JavaScript 2025" class="blog-image" itemprop="image">
+          <img src="https://www.initiumsoft.com/blog_initium/wp-content/uploads/2025/01/frameworks-java-script.webp" alt="Frameworks JavaScript 2025" class="blog-image" itemprop="image" width="300" height="200" loading="lazy">
           <div class="blog-content">
             <h3 itemprop="headline"><a href="https://medium.com/@fsolano2509/los-mejores-frameworks-javascript-en-2025" target="_blank" rel="noopener">Los mejores frameworks JavaScript en 2025</a></h3>
             <div class="blog-meta">
