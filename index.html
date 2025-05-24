@@ -37,7 +37,9 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="preconnect" href="https://kit.fontawesome.com">
-  
+  <!-- Preload de recursos críticos -->
+<link rel="preload" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" as="style">
+<link rel="preload" as="image" href="https://cdnx.jumpseller.com/cash247/image/50679665/resize/540/600?1720965756">
   <!-- Metadatos para redes sociales -->
   <meta property="og:title" content="Andres Felipe Solano Moreno - Portafolio">
   <meta property="og:description" content="Portafolio profesional de Andres Felipe Solano Moreno, Ingeniero de Software con experiencia en desarrollo web y certificaciones en tecnología.">
@@ -58,7 +60,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
   
   <!-- Font Awesome -->
-  <script src="https://kit.fontawesome.com/a2d9d6c11b.js" crossorigin="anonymous" defer></script>
+  <script src="https://kit.fontawesome.com/a2d9d6c11b.js" crossorigin="anonymous" defer async></script>
 
   <!-- Google Tag Manager -->
   <script>
@@ -368,6 +370,42 @@
   </style>
 </head>
 <body>
+  <!-- Datos estructurados JSON-LD -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Andres Felipe Solano Moreno",
+  "jobTitle": "Ingeniero de Software",
+  "description": "Estudiante de Ingeniería de Software especializado en desarrollo web, ciberseguridad y redes",
+  "url": "https://fs28git.github.io/portafolio/",
+  "sameAs": [
+    "https://www.linkedin.com/in/felipe-solano-95655b363/",
+    "https://github.com/fs28git"
+  ],
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Diagonal 82ª #110-93, Barrio Bolivia Real",
+    "addressLocality": "Bogotá",
+    "addressCountry": "Colombia"
+  },
+  "email": "Fsolano2509@gmail.com",
+  "telephone": "+573246339042",
+  "hasCredential": [
+    {
+      "@type": "EducationalOccupationalCredential",
+      "name": "CCNA - Introduction to Networks",
+      "credentialCategory": "certification"
+    },
+    {
+      "@type": "EducationalOccupationalCredential", 
+      "name": "Ethical Hacker",
+      "credentialCategory": "certification"
+    }
+  ]
+}
+</script>
+  
     <!-- Banner 1: Enlace a samuelortizospina.me -->
 <div style="background-color: #dceeff; padding: 15px; text-align: center; border-radius: 8px; margin: 10px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
   <a href="https://samuelortizospina.me/?utm_source=google&utm_medium=banner&utm_campaign=portafolio+web&utm_id=banner-1"
