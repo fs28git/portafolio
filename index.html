@@ -4,7 +4,7 @@
   <!-- Metadatos básicos -->
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  
+
   <!-- Política de Seguridad de Contenido (CSP) -->
   <meta http-equiv="Content-Security-Policy" content="
     default-src 'self';
@@ -22,13 +22,14 @@
   <!-- Favicon -->
   <link rel="icon" href="favicon.svg" type="image/svg+xml">
   <link rel="icon" href="favicon.ico" sizes="any">
-  
+
   <!-- SEO -->
   <title>Andres Felipe Solano Moreno - Portafolio</title>
   <meta name="description" content="Portafolio profesional de Andres Felipe Solano Moreno, Ingeniero de Software con experiencia en desarrollo web, certificaciones en redes y ciberseguridad.">
   <meta name="keywords" content="Portafolio, Ingeniería de Software, Certificados, Blog, Productos, Andres Felipe Solano">
   <meta name="author" content="Andres Felipe Solano Moreno">
   <link rel="canonical" href="https://fs28git.github.io/portafolio/">
+  
   <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
 <meta name="googlebot" content="index, follow">
 <meta name="theme-color" content="#0a66c2">
@@ -37,17 +38,18 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="preconnect" href="https://kit.fontawesome.com">
-  <!-- Preload de recursos críticos -->
-<link rel="preload" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" as="style">
-<link rel="preload" as="image" href="https://cdnx.jumpseller.com/cash247/image/50679665/resize/540/600?1720965756">
+
   <!-- Metadatos para redes sociales -->
   <meta property="og:title" content="Andres Felipe Solano Moreno - Portafolio">
   <meta property="og:description" content="Portafolio profesional de Andres Felipe Solano Moreno, Ingeniero de Software con experiencia en desarrollo web y certificaciones en tecnología.">
   <meta property="og:url" content="https://fs28git.github.io/portafolio/">
   <meta property="og:type" content="website">
   <meta property="og:image" content="https://fs28git.github.io/portafolio/img/perfil.jpg">
-  
+
   <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Andres Felipe Solano Moreno - Portafolio">
+  <meta name="twitter:description" content="Portafolio profesional de Andres Felipe Solano Moreno, certificaciones y proyectos en tecnología.">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:site" content="@fs28git">
 <meta name="twitter:creator" content="@fs28git">
@@ -55,12 +57,12 @@
 <meta name="twitter:description" content="Portafolio profesional de Andres Felipe Solano Moreno, certificaciones y proyectos en tecnología.">
 <meta name="twitter:image" content="https://fs28git.github.io/portafolio/img/perfil.jpg">
 <meta name="twitter:image:alt" content="Foto de perfil de Andres Felipe Solano Moreno">
-  
+
   <!-- Fuentes de Google -->
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
-  
+
   <!-- Font Awesome -->
-  <script src="https://kit.fontawesome.com/a2d9d6c11b.js" crossorigin="anonymous" defer async></script>
+  <script src="https://kit.fontawesome.com/a2d9d6c11b.js" crossorigin="anonymous" defer></script>
 
   <!-- Google Tag Manager -->
   <script>
@@ -83,13 +85,13 @@
       --light-background: #f5f5f5;
       --border-color: #ddd;
     }
-    
+
     * {
       box-sizing: border-box;
       margin: 0;
       padding: 0;
     }
-    
+
     body {
       font-family: 'Poppins', sans-serif;
       line-height: 1.6;
@@ -101,7 +103,7 @@
       display: flex;
       flex-direction: column;
     }
-    
+
     .skip-link {
       position: absolute;
       top: -40px;
@@ -112,7 +114,7 @@
       z-index: 100;
       transition: top 0.3s;
     }
-    
+
     .skip-link:focus {
       top: 0;
     }
@@ -124,16 +126,16 @@
       text-align: center;
       position: relative;
     }
-    
+
     header h1 {
       margin: 0;
       font-size: 1.8rem;
     }
-    
+
     nav {
       margin-top: 1rem;
     }
-    
+
     nav ul {
       list-style: none;
       display: flex;
@@ -143,7 +145,7 @@
       margin: 0;
       padding: 0;
     }
-    
+
     nav a {
       color: white;
       text-decoration: none;
@@ -151,19 +153,19 @@
       border-radius: 4px;
       transition: background-color 0.3s;
     }
-    
+
     nav a:hover, nav a:focus {
       background-color: rgba(255, 255, 255, 0.2);
       outline: none;
     }
-    
+
     .container {
       max-width: 1200px;
       margin: 0 auto;
       padding: 2rem 1rem;
       flex: 1;
     }
-    
+
     article {
       margin-bottom: 3rem;
       padding: 1.5rem;
@@ -171,27 +173,27 @@
       border-radius: 8px;
       box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     }
-    
+
     article h2 {
       color: var(--primary-color);
       margin-bottom: 1rem;
       border-bottom: 2px solid var(--border-color);
       padding-bottom: 0.5rem;
     }
-    
+
     article ul {
       margin-left: 1.5rem;
     }
-    
+
     article li {
       margin-bottom: 0.5rem;
     }
-    
+
     address ul {
       list-style: none;
       margin-left: 0;
     }
-    
+
     .btn-contacto {
       display: inline-block;
       background-color: var(--primary-color);
@@ -203,7 +205,7 @@
       margin-top: 1rem;
       transition: background-color 0.3s;
     }
-    
+
     .btn-contacto:hover, .btn-contacto:focus {
       background-color: var(--secondary-color);
     }
@@ -213,7 +215,7 @@
       grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
       gap: 2rem;
     }
-    
+
     .product {
       background: white;
       border-radius: 8px;
@@ -221,34 +223,38 @@
       box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
       transition: transform 0.3s;
     }
-    
+
     .product:hover {
       transform: translateY(-5px);
     }
-    
+
     .product-image {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
   width: 100%;
   height: 200px;
   object-fit: cover;
   aspect-ratio: 16/9;
   background-color: #f0f0f0;
 }
-    
+
     .product-content {
       padding: 1.5rem;
     }
-    
+
     .product h3 {
       margin-top: 0;
       color: var(--primary-color);
     }
-    
+
     .product-price {
       font-weight: bold;
       color: var(--accent-color);
       margin: 0.5rem 0;
     }
-    
+
     .product-link {
       display: inline-block;
       background-color: var(--primary-color);
@@ -259,7 +265,7 @@
       margin-top: 1rem;
       transition: background-color 0.3s;
     }
-    
+
     .product-link:hover {
       background-color: var(--secondary-color);
     }
@@ -269,50 +275,54 @@
       grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
       gap: 2rem;
     }
-    
+
     .blog-post {
       background: white;
       border-radius: 8px;
       overflow: hidden;
       box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
     }
-    
+
     .blog-image {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
   width: 100%;
   height: 200px;
   object-fit: cover;
   aspect-ratio: 3/2;
   background-color: #f0f0f0;
 }
-    
+
     .blog-content {
       padding: 1.5rem;
     }
-    
+
     .blog-post h3 {
       margin-top: 0;
     }
-    
+
     .blog-post h3 a {
       color: var(--primary-color);
       text-decoration: none;
       transition: color 0.3s;
     }
-    
+
     .blog-post h3 a:hover {
       color: var(--secondary-color);
     }
-    
+
     .blog-meta {
       color: var(--light-text);
       font-size: 0.9rem;
       margin-bottom: 1rem;
     }
-    
+
     .blog-excerpt {
       margin-bottom: 1rem;
     }
-    
+
     .read-more {
       display: inline-block;
       color: var(--primary-color);
@@ -320,7 +330,7 @@
       font-weight: 600;
       transition: color 0.3s;
     }
-    
+
     .read-more:hover {
       color: var(--secondary-color);
     }
@@ -332,26 +342,26 @@
       padding: 1.5rem;
       margin-top: 2rem;
     }
-    
+
     footer p {
       margin: 0;
     }
-    
+
     footer a {
       color: white;
     }
-    
+
     @media screen and (max-width: 768px) {
       nav ul {
         flex-direction: column;
         align-items: center;
       }
-      
+
       .product-grid, .blog-grid {
         grid-template-columns: 1fr;
       }
     }
-    
+
     .visually-hidden {
       position: absolute;
       width: 1px;
@@ -362,7 +372,7 @@
       clip: rect(0, 0, 0, 0);
       border: 0;
     }
-    
+
     a:focus, button:focus, input:focus, select:focus, textarea:focus {
       outline: 3px solid rgba(10, 102, 194, 0.5);
       outline-offset: 2px;
@@ -370,42 +380,6 @@
   </style>
 </head>
 <body>
-  <!-- Datos estructurados JSON-LD -->
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "Person",
-  "name": "Andres Felipe Solano Moreno",
-  "jobTitle": "Ingeniero de Software",
-  "description": "Estudiante de Ingeniería de Software especializado en desarrollo web, ciberseguridad y redes",
-  "url": "https://fs28git.github.io/portafolio/",
-  "sameAs": [
-    "https://www.linkedin.com/in/felipe-solano-95655b363/",
-    "https://github.com/fs28git"
-  ],
-  "address": {
-    "@type": "PostalAddress",
-    "streetAddress": "Diagonal 82ª #110-93, Barrio Bolivia Real",
-    "addressLocality": "Bogotá",
-    "addressCountry": "Colombia"
-  },
-  "email": "Fsolano2509@gmail.com",
-  "telephone": "+573246339042",
-  "hasCredential": [
-    {
-      "@type": "EducationalOccupationalCredential",
-      "name": "CCNA - Introduction to Networks",
-      "credentialCategory": "certification"
-    },
-    {
-      "@type": "EducationalOccupationalCredential", 
-      "name": "Ethical Hacker",
-      "credentialCategory": "certification"
-    }
-  ]
-}
-</script>
-  
     <!-- Banner 1: Enlace a samuelortizospina.me -->
 <div style="background-color: #dceeff; padding: 15px; text-align: center; border-radius: 8px; margin: 10px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
   <a href="https://samuelortizospina.me/?utm_source=google&utm_medium=banner&utm_campaign=portafolio+web&utm_id=banner-1"
@@ -587,8 +561,9 @@
       <h2><i class="fas fa-box-open" aria-hidden="true"></i> Catálogo de Productos</h2>
       <div class="product-grid" itemscope itemtype="https://schema.org/ItemList">
         <meta itemprop="name" content="Catálogo de Productos">
-        
+
         <div class="product" itemprop="itemListElement" itemscope itemtype="https://schema.org/Product">
+          <img src="https://cdnx.jumpseller.com/cash247/image/50679665/resize/540/600?1720965756" alt="Moto Suzuki Gixxer 250 SF" class="product-image" itemprop="image">
          <img src="https://cdnx.jumpseller.com/cash247/image/50679665/resize/540/600?1720965756" alt="Moto Suzuki Gixxer 250 SF" class="product-image" itemprop="image" width="540" height="300" loading="lazy">
           <div class="product-content">
             <h3 itemprop="name">Suzuki Gixxer 250 SF</h3>
@@ -609,7 +584,7 @@
             <a href="https://suzuki.com.co/motos/gixxer-250-sf" class="product-link" itemprop="url" target="_blank" rel="noopener">Ver producto en Suzuki</a>
           </div>
         </div>
-        
+
         <div class="product" itemprop="itemListElement" itemscope itemtype="https://schema.org/Product">
           <img src="https://cdn.pixabay.com/photo/2020/10/21/18/07/laptop-5673901_1280.jpg" alt="Laptop HP ProBook" class="product-image" itemprop="image">
           <div class="product-content">
@@ -631,7 +606,7 @@
             <a href="https://www.hp.com/co-es/shop/laptops-tablets/business/hp-probook.html" class="product-link" itemprop="url" target="_blank" rel="noopener">Ver producto en HP</a>
           </div>
         </div>
-        
+
         <div class="product" itemprop="itemListElement" itemscope itemtype="https://schema.org/Product">
           <img src="https://cdn.pixabay.com/photo/2016/11/19/14/00/code-1839406_1280.jpg" alt="Curso Desarrollo Web" class="product-image" itemprop="image">
           <div class="product-content">
@@ -660,6 +635,7 @@
       <h2><i class="fas fa-blog" aria-hidden="true"></i> Noticias / Blog</h2>
       <div class="blog-grid">
         <article class="blog-post" itemscope itemtype="https://schema.org/BlogPosting">
+          <img src="https://cdn.pixabay.com/photo/2016/11/19/14/00/code-1839406_1280.jpg" alt="Tendencias en desarrollo web 2025" class="blog-image" itemprop="image">
          <img src="https://cdn.pixabay.com/photo/2016/11/19/14/00/code-1839406_1280.jpg" alt="Tendencias en desarrollo web 2025" class="blog-image" itemprop="image" width="300" height="200" loading="lazy">
           <div class="blog-content">
             <h3 itemprop="headline"><a href="https://medium.com/@fsolano2509/tendencias-en-desarrollo-web-para-2025" target="_blank" rel="noopener">Tendencias en Desarrollo Web para 2025</a></h3>
@@ -677,6 +653,7 @@
           </div>
         </article>
         <article class="blog-post" itemscope itemtype="https://schema.org/BlogPosting">
+          <img src="https://cdn.pixabay.com/photo/2018/05/08/08/44/artificial-intelligence-3382507_1280.jpg" alt="Inteligencia Artificial en Ciberseguridad" class="blog-image" itemprop="image">
           <img src="https://cdn.pixabay.com/photo/2018/05/08/08/44/artificial-intelligence-3382507_1280.jpg" alt="Inteligencia Artificial en Ciberseguridad" class="blog-image" itemprop="image" width="300" height="200" loading="lazy">
           <div class="blog-content">
             <h3 itemprop="headline"><a href="https://medium.com/@fsolano2509/la-ia-como-herramienta-en-ciberseguridad" target="_blank" rel="noopener">La IA como herramienta en Ciberseguridad</a></h3>
@@ -693,8 +670,9 @@
             <meta itemprop="dateModified" content="2025-04-22">
           </div>
         </article>
-        
+
         <article class="blog-post" itemscope itemtype="https://schema.org/BlogPosting">
+          <img src="https://www.initiumsoft.com/blog_initium/wp-content/uploads/2025/01/frameworks-java-script.webp" alt="Frameworks JavaScript 2025" class="blog-image" itemprop="image">
           <img src="https://www.initiumsoft.com/blog_initium/wp-content/uploads/2025/01/frameworks-java-script.webp" alt="Frameworks JavaScript 2025" class="blog-image" itemprop="image" width="300" height="200" loading="lazy">
           <div class="blog-content">
             <h3 itemprop="headline"><a href="https://medium.com/@fsolano2509/los-mejores-frameworks-javascript-en-2025" target="_blank" rel="noopener">Los mejores frameworks JavaScript en 2025</a></h3>
