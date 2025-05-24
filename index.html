@@ -1,686 +1,671 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <!-- Metadatos básicos -->
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <!-- Política de Seguridad de Contenido (CSP) -->
-<meta http-equiv="Content-Security-Policy" content="
-    default-src 'self';
-    script-src 'self' https://kit.fontawesome.com https://www.googletagmanager.com 'sha256-4+w4vjAdUPwQckQ4g2TO/fmysAZ+wuIhfBOt2j7ihlI=';
-    style-src 'self' 'unsafe-inline' https://fonts.googleapis.com;
-    img-src 'self' data: https://cdnx.jumpseller.com;
-    font-src 'self' https://fonts.gstatic.com;
-    connect-src 'self' https://fonts.googleapis.com https://fonts.gstatic.com https://kit.fontawesome.com https://www.googletagmanager.com;
-    frame-src https://www.googletagmanager.com;
-    frame-ancestors 'none'">
-  
-  <!-- Favicon -->
-  <link rel="icon" href="favicon.svg" type="image/svg+xml">
-  <link rel="icon" href="favicon.ico" sizes="any">
+    <meta http-equiv="Content-Security-Policy" content="
+        default-src 'self';
+        script-src 'self' https://kit.fontawesome.com https://www.googletagmanager.com 'sha256-4+w4vjAdUPwQckQ4g2TO/fmysAZ+wuIhfBOt2j7ihlI=';
+        style-src 'self' 'unsafe-inline' https://fonts.googleapis.com;
+        img-src 'self' data: https://cdnx.jumpseller.com;
+        font-src 'self' https://fonts.gstatic.com;
+        connect-src 'self' https://fonts.googleapis.com https://fonts.gstatic.com https://kit.fontawesome.com https://www.googletagmanager.com;
+        frame-src https://www.googletagmanager.com;
+        frame-ancestors 'none'">
 
-  <!-- SEO -->
-  <title>Andres Felipe Solano Moreno - Portafolio</title>
-  <meta name="description" content="Portafolio profesional de Andres Felipe Solano Moreno, Ingeniero de Software con experiencia en desarrollo web, certificaciones en redes y ciberseguridad.">
-  <meta name="keywords" content="Portafolio, Ingeniería de Software, Certificados, Blog, Productos, Andres Felipe Solano">
-  <meta name="author" content="Andres Felipe Solano Moreno">
-  <link rel="canonical" href="https://fs28git.github.io/portafolio/">
-  
-  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
-<meta name="googlebot" content="index, follow">
-<meta name="theme-color" content="#0a66c2">
-<meta name="msapplication-TileColor" content="#0a66c2">
-  <!-- Preconexiones -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="preconnect" href="https://kit.fontawesome.com">
+    <link rel="icon" href="favicon.svg" type="image/svg+xml">
+    <link rel="icon" href="favicon.ico" sizes="any">
 
-  <!-- Metadatos para redes sociales -->
-  <meta property="og:title" content="Andres Felipe Solano Moreno - Portafolio">
-  <meta property="og:description" content="Portafolio profesional de Andres Felipe Solano Moreno, Ingeniero de Software con experiencia en desarrollo web y certificaciones en tecnología.">
-  <meta property="og:url" content="https://fs28git.github.io/portafolio/">
-  <meta property="og:type" content="website">
-  <meta property="og:image" content="https://fs28git.github.io/portafolio/img/perfil.jpg">
+    <title>Andres Felipe Solano Moreno - Portafolio</title>
+    <meta name="description" content="Portafolio profesional de Andres Felipe Solano Moreno, Ingeniero de Software con experiencia en desarrollo web, certificaciones en redes y ciberseguridad.">
+    <meta name="keywords" content="Portafolio, Ingeniería de Software, Certificados, Blog, Productos, Andres Felipe Solano">
+    <meta name="author" content="Andres Felipe Solano Moreno">
+    <link rel="canonical" href="https://fs28git.github.io/portafolio/">
 
-  <!-- Twitter Card -->
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Andres Felipe Solano Moreno - Portafolio">
-  <meta name="twitter:description" content="Portafolio profesional de Andres Felipe Solano Moreno, certificaciones y proyectos en tecnología.">
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:site" content="@fs28git">
-<meta name="twitter:creator" content="@fs28git">
-<meta name="twitter:title" content="Andres Felipe Solano Moreno - Portafolio">
-<meta name="twitter:description" content="Portafolio profesional de Andres Felipe Solano Moreno, certificaciones y proyectos en tecnología.">
-<meta name="twitter:image" content="https://fs28git.github.io/portafolio/img/perfil.jpg">
-<meta name="twitter:image:alt" content="Foto de perfil de Andres Felipe Solano Moreno">
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+    <meta name="googlebot" content="index, follow">
+    <meta name="theme-color" content="#0a66c2">
+    <meta name="msapplication-TileColor" content="#0a66c2">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://kit.fontawesome.com">
 
-  <!-- Fuentes de Google -->
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <meta property="og:title" content="Andres Felipe Solano Moreno - Portafolio">
+    <meta property="og:description" content="Portafolio profesional de Andres Felipe Solano Moreno, Ingeniero de Software con experiencia en desarrollo web y certificaciones en tecnología.">
+    <meta property="og:url" content="https://fs28git.github.io/portafolio/">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://fs28git.github.io/portafolio/img/perfil.jpg">
 
-  <!-- Font Awesome -->
-  <script src="https://kit.fontawesome.com/a2d9d6c11b.js" crossorigin="anonymous" defer></script>
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Andres Felipe Solano Moreno - Portafolio">
+    <meta name="twitter:description" content="Portafolio profesional de Andres Felipe Solano Moreno, certificaciones y proyectos en tecnología.">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@fs28git">
+    <meta name="twitter:creator" content="@fs28git">
+    <meta name="twitter:title" content="Andres Felipe Solano Moreno - Portafolio">
+    <meta name="twitter:description" content="Portafolio profesional de Andres Felipe Solano Moreno, certificaciones y proyectos en tecnología.">
+    <meta name="twitter:image" content="https://fs28git.github.io/portafolio/img/perfil.jpg">
+    <meta name="twitter:image:alt" content="Foto de perfil de Andres Felipe Solano Moreno">
 
-  <!-- Google Tag Manager -->
-  <script>
-    (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-    })(window,document,'script','dataLayer','G-KCEY5YMV5Q');
-  </script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
 
-  <!-- Estilos CSS -->
-  <style>
-    :root {
-      --primary-color: #0a66c2;
-      --secondary-color: #0077b5;
-      --accent-color: #e1306c;
-      --text-color: #333;
-      --light-text: #666;
-      --background-color: #fff;
-      --light-background: #f5f5f5;
-      --border-color: #ddd;
-    }
+    <script src="https://kit.fontawesome.com/a2d9d6c11b.js" crossorigin="anonymous" defer></script>
 
-    * {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-    }
+    <script>
+        (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+            new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+            j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+            'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+        })(window,document,'script','dataLayer','G-KCEY5YMV5Q');
+    </script>
 
-    body {
-      font-family: 'Poppins', sans-serif;
-      line-height: 1.6;
-      color: var(--text-color);
-      background-color: var(--background-color);
-      padding: 0;
-      margin: 0;
-      min-height: 100vh;
-      display: flex;
-      flex-direction: column;
-    }
+    <style>
+        :root {
+            --primary-color: #0a66c2;
+            --secondary-color: #0077b5;
+            --accent-color: #e1306c;
+            --text-color: #333;
+            --light-text: #666;
+            --background-color: #fff;
+            --light-background: #f5f5f5;
+            --border-color: #ddd;
+        }
 
-    .skip-link {
-      position: absolute;
-      top: -40px;
-      left: 0;
-      background: var(--primary-color);
-      color: white;
-      padding: 8px;
-      z-index: 100;
-      transition: top 0.3s;
-    }
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
 
-    .skip-link:focus {
-      top: 0;
-    }
+        body {
+            font-family: 'Poppins', sans-serif;
+            line-height: 1.6;
+            color: var(--text-color);
+            background-color: var(--background-color);
+            padding: 0;
+            margin: 0;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
 
-    header {
-      background-color: var(--primary-color);
-      color: white;
-      padding: 1rem;
-      text-align: center;
-      position: relative;
-    }
+        .skip-link {
+            position: absolute;
+            top: -40px;
+            left: 0;
+            background: var(--primary-color);
+            color: white;
+            padding: 8px;
+            z-index: 100;
+            transition: top 0.3s;
+        }
 
-    header h1 {
-      margin: 0;
-      font-size: 1.8rem;
-    }
+        .skip-link:focus {
+            top: 0;
+        }
 
-    nav {
-      margin-top: 1rem;
-    }
+        header {
+            background-color: var(--primary-color);
+            color: white;
+            padding: 1rem;
+            text-align: center;
+            position: relative;
+        }
 
-    nav ul {
-      list-style: none;
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 1rem;
-      margin: 0;
-      padding: 0;
-    }
+        header h1 {
+            margin: 0;
+            font-size: 1.8rem;
+        }
 
-    nav a {
-      color: white;
-      text-decoration: none;
-      padding: 0.5rem;
-      border-radius: 4px;
-      transition: background-color 0.3s;
-    }
+        nav {
+            margin-top: 1rem;
+        }
 
-    nav a:hover, nav a:focus {
-      background-color: rgba(255, 255, 255, 0.2);
-      outline: none;
-    }
+        nav ul {
+            list-style: none;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 1rem;
+            margin: 0;
+            padding: 0;
+        }
 
-    .container {
-      max-width: 1200px;
-      margin: 0 auto;
-      padding: 2rem 1rem;
-      flex: 1;
-    }
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 0.5rem;
+            border-radius: 4px;
+            transition: background-color 0.3s;
+        }
 
-    article {
-      margin-bottom: 3rem;
-      padding: 1.5rem;
-      background-color: var(--light-background);
-      border-radius: 8px;
-      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    }
+        nav a:hover, nav a:focus {
+            background-color: rgba(255, 255, 255, 0.2);
+            outline: none;
+        }
 
-    article h2 {
-      color: var(--primary-color);
-      margin-bottom: 1rem;
-      border-bottom: 2px solid var(--border-color);
-      padding-bottom: 0.5rem;
-    }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem 1rem;
+            flex: 1;
+        }
 
-    article ul {
-      margin-left: 1.5rem;
-    }
+        article {
+            margin-bottom: 3rem;
+            padding: 1.5rem;
+            background-color: var(--light-background);
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
 
-    article li {
-      margin-bottom: 0.5rem;
-    }
+        article h2 {
+            color: var(--primary-color);
+            margin-bottom: 1rem;
+            border-bottom: 2px solid var(--border-color);
+            padding-bottom: 0.5rem;
+        }
 
-    address ul {
-      list-style: none;
-      margin-left: 0;
-    }
+        article ul {
+            margin-left: 1.5rem;
+        }
 
-    .btn-contacto {
-      display: inline-block;
-      background-color: var(--primary-color);
-      color: white;
-      text-decoration: none;
-      padding: 0.5rem 1rem;
-      border-radius: 4px;
-      margin-right: 0.5rem;
-      margin-top: 1rem;
-      transition: background-color 0.3s;
-    }
+        article li {
+            margin-bottom: 0.5rem;
+        }
 
-    .btn-contacto:hover, .btn-contacto:focus {
-      background-color: var(--secondary-color);
-    }
+        address ul {
+            list-style: none;
+            margin-left: 0;
+        }
 
-    .product-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-      gap: 2rem;
-    }
+        .btn-contacto {
+            display: inline-block;
+            background-color: var(--primary-color);
+            color: white;
+            text-decoration: none;
+            padding: 0.5rem 1rem;
+            border-radius: 4px;
+            margin-right: 0.5rem;
+            margin-top: 1rem;
+            transition: background-color 0.3s;
+        }
 
-    .product {
-      background: white;
-      border-radius: 8px;
-      overflow: hidden;
-      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-      transition: transform 0.3s;
-    }
+        .btn-contacto:hover, .btn-contacto:focus {
+            background-color: var(--secondary-color);
+        }
 
-    .product:hover {
-      transform: translateY(-5px);
-    }
+        .product-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 2rem;
+        }
 
-.product-image {
-  width: 100%;
-  height: 200px;
-  object-fit: cover;
-  aspect-ratio: 16/9;
-  background-color: #f0f0f0;
-}
+        .product {
+            background: white;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+        }
 
-    .product-content {
-      padding: 1.5rem;
-    }
+        .product:hover {
+            transform: translateY(-5px);
+        }
 
-    .product h3 {
-      margin-top: 0;
-      color: var(--primary-color);
-    }
+        .product-image {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            aspect-ratio: 16/9;
+            background-color: #f0f0f0;
+        }
 
-    .product-price {
-      font-weight: bold;
-      color: var(--accent-color);
-      margin: 0.5rem 0;
-    }
+        .product-content {
+            padding: 1.5rem;
+        }
 
-    .product-link {
-      display: inline-block;
-      background-color: var(--primary-color);
-      color: white;
-      text-decoration: none;
-      padding: 0.5rem 1rem;
-      border-radius: 4px;
-      margin-top: 1rem;
-      transition: background-color 0.3s;
-    }
+        .product h3 {
+            margin-top: 0;
+            color: var(--primary-color);
+        }
 
-    .product-link:hover {
-      background-color: var(--secondary-color);
-    }
+        .product-price {
+            font-weight: bold;
+            color: var(--accent-color);
+            margin: 0.5rem 0;
+        }
 
-    .blog-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-      gap: 2rem;
-    }
+        .product-link {
+            display: inline-block;
+            background-color: var(--primary-color);
+            color: white;
+            text-decoration: none;
+            padding: 0.5rem 1rem;
+            border-radius: 4px;
+            margin-top: 1rem;
+            transition: background-color 0.3s;
+        }
 
-    .blog-post {
-      background: white;
-      border-radius: 8px;
-      overflow: hidden;
-      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-    }
+        .product-link:hover {
+            background-color: var(--secondary-color);
+        }
 
-   .blog-image {
-  width: 100%;
-  height: 200px;
-  object-fit: cover;
-  aspect-ratio: 3/2;
-  background-color: #f0f0f0;
-}
+        .blog-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 2rem;
+        }
 
-    .blog-content {
-      padding: 1.5rem;
-    }
+        .blog-post {
+            background: white;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
 
-    .blog-post h3 {
-      margin-top: 0;
-    }
+        .blog-image {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            aspect-ratio: 3/2;
+            background-color: #f0f0f0;
+        }
 
-    .blog-post h3 a {
-      color: var(--primary-color);
-      text-decoration: none;
-      transition: color 0.3s;
-    }
+        .blog-content {
+            padding: 1.5rem;
+        }
 
-    .blog-post h3 a:hover {
-      color: var(--secondary-color);
-    }
+        .blog-post h3 {
+            margin-top: 0;
+        }
 
-    .blog-meta {
-      color: var(--light-text);
-      font-size: 0.9rem;
-      margin-bottom: 1rem;
-    }
+        .blog-post h3 a {
+            color: var(--primary-color);
+            text-decoration: none;
+            transition: color 0.3s;
+        }
 
-    .blog-excerpt {
-      margin-bottom: 1rem;
-    }
+        .blog-post h3 a:hover {
+            color: var(--secondary-color);
+        }
 
-    .read-more {
-      display: inline-block;
-      color: var(--primary-color);
-      text-decoration: none;
-      font-weight: 600;
-      transition: color 0.3s;
-    }
+        .blog-meta {
+            color: var(--light-text);
+            font-size: 0.9rem;
+            margin-bottom: 1rem;
+        }
 
-    .read-more:hover {
-      color: var(--secondary-color);
-    }
+        .blog-excerpt {
+            margin-bottom: 1rem;
+        }
 
-    footer {
-      background-color: var(--primary-color);
-      color: white;
-      text-align: center;
-      padding: 1.5rem;
-      margin-top: 2rem;
-    }
+        .read-more {
+            display: inline-block;
+            color: var(--primary-color);
+            text-decoration: none;
+            font-weight: 600;
+            transition: color 0.3s;
+        }
 
-    footer p {
-      margin: 0;
-    }
+        .read-more:hover {
+            color: var(--secondary-color);
+        }
 
-    footer a {
-      color: white;
-    }
+        footer {
+            background-color: var(--primary-color);
+            color: white;
+            text-align: center;
+            padding: 1.5rem;
+            margin-top: 2rem;
+        }
 
-    @media screen and (max-width: 768px) {
-      nav ul {
-        flex-direction: column;
-        align-items: center;
-      }
+        footer p {
+            margin: 0;
+        }
 
-      .product-grid, .blog-grid {
-        grid-template-columns: 1fr;
-      }
-    }
+        footer a {
+            color: white;
+        }
 
-    .visually-hidden {
-      position: absolute;
-      width: 1px;
-      height: 1px;
-      margin: -1px;
-      padding: 0;
-      overflow: hidden;
-      clip: rect(0, 0, 0, 0);
-      border: 0;
-    }
+        @media screen and (max-width: 768px) {
+            nav ul {
+                flex-direction: column;
+                align-items: center;
+            }
 
-    a:focus, button:focus, input:focus, select:focus, textarea:focus {
-      outline: 3px solid rgba(10, 102, 194, 0.5);
-      outline-offset: 2px;
-    }
-  </style>
+            .product-grid, .blog-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        .visually-hidden {
+            position: absolute;
+            width: 1px;
+            height: 1px;
+            margin: -1px;
+            padding: 0;
+            overflow: hidden;
+            clip: rect(0, 0, 0, 0);
+            border: 0;
+        }
+
+        a:focus, button:focus, input:focus, select:focus, textarea:focus {
+            outline: 3px solid rgba(10, 102, 194, 0.5);
+            outline-offset: 2px;
+        }
+    </style>
 </head>
 <body>
-    <!-- Banner 1: Enlace a samuelortizospina.me -->
-<div style="background-color: #dceeff; padding: 15px; text-align: center; border-radius: 8px; margin: 10px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
-  <a href="https://samuelortizospina.me/?utm_source=google&utm_medium=banner&utm_campaign=portafolio+web&utm_id=banner-1"
-     target="_blank"
-     style="font-size: 1.2rem; font-weight: 600; color: #0077cc; text-decoration: none; transition: color 0.3s;">
-    🌐 Visita el sitio de Samuel Ortiz Ospina
-  </a>
-</div>
+    <div style="background-color: #dceeff; padding: 15px; text-align: center; border-radius: 8px; margin: 10px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
+        <a href="https://samuelortizospina.me/?utm_source=google&utm_medium=banner&utm_campaign=portafolio+web&utm_id=banner-1"
+            target="_blank"
+            style="font-size: 1.2rem; font-weight: 600; color: #0077cc; text-decoration: none; transition: color 0.3s;">
+            🌐 Visita el sitio de Samuel Ortiz Ospina
+        </a>
+    </div>
 
-<!-- Banner 2: Enlace al GitHub de juanda28-droid -->
-<div style="background-color: #f5f5f5; padding: 15px; text-align: center; border-radius: 8px; margin: 10px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
-  <a href="https://github.com/juanda28-droid"
-     target="_blank"
-     style="font-size: 1.2rem; font-weight: 600; color: #24292e; text-decoration: none; transition: color 0.3s;">
-    💻 Visita el GitHub de juanda28-droid
-  </a>
-</div>
-  <a href="#main-content" class="skip-link">Saltar al contenido principal</a>
+    <div style="background-color: #f5f5f5; padding: 15px; text-align: center; border-radius: 8px; margin: 10px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
+        <a href="https://github.com/juanda28-droid"
+            target="_blank"
+            style="font-size: 1.2rem; font-weight: 600; color: #24292e; text-decoration: none; transition: color 0.3s;">
+            💻 Visita el GitHub de juanda28-droid
+        </a>
+    </div>
+    <a href="#main-content" class="skip-link">Saltar al contenido principal</a>
 
-  <noscript>
-    <iframe src="https://www.googletagmanager.com/ns.html?id=G-KCEY5YMV5Q"
-    height="0" width="0" style="display:none;visibility:hidden"></iframe>
-  </noscript>
-  <header>
-    <h1>Andres Felipe Solano Moreno</h1>
-    <nav aria-label="Menú principal">
-      <ul>
-        <li><a href="#perfil">Perfil</a></li>
-        <li><a href="#contacto">Contacto</a></li>
-        <li><a href="#educacion">Educación</a></li>
-        <li><a href="#experiencia">Experiencia</a></li>
-        <li><a href="#referencias">Referencias</a></li>
-        <li><a href="#certificados">Certificados</a></li>
-        <li><a href="#productos">Catálogo de Productos</a></li>
-        <li><a href="#blog">Noticias / Blog</a></li>
-      </ul>
-    </nav>
-  </header>
+    <noscript>
+        <iframe src="https://www.googletagmanager.com/ns.html?id=G-KCEY5YMV5Q"
+        height="0" width="0" style="display:none;visibility:hidden"></iframe>
+    </noscript>
+    <header>
+        <h1>Andres Felipe Solano Moreno</h1>
+        <nav aria-label="Menú principal">
+            <ul>
+                <li><a href="#perfil">Perfil</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+                <li><a href="#educacion">Educación</a></li>
+                <li><a href="#experiencia">Experiencia</a></li>
+                <li><a href="#referencias">Referencias</a></li>
+                <li><a href="#certificados">Certificados</a></li>
+                <li><a href="#productos">Catálogo de Productos</a></li>
+                <li><a href="#blog">Noticias / Blog</a></li>
+            </ul>
+        </nav>
+    </header>
 
-  <main id="main-content" class="container">
-    <article id="perfil">
-      <h2><i class="fas fa-user" aria-hidden="true"></i> Perfil</h2>
-      <div itemscope itemtype="https://schema.org/Person">
-        <meta itemprop="name" content="Andres Felipe Solano Moreno">
-        <meta itemprop="jobTitle" content="Estudiante de Ingeniería de Software">
-        <p itemprop="description">Me identifico como una persona responsable, eficiente, respetuosa y constante en mi trabajo. Me caracterizo por cumplir las metas asignadas por la empresa con excelencia y dedicación.</p>
-        <p>Soy un estudiante de Ingeniería de Software apasionado por la tecnología y el desarrollo web. Tengo conocimientos en redes, seguridad informática y sistemas operativos Linux, respaldados por certificaciones de prestigiosas organizaciones.</p>
-      </div>
-    </article>
-
-    <article id="contacto">
-      <h2><i class="fas fa-envelope" aria-hidden="true"></i> Contacto</h2>
-      <div itemscope itemtype="https://schema.org/Person">
-        <meta itemprop="name" content="Andres Felipe Solano Moreno">
-        <address>
-          <ul>
-            <li><strong>Teléfono:</strong> <a href="tel:+573246339042" itemprop="telephone">324 633 9042</a></li>
-            <li><strong>Cédula:</strong> <span itemprop="identifier">1000286812</span></li>
-            <li><strong>Email:</strong> <a href="mailto:Fsolano2509@gmail.com" itemprop="email">Fsolano2509@gmail.com</a></li>
-            <li><strong>Localidad:</strong> <span itemprop="addressLocality">Engativá, Bogotá</span></li>
-            <li><strong>Dirección:</strong> <span itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-              <span itemprop="streetAddress">Diagonal 82ª #110-93, Barrio Bolivia Real</span>,
-              <span itemprop="addressLocality">Bogotá</span>,
-              <span itemprop="addressCountry">Colombia</span>
-            </span></li>
-          </ul>
-        </address>
-        <div>
-          <a href="tel:+573246339042" class="btn-contacto">Contáctame por Teléfono</a>
-          <a href="mailto:Fsolano2509@gmail.com" class="btn-contacto">Contáctame por Email</a>
-          <a href="https://www.linkedin.com/in/felipe-solano-95655b363/" target="_blank" rel="noopener" class="btn-contacto" itemprop="sameAs">Contáctame por LinkedIn</a>
-        </div>
-      </div>
-    </article>
-
-    <article id="educacion">
-      <h2><i class="fas fa-graduation-cap" aria-hidden="true"></i> Educación</h2>
-      <div itemscope itemtype="https://schema.org/Person">
-        <meta itemprop="name" content="Andres Felipe Solano Moreno">
-        <ul>
-          <li itemprop="alumniOf" itemscope itemtype="https://schema.org/EducationalOrganization">
-            <strong itemprop="name">Colegio Americano de Bogotá:</strong> 
-            <span itemprop="description">Estudios secundarios</span>
-          </li>
-          <li itemprop="alumniOf" itemscope itemtype="https://schema.org/EducationalOrganization">
-            <strong itemprop="name">Universidad Manuela Beltrán:</strong> 
-            <span itemprop="description">Ingeniería de Software</span>
-          </li>
-        </ul>
-      </div>
-    </article>
-
-    <article id="experiencia">
-      <h2><i class="fas fa-briefcase" aria-hidden="true"></i> Experiencia Laboral</h2>
-      <div itemscope itemtype="https://schema.org/Person">
-        <meta itemprop="name" content="Andres Felipe Solano Moreno">
-        <ul>
-          <li itemprop="hasOccupation" itemscope itemtype="https://schema.org/Occupation">
-            <span itemprop="name">Cajero y Mesero</span> en 
-            <span itemprop="worksFor" itemscope itemtype="https://schema.org/Organization">
-              <span itemprop="name">Surtifriss</span>
-            </span> - <span itemprop="description">1 año de experiencia</span>
-          </li>
-          <li itemprop="hasOccupation" itemscope itemtype="https://schema.org/Occupation">
-            <span itemprop="name">Promotor de Eventos</span>
-          </li>
-          <li itemprop="hasOccupation" itemscope itemtype="https://schema.org/Occupation">
-            <span itemprop="name">Asesor de Ventas</span>
-          </li>
-        </ul>
-      </div> 
-    </article>
-
-    <article id="referencias">
-      <h2><i class="fas fa-users" aria-hidden="true"></i> Referencias</h2>
-      <ul>
-        <li itemscope itemtype="https://schema.org/Person">
-          <span itemprop="name">Gloria Moreno</span> – 
-          <span itemprop="jobTitle">Magíster en Educación</span> – 
-          <a href="tel:+573102180485" itemprop="telephone">310 218 0485</a>
-        </li>
-        <li itemscope itemtype="https://schema.org/Person">
-          <span itemprop="name">Jairo Solano</span> – 
-          <span itemprop="jobTitle">Contador Público</span> – 
-          <a href="tel:+573163355421" itemprop="telephone">316 335 5421</a>
-        </li>
-      </ul>
-    </article>
-
-    <article id="certificados">
-      <h2><i class="fas fa-certificate" aria-hidden="true"></i> Certificados</h2>
-      <ul>
-        <li itemscope itemtype="https://schema.org/EducationalOccupationalCredential">
-          <a href="https://fs28git.github.io/portafolio/CCNA-_Introduction_to_Networks_certificate_fsolano2509-gmail-com_5c511102-d5bf-4ec7-978e-9ccabe1e7512.pdf" target="_blank" rel="noopener" itemprop="url">
-            <span itemprop="name">CCNA - Introduction to Networks</span>
-          </a>
-          <meta itemprop="credentialCategory" content="certification">
-          <meta itemprop="educationalLevel" content="beginner">
-        </li>
-        <li itemscope itemtype="https://schema.org/EducationalOccupationalCredential">
-          <a href="https://fs28git.github.io/portafolio/Ethical_Hacker_certificate_fsolano2509-gmail-com_c9e923dd-5d0a-4eef-b17f-f6ffc930d448.pdf" target="_blank" rel="noopener" itemprop="url">
-            <span itemprop="name">Ethical Hacker</span>
-          </a>
-          <meta itemprop="credentialCategory" content="certification">
-          <meta itemprop="educationalLevel" content="intermediate">
-        </li>
-        <li itemscope itemtype="https://schema.org/EducationalOccupationalCredential">
-          <a href="https://fs28git.github.io/portafolio/Partner-_NDG_Linux_Essentials_certificate_fsolano2509-gmail-com_4063a1d7-dfe4-4911-98d4-b33f71507573.pdf" target="_blank" rel="noopener" itemprop="url">
-            <span itemprop="name">Partner - NDG Linux Essentials</span>
-          </a>
-          <meta itemprop="credentialCategory" content="certification">
-          <meta itemprop="educationalLevel" content="beginner">
-        </li>
-        <li itemscope itemtype="https://schema.org/EducationalOccupationalCredential">
-          <a href="https://fs28git.github.io/portafolio/Partner-_NDG_Linux_Unhatched_certificate_fsolano2509-gmail-com_6ed94c47-5bf4-4310-9c25-570e44241ce4.pdf" target="_blank" rel="noopener" itemprop="url">
-            <span itemprop="name">Partner - NDG Linux Unhatched</span>
-          </a>
-          <meta itemprop="credentialCategory" content="certification">
-          <meta itemprop="educationalLevel" content="beginner">
-        </li>
-        <li itemscope itemtype="https://schema.org/EducationalOccupationalCredential">
-          <a href="https://fs28git.github.io/portafolio/ciber%20seguridad.pdf" target="_blank" rel="noopener" itemprop="url">
-            <span itemprop="name">Certificado: Fundamentos de Ciberseguridad</span>
-          </a>
-          <meta itemprop="credentialCategory" content="certification">
-          <meta itemprop="educationalLevel" content="beginner">
-        </li>
-        <li itemscope itemtype="https://schema.org/EducationalOccupationalCredential">
-          <a href="https://fs28git.github.io/portafolio/gestion%20de%20amenazas%20ciberneticas.pdf" target="_blank" rel="noopener" itemprop="url">
-            <span itemprop="name">Certificado: Gestión de Amenazas Cibernéticas</span>
-          </a>
-          <meta itemprop="credentialCategory" content="certification">
-          <meta itemprop="educationalLevel" content="intermediate">
-        </li>
-      </ul>
-    </article>
-
-    <article id="productos">
-      <h2><i class="fas fa-box-open" aria-hidden="true"></i> Catálogo de Productos</h2>
-      <div class="product-grid" itemscope itemtype="https://schema.org/ItemList">
-        <meta itemprop="name" content="Catálogo de Productos">
-
-        <div class="product" itemprop="itemListElement" itemscope itemtype="https://schema.org/Product">
-          <img src="https://cdnx.jumpseller.com/cash247/image/50679665/resize/540/600?1720965756" alt="Moto Suzuki Gixxer 250 SF" class="product-image" itemprop="image">
-         <img src="https://cdnx.jumpseller.com/cash247/image/50679665/resize/540/600?1720965756" alt="Moto Suzuki Gixxer 250 SF" class="product-image" itemprop="image" width="540" height="300" loading="lazy">
-          <div class="product-content">
-            <h3 itemprop="name">Suzuki Gixxer 250 SF</h3>
-            <div itemprop="description">
-              <p>Motocicleta deportiva con excelente rendimiento y diseño deportivo. Motor de 250cc SOHC con refrigeración por aceite y tecnología Suzuki Oil Cooling System (SOCS).</p>
-              <ul>
-                <li>Motor: 250cc SOHC</li>
-                <li>Potencia: 26.5 HP</li>
-                <li>Torque: 22.2 Nm</li>
-                <li>Frenos: Disco delantero y trasero con ABS</li>
-              </ul>
+    <main id="main-content" class="container">
+        <article id="perfil">
+            <h2><i class="fas fa-user" aria-hidden="true"></i> Perfil</h2>
+            <div itemscope itemtype="https://schema.org/Person">
+                <meta itemprop="name" content="Andres Felipe Solano Moreno">
+                <meta itemprop="jobTitle" content="Estudiante de Ingeniería de Software">
+                <p itemprop="description">Me identifico como una persona responsable, eficiente, respetuosa y constante en mi trabajo. Me caracterizo por cumplir las metas asignadas por la empresa con excelencia y dedicación.</p>
+                <p>Soy un estudiante de Ingeniería de Software apasionado por la tecnología y el desarrollo web. Tengo conocimientos en redes, seguridad informática y sistemas operativos Linux, respaldados por certificaciones de prestigiosas organizaciones.</p>
             </div>
-            <div class="product-price" itemprop="offers" itemscope itemtype="https://schema.org/Offer">
-              <span itemprop="price">$15.490.000</span>
-              <meta itemprop="priceCurrency" content="COP">
-              <meta itemprop="availability" content="https://schema.org/InStock">
-            </div>
-            <a href="https://suzuki.com.co/motos/gixxer-250-sf" class="product-link" itemprop="url" target="_blank" rel="noopener">Ver producto en Suzuki</a>
-          </div>
-        </div>
-
-        <div class="product" itemprop="itemListElement" itemscope itemtype="https://schema.org/Product">
-         <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNTQwIiBoZWlnaHQ9IjMwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiBmaWxsPSJub25lIiB2aWV3Qm94PSIwIDAgNTQwIDMwMCI+CiAgPHJlY3Qgd2lkdGg9IjU0MCIgaGVpZ2h0PSIzMDAiIGZpbGw9IiNmMGYwZjAiLz4KICA8cmVjdCB4PSI1MCIgeT0iNTAiIHdpZHRoPSI0NDAiIGhlaWdodD0iMjYwIiByeD0iMTAiIGZpbGw9IiMzMzMiLz4KICA8cmVjdCB4PSI4MCIgeT0iODAiIHdpZHRoPSIzODAiIGhlaWdodD0iMjAwIiBmaWxsPSIjMDA3N2I1Ii8+CiAgPHRleHQgeD0iMjcwIiB5PSIxODAiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIyNCIgZmlsbD0id2hpdGUiIHRleHQtYW5jaG9yPSJtaWRkbGUiPkxhcHRvcCBIUDwvdGV4dD4KPC9zdmc+" alt="Laptop HP ProBook" class="product-image" itemprop="image">
-          <div class="product-content">
-            <h3 itemprop="name">Laptop HP ProBook 450 G8</h3>
-            <div itemprop="description">
-              <p>Laptop profesional con procesador Intel Core i7, 16GB RAM y SSD de 512GB. Perfecta para tareas de desarrollo y programación.</p>
-              <ul>
-                <li>Procesador: Intel Core i7 11th Gen</li>
-                <li>RAM: 16GB DDR4</li>
-                <li>Almacenamiento: SSD 512GB</li>
-                <li>Pantalla: 15.6" Full HD</li>
-              </ul>
-            </div>
-            <div class="product-price" itemprop="offers" itemscope itemtype="https://schema.org/Offer">
-              <span itemprop="price">$3.800.000</span>
-              <meta itemprop="priceCurrency" content="COP">
-              <meta itemprop="availability" content="https://schema.org/InStock">
-            </div>
-            <a href="https://www.hp.com/co-es/shop/laptops-tablets/business/hp-probook.html" class="product-link" itemprop="url" target="_blank" rel="noopener">Ver producto en HP</a>
-          </div>
-        </div>
-
-        <div class="product" itemprop="itemListElement" itemscope itemtype="https://schema.org/Product">
-          <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNTQwIiBoZWlnaHQ9IjMwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiBmaWxsPSJub25lIiB2aWV3Qm94PSIwIDAgNTQwIDMwMCI+CiAgPHJlY3Qgd2lkdGg9IjU0MCIgaGVpZ2h0PSIzMDAiIGZpbGw9IiMyMTI1MmIiLz4KICA8dGV4dCB4PSI1MCIgeT0iNjAiIGZvbnQtZmFtaWx5PSJtb25vc3BhY2UiIGZvbnQtc2l6ZT0iMTgiIGZpbGw9IiM2NGZmZGEiPiZsdDtoMSZndDs8L3RleHQ+CiAgPHRleHQgeD0iNTAiIHk9IjkwIiBmb250LWZhbWlseT0ibW9ub3NwYWNlIiBmb250LXNpemU9IjE4IiBmaWxsPSIjZmZmIj5EZXNhcnJvbGxvIFdlYjwvdGV4dD4KICA8dGV4dCB4PSI1MCIgeT0iMTIwIiBmb250LWZhbWlseT0ibW9ub3NwYWNlIiBmb250LXNpemU9IjE4IiBmaWxsPSIjNjRmZmRhIj4mbHQ7L2gxJmd0OzwvdGV4dD4KICA8dGV4dCB4PSI1MCIgeT0iMTcwIiBmb250LWZhbWlseT0ibW9ub3NwYWNlIiBmb250LXNpemU9IjE2IiBmaWxsPSIjZmY3OTc5Ij5mdW5jdGlvbigpIHt9PC90ZXh0PgogIDx0ZXh0IHg9IjUwIiB5PSIyMDAiIGZvbnQtZmFtaWx5PSJtb25vc3BhY2UiIGZvbnQtc2l6ZT0iMTYiIGZpbGw9IiM5Y2M2ZmYiPi5jc3MgeyB9PC90ZXh0Pgo8L3N2Zz4=" alt="Curso Desarrollo Web" class="product-image" itemprop="image">
-          <div class="product-content">
-            <h3 itemprop="name">Curso Completo de Desarrollo Web</h3>
-            <div itemprop="description">
-              <p>Curso integral que cubre HTML5, CSS3, JavaScript, React y Node.js. Incluye proyectos prácticos y certificado de finalización.</p>
-              <ul>
-                <li>Duración: 80 horas</li>
-                <li>Nivel: Principiante a Avanzado</li>
-                <li>Idioma: Español</li>
-                <li>Incluye: Proyectos prácticos y certificado</li>
-              </ul>
-            </div>
-            <div class="product-price" itemprop="offers" itemscope itemtype="https://schema.org/Offer">
-              <span itemprop="price">$249.900</span>
-              <meta itemprop="priceCurrency" content="COP">
-              <meta itemprop="availability" content="https://schema.org/InStock">
-            </div>
-            <a href="https://www.udemy.com/course/desarrollo-web-completo-con-html5-css3-js-php-y-mysql/" class="product-link" itemprop="url" target="_blank" rel="noopener">Ver curso en Udemy</a>
-          </div>
-        </div>
-      </div>
-    </article>
-
-    <article id="blog">
-      <h2><i class="fas fa-blog" aria-hidden="true"></i> Noticias / Blog</h2>
-      <div class="blog-grid">
-        <article class="blog-post" itemscope itemtype="https://schema.org/BlogPosting">
-          <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzAwIiBoZWlnaHQ9IjIwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiBmaWxsPSJub25lIiB2aWV3Qm94PSIwIDAgMzAwIDIwMCI+CiAgPHJlY3Qgd2lkdGg9IjMwMCIgaGVpZ2h0PSIyMDAiIGZpbGw9IiMyMTI1MmIiLz4KICA8dGV4dCB4PSIxNTAiIHk9Ijg0IiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMjAiIGZpbGw9IiNmZmYiIHRleHQtYW5jaG9yPSJtaWRkbGUiPlRlbmRlbmNpYXM8L3RleHQ+CiAgPHRleHQgeD0iMTUwIiB5PSIxMTAiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIyMCIgZmlsbD0iIzAwNzdiNSIgdGV4dC1hbmNob3I9Im1pZGRsZSI+V2ViIDIwMjU8L3RleHQ+Cjwvc3ZnPg==" alt="Tendencias en desarrollo web 2025" class="blog-image" itemprop="image">
-            <h3 itemprop="headline"><a href="https://medium.com/@fsolano2509/tendencias-en-desarrollo-web-para-2025" target="_blank" rel="noopener">Tendencias en Desarrollo Web para 2025</a></h3>
-            <div class="blog-meta">
-              <time datetime="2025-05-10" itemprop="datePublished">10 Mayo, 2025</time> | 
-              <span itemprop="author" itemscope itemtype="https://schema.org/Person">
-                <span itemprop="name">Andres Felipe Solano</span>
-              </span>
-            </div>
-            <div class="blog-excerpt" itemprop="abstract">
-              <p>Exploramos las principales tendencias que dominarán el desarrollo web en 2025. Desde la inteligencia artificial aplicada al frontend hasta las nuevas APIs de navegador que revolucionarán la experiencia de usuario.</p>
-            </div>
-            <a href="https://thebridge.tech/blog/tendecias-desarrollo-web/" class="read-more" target="_blank" rel="noopener" itemprop="url">Leer más</a>
-            <meta itemprop="dateModified" content="2025-05-10">
-          </div>
-        </article>
-        <article class="blog-post" itemscope itemtype="https://schema.org/BlogPosting">
-         <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzAwIiBoZWlnaHQ9IjIwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiBmaWxsPSJub25lIiB2aWV3Qm94PSIwIDAgMzAwIDIwMCI+CiAgPHJlY3Qgd2lkdGg9IjMwMCIgaGVpZ2h0PSIyMDAiIGZpbGw9IiMxZTI5M2IiLz4KICA8Y2lyY2xlIGN4PSIxNTAiIGN5PSI4MCIgcj0iMzAiIGZpbGw9IiMwMDc3YjUiLz4KICA8Y2lyY2xlIGN4PSIxMzAiIGN5PSI3NSIgcj0iNCIgZmlsbD0iI2ZmZiIvPgogIDxjaXJjbGUgY3g9IjE3MCIgY3k9Ijc1IiByPSI0IiBmaWxsPSIjZmZmIi8+CiAgPHBhdGggZD0iTTEzNSA5NSBRIDE1MCA5NSAxNjUgOTUiIHN0cm9rZT0iI2ZmZiIgc3Ryb2tlLXdpZHRoPSIyIiBmaWxsPSJub25lIi8+CiAgPHRleHQgeD0iMTUwIiB5PSIxNDAiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxOCIgZmlsbD0iI2ZmZiIgdGV4dC1hbmNob3I9Im1pZGRsZSI+SW50ZWxpZ2VuY2lhPC90ZXh0PgogIDx0ZXh0IHg9IjE1MCIgeT0iMTYwIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTgiIGZpbGw9IiMwMDc3YjUiIHRleHQtYW5jaG9yPSJtaWRkbGUiPkFydGlmaWNpYWw8L3RleHQ+Cjwvc3ZnPg==" alt="Inteligencia Artificial en Ciberseguridad" class="blog-image" itemprop="image"> 
-          <div class="blog-content">
-            <h3 itemprop="headline"><a href="https://medium.com/@fsolano2509/la-ia-como-herramienta-en-ciberseguridad" target="_blank" rel="noopener">La IA como herramienta en Ciberseguridad</a></h3>
-            <div class="blog-meta">
-              <time datetime="2025-04-22" itemprop="datePublished">22 Abril, 2025</time> | 
-              <span itemprop="author" itemscope itemtype="https://schema.org/Person">
-                <span itemprop="name">Andres Felipe Solano</span>
-              </span>
-            </div>
-            <div class="blog-excerpt" itemprop="abstract">
-              <p>Cómo la inteligencia artificial está cambiando el panorama de la seguridad informática. Analizamos las ventajas y los nuevos retos que presenta esta tecnología para los profesionales del sector.</p>
-            </div>
-            <a href="https://www.microsoft.com/es-co/security/business/security-101/what-is-ai-for-cybersecurity#:~:text=La%20inteligencia%20artificial%20puede%20automatizar,en%20estrategias%20de%20defensa%20proactivas." class="read-more" target="_blank" rel="noopener" itemprop="url">Leer más</a>
-            <meta itemprop="dateModified" content="2025-04-22">
-          </div>
         </article>
 
-        <article class="blog-post" itemscope itemtype="https://schema.org/BlogPosting">
-          <img src="https://www.initiumsoft.com/blog_initium/wp-content/uploads/2025/01/frameworks-java-script.webp" alt="Frameworks JavaScript 2025" class="blog-image" itemprop="image">
-          <img src="https://www.initiumsoft.com/blog_initium/wp-content/uploads/2025/01/frameworks-java-script.webp" alt="Frameworks JavaScript 2025" class="blog-image" itemprop="image" width="300" height="200" loading="lazy">
-          <div class="blog-content">
-            <h3 itemprop="headline"><a href="https://medium.com/@fsolano2509/los-mejores-frameworks-javascript-en-2025" target="_blank" rel="noopener">Los mejores frameworks JavaScript en 2025</a></h3>
-            <div class="blog-meta">
-              <time datetime="2025-03-15" itemprop="datePublished">15 Marzo, 2025</time> | 
-              <span itemprop="author" itemscope itemtype="https://schema.org/Person">
-                <span itemprop="name">Andres Felipe Solano</span>
-              </span>
+        <article id="contacto">
+            <h2><i class="fas fa-envelope" aria-hidden="true"></i> Contacto</h2>
+            <div itemscope itemtype="https://schema.org/Person">
+                <meta itemprop="name" content="Andres Felipe Solano Moreno">
+                <address>
+                    <ul>
+                        <li><strong>Teléfono:</strong> <a href="tel:+573246339042" itemprop="telephone">324 633 9042</a></li>
+                        <li><strong>Cédula:</strong> <span itemprop="identifier">1000286812</span></li>
+                        <li><strong>Email:</strong> <a href="mailto:Fsolano2509@gmail.com" itemprop="email">Fsolano2509@gmail.com</a></li>
+                        <li><strong>Localidad:</strong> <span itemprop="addressLocality">Engativá, Bogotá</span></li>
+                        <li><strong>Dirección:</strong> <span itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+                            <span itemprop="streetAddress">Diagonal 82ª #110-93, Barrio Bolivia Real</span>,
+                            <span itemprop="addressLocality">Bogotá</span>,
+                            <span itemprop="addressCountry">Colombia</span>
+                        </span></li>
+                    </ul>
+                </address>
+                <div>
+                    <a href="tel:+573246339042" class="btn-contacto">Contáctame por Teléfono</a>
+                    <a href="mailto:Fsolano2509@gmail.com" class="btn-contacto">Contáctame por Email</a>
+                    <a href="https://www.linkedin.com/in/felipe-solano-95655b363/" target="_blank" rel="noopener" class="btn-contacto" itemprop="sameAs">Contáctame por LinkedIn</a>
+                </div>
             </div>
-            <div class="blog-excerpt" itemprop="abstract">
-              <p>Comparativa exhaustiva de los frameworks JavaScript más populares este año. Analizamos rendimiento, ecosistema y facilidad de uso para ayudarte a elegir la mejor opción para tus proyectos.</p>
-            </div>
-            <a href="https://www.geeksforgeeks.org/top-javascript-frameworks-libraries-for-building-games" class="read-more" target="_blank" rel="noopener" itemprop="url">Leer más</a>
-            <meta itemprop="dateModified" content="2025-03-15">
-          </div>
         </article>
-      </div>
-    </article>
-  </main>
-  <footer>
-    <p>&copy; 2025 Andres Felipe Solano Moreno | Todos los derechos reservados</p>
-    <p>Sitio diseñado y desarrollado por <a href="https://github.com/fs28git" target="_blank" rel="noopener">fs28git</a></p>
-    <div aria-hidden="true" style="margin-top: 1rem;">
-     </div> 
-  </footer>
+
+        <article id="educacion">
+            <h2><i class="fas fa-graduation-cap" aria-hidden="true"></i> Educación</h2>
+            <div itemscope itemtype="https://schema.org/Person">
+                <meta itemprop="name" content="Andres Felipe Solano Moreno">
+                <ul>
+                    <li itemprop="alumniOf" itemscope itemtype="https://schema.org/EducationalOrganization">
+                        <strong itemprop="name">Colegio Americano de Bogotá:</strong>
+                        <span itemprop="description">Estudios secundarios</span>
+                    </li>
+                    <li itemprop="alumniOf" itemscope itemtype="https://schema.org/EducationalOrganization">
+                        <strong itemprop="name">Universidad Manuela Beltrán:</strong>
+                        <span itemprop="description">Ingeniería de Software</span>
+                    </li>
+                </ul>
+            </div>
+        </article>
+
+        <article id="experiencia">
+            <h2><i class="fas fa-briefcase" aria-hidden="true"></i> Experiencia Laboral</h2>
+            <div itemscope itemtype="https://schema.org/Person">
+                <meta itemprop="name" content="Andres Felipe Solano Moreno">
+                <ul>
+                    <li itemprop="hasOccupation" itemscope itemtype="https://schema.org/Occupation">
+                        <span itemprop="name">Cajero y Mesero</span> en
+                        <span itemprop="worksFor" itemscope itemtype="https://schema.org/Organization">
+                            <span itemprop="name">Surtifriss</span>
+                        </span> - <span itemprop="description">1 año de experiencia</span>
+                    </li>
+                    <li itemprop="hasOccupation" itemscope itemtype="https://schema.org/Occupation">
+                        <span itemprop="name">Promotor de Eventos</span>
+                    </li>
+                    <li itemprop="hasOccupation" itemscope itemtype="https://schema.org/Occupation">
+                        <span itemprop="name">Asesor de Ventas</span>
+                    </li>
+                </ul>
+            </div>
+        </article>
+
+        <article id="referencias">
+            <h2><i class="fas fa-users" aria-hidden="true"></i> Referencias</h2>
+            <ul>
+                <li itemscope itemtype="https://schema.org/Person">
+                    <span itemprop="name">Gloria Moreno</span> –
+                    <span itemprop="jobTitle">Magíster en Educación</span> –
+                    <a href="tel:+573102180485" itemprop="telephone">310 218 0485</a>
+                </li>
+                <li itemscope itemtype="https://schema.org/Person">
+                    <span itemprop="name">Jairo Solano</span> –
+                    <span itemprop="jobTitle">Contador Público</span> –
+                    <a href="tel:+573163355421" itemprop="telephone">316 335 5421</a>
+                </li>
+            </ul>
+        </article>
+
+        <article id="certificados">
+            <h2><i class="fas fa-certificate" aria-hidden="true"></i> Certificados</h2>
+            <ul>
+                <li itemscope itemtype="https://schema.org/EducationalOccupationalCredential">
+                    <a href="https://fs28git.github.io/portafolio/CCNA-_Introduction_to_Networks_certificate_fsolano2509-gmail-com_5c511102-d5bf-4ec7-978e-9ccabe1e7512.pdf" target="_blank" rel="noopener" itemprop="url">
+                        <span itemprop="name">CCNA - Introduction to Networks</span>
+                    </a>
+                    <meta itemprop="credentialCategory" content="certification">
+                    <meta itemprop="educationalLevel" content="beginner">
+                </li>
+                <li itemscope itemtype="https://schema.org/EducationalOccupationalCredential">
+                    <a href="https://fs28git.github.io/portafolio/Ethical_Hacker_certificate_fsolano2509-gmail-com_c9e923dd-5d0a-4eef-b17f-f6ffc930d448.pdf" target="_blank" rel="noopener" itemprop="url">
+                        <span itemprop="name">Ethical Hacker</span>
+                    </a>
+                    <meta itemprop="credentialCategory" content="certification">
+                    <meta itemprop="educationalLevel" content="intermediate">
+                </li>
+                <li itemscope itemtype="https://schema.org/EducationalOccupationalCredential">
+                    <a href="https://fs28git.github.io/portafolio/Partner-_NDG_Linux_Essentials_certificate_fsolano2509-gmail-com_4063a1d7-dfe4-4911-98d4-b33f71507573.pdf" target="_blank" rel="noopener" itemprop="url">
+                        <span itemprop="name">Partner - NDG Linux Essentials</span>
+                    </a>
+                    <meta itemprop="credentialCategory" content="certification">
+                    <meta itemprop="educationalLevel" content="beginner">
+                </li>
+                <li itemscope itemtype="https://schema.org/EducationalOccupationalCredential">
+                    <a href="https://fs28git.github.io/portafolio/Partner-_NDG_Linux_Unhatched_certificate_fsolano2509-gmail-com_6ed94c47-5bf4-4310-9c25-570e44241ce4.pdf" target="_blank" rel="noopener" itemprop="url">
+                        <span itemprop="name">Partner - NDG Linux Unhatched</span>
+                    </a>
+                    <meta itemprop="credentialCategory" content="certification">
+                    <meta itemprop="educationalLevel" content="beginner">
+                </li>
+                <li itemscope itemtype="https://schema.org/EducationalOccupationalCredential">
+                    <a href="https://fs28git.github.io/portafolio/ciber%20seguridad.pdf" target="_blank" rel="noopener" itemprop="url">
+                        <span itemprop="name">Certificado: Fundamentos de Ciberseguridad</span>
+                    </a>
+                    <meta itemprop="credentialCategory" content="certification">
+                    <meta itemprop="educationalLevel" content="beginner">
+                </li>
+                <li itemscope itemtype="https://schema.org/EducationalOccupationalCredential">
+                    <a href="https://fs28git.github.io/portafolio/gestion%20de%20amenazas%20ciberneticas.pdf" target="_blank" rel="noopener" itemprop="url">
+                        <span itemprop="name">Certificado: Gestión de Amenazas Cibernéticas</span>
+                    </a>
+                    <meta itemprop="credentialCategory" content="certification">
+                    <meta itemprop="educationalLevel" content="intermediate">
+                </li>
+            </ul>
+        </article>
+
+        <article id="productos">
+            <h2><i class="fas fa-box-open" aria-hidden="true"></i> Catálogo de Productos</h2>
+            <div class="product-grid" itemscope itemtype="https://schema.org/ItemList">
+                <meta itemprop="name" content="Catálogo de Productos">
+
+                <div class="product" itemprop="itemListElement" itemscope itemtype="https://schema.org/Product">
+                    <img src="https://cdnx.jumpseller.com/cash247/image/50679665/resize/540/600?1720965756" alt="Moto Suzuki Gixxer 250 SF" class="product-image" itemprop="image" width="540" height="300" loading="lazy">
+                    <div class="product-content">
+                        <h3 itemprop="name">Suzuki Gixxer 250 SF</h3>
+                        <div itemprop="description">
+                            <p>Motocicleta deportiva con excelente rendimiento y diseño deportivo. Motor de 250cc SOHC con refrigeración por aceite y tecnología Suzuki Oil Cooling System (SOCS).</p>
+                            <ul>
+                                <li>Motor: 250cc SOHC</li>
+                                <li>Potencia: 26.5 HP</li>
+                                <li>Torque: 22.2 Nm</li>
+                                <li>Frenos: Disco delantero y trasero con ABS</li>
+                            </ul>
+                        </div>
+                        <div class="product-price" itemprop="offers" itemscope itemtype="https://schema.org/Offer">
+                            <span itemprop="price">$15.490.000</span>
+                            <meta itemprop="priceCurrency" content="COP">
+                            <meta itemprop="availability" content="https://schema.org/InStock">
+                        </div>
+                        <a href="https://suzuki.com.co/motos/gixxer-250-sf" class="product-link" itemprop="url" target="_blank" rel="noopener">Ver producto en Suzuki</a>
+                    </div>
+                </div>
+
+                <div class="product" itemprop="itemListElement" itemscope itemtype="https://schema.org/Product">
+                    <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNTQwIiBoZWlnaHQ9IjMwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiBmaWxsPSJub25lIiB2aWV3Qm94PSIwIDAgNTQwIDMwMCI+CiAgPHJlY3Qgd2lkdGg9IjU0MCIgaGVpZ2h0PSIzMDAiIGZpbGw9IiNmMGYwZjAiLz4KICA8cmVjdCB4PSI1MCIgeT0iNTAiIHdpZHRoPSI0NDAiIGhlaWdodD0iMjYwIiByeD0iMTAiIGZpbGw9IiMzMzMiLz4KICA8cmVjdCB4PSI4MCIgeT0iODAiIHdpZHRoPSIzODAiIGhlaWdodD0iMjAwIiBmaWxsPSIjMDA3N2I1Ii8+CiAgPHRleHQgeD0iMjcwIiB5PSIxODAiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIyNCIgZmlsbD0id2hpdGUiIHRleHQtYW5jaG9yPSJtaWRkbGUiPkxhcHRvcCBIUDwvdGV4dD4KPC9zdmc+" alt="Laptop HP ProBook" class="product-image" itemprop="image">
+                    <div class="product-content">
+                        <h3 itemprop="name">Laptop HP ProBook 450 G8</h3>
+                        <div itemprop="description">
+                            <p>Laptop profesional con procesador Intel Core i7, 16GB RAM y SSD de 512GB. Perfecta para tareas de desarrollo y programación.</p>
+                            <ul>
+                                <li>Procesador: Intel Core i7 11th Gen</li>
+                                <li>RAM: 16GB DDR4</li>
+                                <li>Almacenamiento: SSD 512GB</li>
+                                <li>Pantalla: 15.6" Full HD</li>
+                            </ul>
+                        </div>
+                        <div class="product-price" itemprop="offers" itemscope itemtype="https://schema.org/Offer">
+                            <span itemprop="price">$3.800.000</span>
+                            <meta itemprop="priceCurrency" content="COP">
+                            <meta itemprop="availability" content="https://schema.org/InStock">
+                        </div>
+                        <a href="https://www.hp.com/co-es/shop/laptops-tablets/business/hp-probook.html" class="product-link" itemprop="url" target="_blank" rel="noopener">Ver producto en HP</a>
+                    </div>
+                </div>
+
+                <div class="product" itemprop="itemListElement" itemscope itemtype="https://schema.org/Product">
+                    <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNTQwIiBoZWlnaHQ9IjMwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiBmaWxsPSJub25lIiB2aWV3Qm94PSIwIDAgNTQwIDMwMCI+CiAgPHJlY3Qgd2lkdGg9IjU0MCIgaGVpZ2h0PSIzMDAiIGZpbGw9IiMyMTI1MmIiLz4KICA8dGV4dCB4PSI1MCIgeT0iNjAiIGZvbnQtZmFtaWx5PSJtb25vc3BhY2UiIGZvbnQtc2l6ZT0iMTgiIGZpbGw9IiM2NGZmZGEiPiZsdDtoMSZndDs8L3RleHQ+CiAgPHRleHQgeD0iNTAiIHk9IjkwIiBmb250LWZhbWlseT0ibW9ub3NwYWNlIiBmb250LXNpemU9IjE4IiBmaWxsPSIjZmZmIj5EZXNhcnJvbGxvIFdlYnwvdGV4dD4KICA8dGV4dCB4PSI1MCIgeT0iMTIwIiBmb250LWZhbWlseT0ibW9ub3NwYWNlIiBmb250LXNpemU9IjE4IiBmaWxsPSIjNjRmZmRhIj4mbHQ7L2gxJmd0OzwvdGV4dD4KICA8dGV4dCB4PSI1MCIgeT0iMTcwIiBmb250LWZhbWl5PSJtb25vc3BhY2UiIGZvbnQtc2l6ZT0iMTYiIGZpbGw9IiNmZjcwNzkiPmZ1bmN0aW9uKCkge308L3RleHQ+CiAgPHRleHQgeD0iNTAiIHk9IjIwMCIgZm9udC1mYW1pbHk9Im1vbm9zcGFjZSIgZm9udC1zaXplPSIxNiIgZmlsbD0iIzljYzZmZiI+LmNzcyB7IH08L3RleHQ+Cjwvc3ZnPg==" alt="Curso Desarrollo Web" class="product-image" itemprop="image">
+                    <div class="product-content">
+                        <h3 itemprop="name">Curso Completo de Desarrollo Web</h3>
+                        <div itemprop="description">
+                            <p>Curso integral que cubre HTML5, CSS3, JavaScript, React y Node.js. Incluye proyectos prácticos y certificado de finalización.</p>
+                            <ul>
+                                <li>Duración: 80 horas</li>
+                                <li>Nivel: Principiante a Avanzado</li>
+                                <li>Idioma: Español</li>
+                                <li>Incluye: Proyectos prácticos y certificado</li>
+                            </ul>
+                        </div>
+                        <div class="product-price" itemprop="offers" itemscope itemtype="https://schema.org/Offer">
+                            <span itemprop="price">$249.900</span>
+                            <meta itemprop="priceCurrency" content="COP">
+                            <meta itemprop="availability" content="https://schema.org/InStock">
+                        </div>
+                        <a href="https://www.udemy.com/course/desarrollo-web-completo-con-html5-css3-js-php-y-mysql/" class="product-link" itemprop="url" target="_blank" rel="noopener">Ver curso en Udemy</a>
+                    </div>
+                </div>
+            </div>
+        </article>
+
+        <article id="blog">
+            <h2><i class="fas fa-blog" aria-hidden="true"></i> Noticias / Blog</h2>
+            <div class="blog-grid">
+                <article class="blog-post" itemscope itemtype="https://schema.org/BlogPosting">
+                    <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzAwIiBoZWlnaHQ9IjIwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiBmaWxsPSJub25lIiB2aWV3Qm94PSIwIDAgMzAwIDIwMCI+CiAgPHJlY3Qgd2lkdGg9IjMwMCIgaGVpZ2h0PSIyMDAiIGZpbGw9IiMyMTI1MmIiLz4KICA8dGV4dCB4PSIxNTAiIHk9Ijg0IiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMjAiIGZpbGw9IiNmZmYiIHRleHQtYW5jaG9yPSJtaWRkbGUiPlRlbmRlbmNpYXM8L3RleHQ+CiAgPHRleHQgeD0iMTUwIiB5PSIxMTAiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIyMCIgZmlsbD0iIzAwNzdiNSIgdGV4dC1hbmNob3I9Im1pZGRsZSI+V2ViIDIwMjU8L3RleHQ+Cjwvc3ZnPg==" alt="Tendencias en desarrollo web 2025" class="blog-image" itemprop="image">
+                    <div class="blog-content">
+                        <h3 itemprop="headline"><a href="https://medium.com/@fsolano2509/tendencias-en-desarrollo-web-para-2025" target="_blank" rel="noopener">Tendencias en Desarrollo Web para 2025</a></h3>
+                        <div class="blog-meta">
+                            <time datetime="2025-05-10" itemprop="datePublished">10 Mayo, 2025</time> |
+                            <span itemprop="author" itemscope itemtype="https://schema.org/Person">
+                                <span itemprop="name">Andres Felipe Solano</span>
+                            </span>
+                        </div>
+                        <div class="blog-excerpt" itemprop="abstract">
+                            <p>Exploramos las principales tendencias que dominarán el desarrollo web en 2025. Desde la inteligencia artificial aplicada al frontend hasta las nuevas APIs de navegador que revolucionarán la experiencia de usuario.</p>
+                        </div>
+                        <a href="https://thebridge.tech/blog/tendecias-desarrollo-web/" class="read-more" target="_blank" rel="noopener" itemprop="url">Leer más</a>
+                        <meta itemprop="dateModified" content="2025-05-10">
+                    </div>
+                </article>
+                <article class="blog-post" itemscope itemtype="https://schema.org/BlogPosting">
+                    <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzAwIiBoZWlnaHQ9IjIwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiBmaWxsPSJub25lIiB2aWV3Qm94PSIwIDAgMzAwIDIwMCI+CiAgPHJlY3Qgd2lkdGg9IjMwMCIgaGVpZ2h0PSIyMDAiIGZpbGw9IiMxZTI5M2IiLz4KICA8Y2lyY2xlIGN4PSIxNTAiIGN5PSI4MCIgcj0iMzAiIGZpbGw9IiMwMDc3YjUiLz4KICA8Y2lyY2xlIGN4PSIxMzAiIGN5PSI3NSIgcj0iNCIgZmlsbD0iI2ZmZiIvPgogIDxjaXJjbGUgY3g9IjE3MCIgY3k9Ijc1IiByPSI0IiBmaWxsPSIjZmZmIi8+CiAgPHBhdGggZD0iTTEzNSA5NSBRIDE1MCA5NSAxNjUgOTUiIHN0cm9rZT0iI2ZmZiIgc3Ryb2tlLXdpZHRoPSIyIiBmaWxsPSJub25lIi8+CiAgPHRleHQgeD0iMTUwIiB5PSIxNDAiIGZvbnQtZmFtaWx5PSJBcmlhbSIgZm9udC1zaXplPSIxOCIgZmlsbD0iI2ZmZiIgdGV4dC1hbmNob3I9Im1pZGRsZSI+SW50ZWxpZ2VuY2lhPC90ZXh0PgogIDx0ZXh0IHg9IjE1MCIgeT0iMTYwIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTgiIGZpbGw9IiMwMDc3YjUiIHRleHQtYW5jaG9yPSJtaWRkbGUiPkFydGlmaWNpYWw8L3RleHQ+Cjwvc3ZnPg==" alt="Inteligencia Artificial en Ciberseguridad" class="blog-image" itemprop="image">
+                    <div class="blog-content">
+                        <h3 itemprop="headline"><a href="https://medium.com/@fsolano2509/la-ia-como-herramienta-en-ciberseguridad" target="_blank" rel="noopener">La IA como herramienta en Ciberseguridad</a></h3>
+                        <div class="blog-meta">
+                            <time datetime="2025-04-22" itemprop="datePublished">22 Abril, 2025</time> |
+                            <span itemprop="author" itemscope itemtype="https://schema.org/Person">
+                                <span itemprop="name">Andres Felipe Solano</span>
+                            </span>
+                        </div>
+                        <div class="blog-excerpt" itemprop="abstract">
+                            <p>Cómo la inteligencia artificial está cambiando el panorama de la seguridad informática. Analizamos las ventajas y los nuevos retos que presenta esta tecnología para los profesionales del sector.</p>
+                        </div>
+                        <a href="https://www.microsoft.com/es-co/security/business/security-101/what-is-ai-for-cybersecurity#:~:text=La%20inteligencia%20artificial%20puede%20automatizar,en%20estrategias%20de%20defensa%20proactivas." class="read-more" target="_blank" rel="noopener" itemprop="url">Leer más</a>
+                        <meta itemprop="dateModified" content="2025-04-22">
+                    </div>
+                </article>
+
+                <article class="blog-post" itemscope itemtype="https://schema.org/BlogPosting">
+                    <img src="https://www.initiumsoft.com/blog_initium/wp-content/uploads/2025/01/frameworks-java-script.webp" alt="Frameworks JavaScript 2025" class="blog-image" itemprop="image" width="300" height="200" loading="lazy">
+                    <div class="blog-content">
+                        <h3 itemprop="headline"><a href="https://medium.com/@fsolano2509/los-mejores-frameworks-javascript-en-2025" target="_blank" rel="noopener">Los mejores frameworks JavaScript en 2025</a></h3>
+                        <div class="blog-meta">
+                            <time datetime="2025-03-15" itemprop="datePublished">15 Marzo, 2025</time> |
+                            <span itemprop="author" itemscope itemtype="https://schema.org/Person">
+                                <span itemprop="name">Andres Felipe Solano</span>
+                            </span>
+                        </div>
+                        <div class="blog-excerpt" itemprop="abstract">
+                            <p>Comparativa exhaustiva de los frameworks JavaScript más populares este año. Analizamos rendimiento, ecosistema y facilidad de uso para ayudarte a elegir la mejor opción para tus proyectos.</p>
+                        </div>
+                        <a href="https://www.geeksforgeeks.org/top-javascript-frameworks-libraries-for-building-games" class="read-more" target="_blank" rel="noopener" itemprop="url">Leer más</a>
+                        <meta itemprop="dateModified" content="2025-03-15">
+                    </div>
+                </article>
+            </div>
+        </article>
+    </main>
+    <footer>
+        <p>&copy; 2025 Andres Felipe Solano Moreno | Todos los derechos reservados</p>
+    </footer>
+</body>
+</html>
