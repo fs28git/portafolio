@@ -1,0 +1,14 @@
+:root {
+  --color-fondo: #f8f9fa;
+  --color-principal: #004aad;
+  --color-secundario: #0077ff;
+  --color-texto: #222;
+  --fuente-base: 'Poppins', sans-serif;
+
+  /* Materias */
+  --materia1: #ffd166;
+  --materia2: #06d6a0;
+  --materia3: #118ab2;
+  --materia4: #ef476f;
+  --materia5: #8338ec;
+}
