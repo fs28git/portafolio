@@ -1,0 +1,37 @@
+body {
+  font-family: var(--fuente-base);
+  margin: 0;
+  background: var(--color-fondo);
+  color: var(--color-texto);
+}
+
+header {
+  background: var(--color-principal);
+  color: white;
+  padding: 10px 0;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+  margin: auto;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+nav a.active,
+nav a:hover {
+  text-decoration: underline;
+}
