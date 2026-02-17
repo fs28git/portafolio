@@ -1,0 +1,39 @@
+.organigrama {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  margin: 40px auto;
+  width: 60%;
+}
+
+.nodo {
+  padding: 15px 25px;
+  border-radius: 25px;
+  color: white;
+  font-weight: bold;
+  text-align: center;
+  width: 80%;
+  position: relative;
+}
+
+.nodo::after {
+  content: '';
+  width: 3px;
+  height: 30px;
+  background: #aaa;
+  position: absolute;
+  left: 50%;
+  bottom: -30px;
+  transform: translateX(-50%);
+}
+
+.nodo:last-child::after { display: none; }
+
+.inicio { background: var(--color-secundario); }
+.academica { background: var(--materia1); }
+.investigacion { background: var(--materia3); }
+.receso { background: var(--materia2); }
+.tutoria { background: var(--materia5); }
+.personal { background: var(--materia4); }
+.fin { background: #333; }
