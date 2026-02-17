@@ -1,0 +1,13 @@
+@media (max-width: 768px) {
+  .grid-horario {
+    grid-template-columns: 1fr;
+    width: 90%;
+  }
+  .organigrama {
+    width: 90%;
+  }
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+}
