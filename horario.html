@@ -1,44 +1,91 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Horario de Clases</title>
-  <link rel="stylesheet" href="css/variables.css">
-  <link rel="stylesheet" href="css/layout.css">
-  <link rel="stylesheet" href="css/components.css">
-  <link rel="stylesheet" href="css/horario.css">
-  <link rel="stylesheet" href="css/responsive.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Horario Académico</title>
+
+<link rel="stylesheet" href="css/variables.css">
+<link rel="stylesheet" href="css/layout.css">
+<link rel="stylesheet" href="css/components.css">
+<link rel="stylesheet" href="css/horario.css">
+<link rel="stylesheet" href="css/responsive.css">
 </head>
+
 <body>
-  <header>
-    <nav>
-      <h1>Mi Portafolio Académico</h1>
-      <ul>
-        <li><a href="index.html">Inicio</a></li>
-        <li><a href="horario.html" class="active">Horario</a></li>
-        <li><a href="organigrama.html">Organigrama</a></li>
-      </ul>
-    </nav>
-  </header>
 
-  <main class="horario-container">
-    <h2>Horario Semanal de Clases</h2>
-    <div class="grid-horario">
-      <div class="dia">Lunes</div>
-      <div class="bloque materia1">Ingeniería Web<br><span>Prof. Ochoa</span><br>Aula 201</div>
-      <div class="bloque materia2">Probabilidad y Estadística<br><span>Virtual</span></div>
-      <div class="dia">Martes</div>
-      <div class="bloque materia3">Sistemas Expertos<br><span>Prof. Solano</span><br>Aula 105</div>
-      <div class="bloque materia4">Ética Profesional<br><span>Prof. Rojas</span></div>
-      <div class="dia">Miércoles</div>
-      <div class="bloque materia2">Probabilidad y Estadística<br><span>Aula 305</span></div>
-      <div class="bloque materia5">Inteligencia de Negocios<br><span>Virtual</span></div>
-    </div>
-  </main>
+<header class="page-header">
+  <h1>Horario Académico</h1>
+  <a href="index.html" class="btn">← Volver</a>
+</header>
 
-  <footer>
-    <p>© 2026 - Portafolio Académico de Ingeniería de Software</p>
-  </footer>
+<main class="container">
+
+<section class="card">
+  <h2>Horario Semanal</h2>
+
+  <div class="horario-grid">
+
+    <!-- Encabezados -->
+    <div class="hora head"></div>
+    <div class="head">Lunes</div>
+    <div class="head">Martes</div>
+    <div class="head">Miércoles</div>
+    <div class="head">Jueves</div>
+    <div class="head">Viernes</div>
+
+    <!-- 4-5 pm -->
+    <div class="hora">4-5 pm</div>
+    <div class="materia ia">Inteligencia Artificial<br><span>A413</span></div>
+    <div class="vacio"></div>
+    <div class="vacio"></div>
+    <div class="vacio"></div>
+    <div class="vacio"></div>
+
+    <!-- 5-6 pm -->
+    <div class="hora">5-6 pm</div>
+    <div class="materia ia">Inteligencia Artificial<br><span>A413</span></div>
+    <div class="vacio"></div>
+    <div class="vacio"></div>
+    <div class="vacio"></div>
+    <div class="vacio"></div>
+
+    <!-- 6-7 pm -->
+    <div class="hora">6-7 pm</div>
+    <div class="vacio"></div>
+    <div class="vacio"></div>
+    <div class="vacio"></div>
+    <div class="materia model">Modelamiento Estocástico<br><span>A403</span></div>
+    <div class="materia gp">Gerencia de Proyectos<br><span>A403</span></div>
+
+    <!-- 7-8 pm -->
+    <div class="hora">7-8 pm</div>
+    <div class="vacio"></div>
+    <div class="vacio"></div>
+    <div class="vacio"></div>
+    <div class="materia model">Modelamiento Estocástico<br><span>A403</span></div>
+    <div class="materia gp">Gerencia de Proyectos<br><span>A403</span></div>
+
+    <!-- 8-9 pm -->
+    <div class="hora">8-9 pm</div>
+    <div class="materia web">Ingeniería Web II<br><span>A406</span></div>
+    <div class="materia leg">Legislación Informática<br><span>A205</span></div>
+    <div class="vacio"></div>
+    <div class="materia model">Modelamiento Estocástico<br><span>A403</span></div>
+    <div class="vacio"></div>
+
+    <!-- 9-10 pm -->
+    <div class="hora">9-10 pm</div>
+    <div class="materia web">Ingeniería Web II<br><span>A406</span></div>
+    <div class="materia leg">Legislación Informática<br><span>A205</span></div>
+    <div class="vacio"></div>
+    <div class="vacio"></div>
+    <div class="vacio"></div>
+
+  </div>
+</section>
+
+</main>
 </body>
 </html>
+
