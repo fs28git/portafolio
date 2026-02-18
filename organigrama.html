@@ -1,42 +1,55 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Organigrama Diario</title>
-  <link rel="stylesheet" href="css/variables.css">
-  <link rel="stylesheet" href="css/layout.css">
-  <link rel="stylesheet" href="css/components.css">
-  <link rel="stylesheet" href="css/organigrama.css">
-  <link rel="stylesheet" href="css/responsive.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Organigrama Diario</title>
+
+<link rel="stylesheet" href="css/variables.css">
+<link rel="stylesheet" href="css/layout.css">
+<link rel="stylesheet" href="css/components.css">
+<link rel="stylesheet" href="css/organigrama.css">
+<link rel="stylesheet" href="css/responsive.css">
 </head>
+
 <body>
-  <header>
-    <nav>
-      <h1>Mi Portafolio Académico</h1>
-      <ul>
-        <li><a href="index.html">Inicio</a></li>
-        <li><a href="horario.html">Horario</a></li>
-        <li><a href="organigrama.html" class="active">Organigrama</a></li>
-      </ul>
-    </nav>
-  </header>
 
-  <main class="organigrama-container">
-    <h2>Organigrama Diario de Actividades</h2>
-    <div class="organigrama">
-      <div class="nodo inicio">Inicio de jornada</div>
-      <div class="nodo academica">Clases</div>
-      <div class="nodo investigacion">Investigación</div>
-      <div class="nodo receso">Receso</div>
-      <div class="nodo tutoria">Tutoría</div>
-      <div class="nodo personal">Desarrollo Personal</div>
-      <div class="nodo fin">Fin de jornada</div>
-    </div>
-  </main>
+<header class="page-header">
+  <h1>Flujo Diario Académico</h1>
+  <a href="index.html" class="btn">← Volver</a>
+</header>
 
-  <footer>
-    <p>© 2026 - Portafolio Académico de Ingeniería de Software</p>
-  </footer>
+<main class="container">
+
+<section class="timeline">
+
+  <div class="event academia">
+    <h3>Inicio de jornada</h3>
+    <p>Preparación para clases de la tarde.</p>
+  </div>
+
+  <div class="event clase">
+    <h3>Bloque de clases principales</h3>
+    <p>Inteligencia Artificial, Web II y Legislación.</p>
+  </div>
+
+  <div class="event investigacion">
+    <h3>Modelamiento y proyectos</h3>
+    <p>Trabajo analítico y gestión de proyectos de software.</p>
+  </div>
+
+  <div class="event personal">
+    <h3>Estudio autónomo</h3>
+    <p>Refuerzo de contenidos y desarrollo personal.</p>
+  </div>
+
+  <div class="event cierre">
+    <h3>Cierre del día</h3>
+    <p>Organización de tareas y planificación.</p>
+  </div>
+
+</section>
+
+</main>
 </body>
 </html>
