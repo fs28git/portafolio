@@ -8,155 +8,42 @@
 
 <meta name="description" content="Portafolio académico de Ingeniería de Software con horario de clases, organigrama diario, certificaciones y proyectos.">
 
+<link rel="stylesheet" href="css/variables.css">
+<link rel="stylesheet" href="css/layout.css">
+<link rel="stylesheet" href="css/components.css">
+<link rel="stylesheet" href="css/responsive.css">
+
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
-
-<style>
-:root{
-  --primary:#0a66c2;
-  --secondary:#004182;
-  --dark:#111827;
-  --light:#f3f4f6;
-  --white:#ffffff;
-}
-
-/* RESET */
-*{margin:0;padding:0;box-sizing:border-box;}
-
-body{
-  font-family:'Poppins',sans-serif;
-  background:var(--light);
-  color:var(--dark);
-  line-height:1.6;
-}
-
-/* HEADER */
-header{
-  background:linear-gradient(135deg,var(--primary),var(--secondary));
-  color:white;
-  text-align:center;
-  padding:80px 20px;
-}
-
-header h1{font-size:2.6rem;}
-header p{opacity:.9;margin-top:10px;}
-
-nav{margin-top:25px;}
-
-nav a{
-  color:white;
-  text-decoration:none;
-  margin:0 15px;
-  font-weight:500;
-  transition:.3s;
-}
-
-nav a:hover{opacity:.8;}
-
-/* CONTENEDOR */
-.container{
-  max-width:1100px;
-  margin:auto;
-  padding:60px 20px;
-}
-
-section{margin-bottom:70px;}
-
-section h2{
-  color:var(--primary);
-  margin-bottom:25px;
-  font-size:1.8rem;
-}
-
-/* TARJETAS */
-.card{
-  background:var(--white);
-  padding:25px;
-  border-radius:14px;
-  box-shadow:0 10px 25px rgba(0,0,0,.06);
-}
-
-.grid{
-  display:grid;
-  grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
-  gap:20px;
-}
-
-/* CERTIFICADOS */
-.cert{
-  background:white;
-  padding:20px;
-  border-radius:12px;
-  box-shadow:0 6px 18px rgba(0,0,0,.05);
-  transition:.3s;
-}
-
-.cert:hover{
-  transform:translateY(-6px);
-}
-
-/* BOTONES */
-.btn{
-  display:inline-block;
-  margin-top:12px;
-  background:var(--primary);
-  color:white;
-  padding:9px 16px;
-  border-radius:8px;
-  text-decoration:none;
-  font-size:.9rem;
-  transition:.3s;
-}
-
-.btn:hover{background:var(--secondary);}
-
-/* ARTÍCULOS */
-.article{
-  border-left:4px solid var(--primary);
-}
-
-/* LINKS EXTRA */
-.extra-links a{
-  display:inline-block;
-  margin:8px 12px 0 0;
-  font-weight:600;
-  color:var(--primary);
-  text-decoration:none;
-}
-
-.extra-links a:hover{text-decoration:underline;}
-
-/* FOOTER */
-footer{
-  background:var(--dark);
-  color:white;
-  text-align:center;
-  padding:35px 20px;
-  margin-top:40px;
-}
-
-/* RESPONSIVE */
-@media(max-width:768px){
-  header h1{font-size:2rem;}
-}
-</style>
 </head>
 
 <body>
 
-<header>
-  <h1>Andres Felipe Solano Moreno</h1>
-  <p>Portafolio Académico · Ingeniería de Software</p>
+<!-- HERO / HEADER -->
+<header class="hero">
+  <div class="hero-content">
 
-  <nav>
-    <a href="#perfil">Perfil</a>
-    <a href="#proyectos">Proyecto de Clase</a>
-    <a href="#certificados">Certificados</a>
-    <a href="#articulos">Artículos</a>
-    <a href="#contacto">Contacto</a>
-  </nav>
+    <div class="hero-text">
+      <h1>Andres Felipe Solano Moreno</h1>
+      <p>
+        Estudiante de Ingeniería de Software enfocado en desarrollo web,
+        redes, Linux y ciberseguridad.
+      </p>
+
+      <div class="hero-buttons">
+        <a href="#proyectos" class="btn">Ver Proyecto Académico</a>
+        <a href="#contacto" class="btn btn-outline">Contacto</a>
+      </div>
+    </div>
+
+    <div class="hero-image">
+      <img src="assets/img/perfil.jpg" alt="Foto de Andres Felipe Solano">
+    </div>
+
+  </div>
 </header>
 
-<div class="container">
+<!-- CONTENIDO -->
+<main class="container">
 
 <!-- PERFIL -->
 <section id="perfil">
@@ -168,25 +55,25 @@ footer{
   </div>
 </section>
 
-<!-- PROYECTO DE CLASE -->
+<!-- PROYECTO ACADÉMICO -->
 <section id="proyectos">
-  <h2>Módulo Académico Integrado</h2>
+  <h2>Módulo Académico</h2>
 
   <div class="grid">
 
     <div class="card">
       <h3>Horario de Clases</h3>
-      Visualización semanal estructurada con CSS Grid, variables de color por materia
-      y adaptación responsive a tarjetas móviles.
-      <br>
+      Visualización semanal estructurada con CSS Grid, colores por materia
+      y adaptación responsive.
+      <br><br>
       <a class="btn" href="horario.html">Ver Horario</a>
     </div>
 
     <div class="card">
       <h3>Organigrama Diario</h3>
-      Representación visual del flujo académico diario mediante Flexbox, Grid,
-      conectores estructurales y categorías de actividad.
-      <br>
+      Representación visual del flujo académico mediante timeline,
+      Flexbox y categorías de actividad.
+      <br><br>
       <a class="btn" href="organigrama.html">Ver Organigrama</a>
     </div>
 
@@ -228,25 +115,23 @@ footer{
 
 <!-- ARTÍCULOS -->
 <section id="articulos">
-  <h2>Artículos y Reflexiones Académicas</h2>
+  <h2>Artículos Académicos</h2>
 
   <div class="grid">
 
     <div class="card article">
       <strong>Importancia del Diseño Responsive</strong><br>
-      Análisis del impacto de la adaptabilidad móvil en la experiencia de usuario
-      dentro de proyectos web académicos.
+      Adaptabilidad móvil como factor clave en la experiencia de usuario.
     </div>
 
     <div class="card article">
       <strong>Grid vs Flexbox en Arquitecturas Modernas</strong><br>
-      Justificación técnica del uso combinado de CSS Grid para estructura global
-      y Flexbox para alineación interna de componentes.
+      Uso de Grid para estructura global y Flexbox para alineación interna.
     </div>
 
     <div class="card article">
-      <strong>Escalabilidad en Proyectos Web Educativos</strong><br>
-      Aplicación de modularización CSS, reutilización de componentes y coherencia visual.
+      <strong>Escalabilidad en Proyectos Web</strong><br>
+      Modularización CSS, reutilización de componentes y coherencia visual.
     </div>
 
   </div>
@@ -264,12 +149,14 @@ footer{
   </div>
 </section>
 
-</div>
+</main>
 
+<!-- FOOTER -->
 <footer>
   © 2026 · Portafolio Académico de Ingeniería de Software
 </footer>
 
 </body>
 </html>
+
 
