@@ -6,22 +6,25 @@
 
 <title>Portafolio Académico | Andres Felipe Solano Moreno</title>
 
-<meta name="description" content="Portafolio académico de Ingeniería de Software con horario de clases, organigrama diario, certificaciones y proyectos.">
+<meta name="description" content="Portafolio académico de Ingeniería de Software con horario, organigrama, certificaciones y proyectos.">
 
+<!-- CSS modular del proyecto -->
 <link rel="stylesheet" href="css/variables.css">
 <link rel="stylesheet" href="css/layout.css">
 <link rel="stylesheet" href="css/components.css">
 <link rel="stylesheet" href="css/responsive.css">
 
+<!-- Fuente -->
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
 
-<!-- HERO / HEADER -->
+<!-- ===== HERO ===== -->
 <header class="hero">
-  <div class="hero-content">
+  <div class="container hero-content">
 
+    <!-- TEXTO -->
     <div class="hero-text">
       <h1>Andres Felipe Solano Moreno</h1>
       <p>
@@ -30,11 +33,12 @@
       </p>
 
       <div class="hero-buttons">
-        <a href="#proyectos" class="btn">Ver Proyecto Académico</a>
+        <a href="#proyectos" class="btn">Proyecto Académico</a>
         <a href="#contacto" class="btn btn-outline">Contacto</a>
       </div>
     </div>
 
+    <!-- FOTO -->
     <div class="hero-image">
       <img src="assets/img/perfil.jpg" alt="Foto de Andres Felipe Solano">
     </div>
@@ -42,21 +46,22 @@
   </div>
 </header>
 
-<!-- CONTENIDO -->
+<!-- ===== CONTENIDO ===== -->
 <main class="container">
 
 <!-- PERFIL -->
-<section id="perfil">
+<section id="perfil" class="section">
   <h2>Perfil Profesional</h2>
   <div class="card">
-    Estudiante de Ingeniería de Software con formación en redes, Linux, ciberseguridad y desarrollo web.
-    Este portafolio integra un módulo académico compuesto por horario semanal y organigrama diario,
-    aplicando arquitectura CSS modular, diseño responsive y coherencia visual escalable.
+    Estudiante de Ingeniería de Software con formación en redes, Linux,
+    ciberseguridad y desarrollo web.  
+    Este portafolio integra un módulo académico compuesto por horario semanal
+    y organigrama diario, aplicando arquitectura CSS modular y diseño responsive.
   </div>
 </section>
 
 <!-- PROYECTO ACADÉMICO -->
-<section id="proyectos">
+<section id="proyectos" class="section">
   <h2>Módulo Académico</h2>
 
   <div class="grid">
@@ -66,79 +71,87 @@
       Visualización semanal estructurada con CSS Grid, colores por materia
       y adaptación responsive.
       <br><br>
-      <a class="btn" href="horario.html">Ver Horario</a>
+      <a href="horario.html" class="btn">Ver Horario</a>
     </div>
 
     <div class="card">
       <h3>Organigrama Diario</h3>
-      Representación visual del flujo académico mediante timeline,
+      Representación del flujo académico mediante timeline,
       Flexbox y categorías de actividad.
       <br><br>
-      <a class="btn" href="organigrama.html">Ver Organigrama</a>
+      <a href="organigrama.html" class="btn">Ver Organigrama</a>
     </div>
 
   </div>
 </section>
 
 <!-- CERTIFICADOS -->
-<section id="certificados">
+<section id="certificados" class="section">
   <h2>Certificaciones Técnicas</h2>
 
   <div class="grid">
 
-    <div class="cert">
-      CCNA – Introduction to Networks
-      <br>
-      <a class="btn" target="_blank" href="assets/img/pdf/CCNA-_Introduction_to_Networks_certificate_fsolano2509-gmail-com_5c511102-d5bf-4ec7-978e-9ccabe1e7512.pdf">Ver PDF</a>
+    <div class="card">
+      CCNA – Introduction to Networks<br>
+      <a class="btn" target="_blank"
+        href="assets/img/pdf/CCNA-_Introduction_to_Networks_certificate_fsolano2509-gmail-com_5c511102-d5bf-4ec7-978e-9ccabe1e7512.pdf">
+        Ver PDF
+      </a>
     </div>
 
-    <div class="cert">
-      Ethical Hacker
-      <br>
-      <a class="btn" target="_blank" href="assets/img/pdf/Ethical_Hacker_certificate_fsolano2509-gmail-com_c9e923dd-5d0a-4eef-b17f-f6ffc930d448.pdf">Ver PDF</a>
+    <div class="card">
+      Ethical Hacker<br>
+      <a class="btn" target="_blank"
+        href="assets/img/pdf/Ethical_Hacker_certificate_fsolano2509-gmail-com_c9e923dd-5d0a-4eef-b17f-f6ffc930d448.pdf">
+        Ver PDF
+      </a>
     </div>
 
-    <div class="cert">
-      NDG Linux Essentials
-      <br>
-      <a class="btn" target="_blank" href="assets/img/pdf/Partner-_NDG_Linux_Essentials_certificate_fsolano2509-gmail-com_4063a1d7-dfe4-4911-98d4-b33f71507573.pdf">Ver PDF</a>
+    <div class="card">
+      NDG Linux Essentials<br>
+      <a class="btn" target="_blank"
+        href="assets/img/pdf/Partner-_NDG_Linux_Essentials_certificate_fsolano2509-gmail-com_4063a1d7-dfe4-4911-98d4-b33f71507573.pdf">
+        Ver PDF
+      </a>
     </div>
 
-    <div class="cert">
-      NDG Linux Unhatched
-      <br>
-      <a class="btn" target="_blank" href="assets/img/pdf/Partner-_NDG_Linux_Unhatched_certificate_fsolano2509-gmail-com_6ed94c47-5bf4-4310-9c25-570e44241ce4.pdf">Ver PDF</a>
+    <div class="card">
+      NDG Linux Unhatched<br>
+      <a class="btn" target="_blank"
+        href="assets/img/pdf/Partner-_NDG_Linux_Unhatched_certificate_fsolano2509-gmail-com_6ed94c47-5bf4-4310-9c25-570e44241ce4.pdf">
+        Ver PDF
+      </a>
     </div>
 
   </div>
 </section>
 
 <!-- ARTÍCULOS -->
-<section id="articulos">
+<section id="articulos" class="section">
   <h2>Artículos Académicos</h2>
 
   <div class="grid">
 
-    <div class="card article">
+    <div class="card">
       <strong>Importancia del Diseño Responsive</strong><br>
       Adaptabilidad móvil como factor clave en la experiencia de usuario.
     </div>
 
-    <div class="card article">
+    <div class="card">
       <strong>Grid vs Flexbox en Arquitecturas Modernas</strong><br>
-      Uso de Grid para estructura global y Flexbox para alineación interna.
+      Grid para estructura global y Flexbox para alineación interna.
     </div>
 
-    <div class="card article">
+    <div class="card">
       <strong>Escalabilidad en Proyectos Web</strong><br>
-      Modularización CSS, reutilización de componentes y coherencia visual.
+      Modularización CSS y reutilización de componentes.
     </div>
 
   </div>
 </section>
 
 <!-- CONTACTO -->
-<section id="contacto">
+<section id="contacto" class="section">
   <h2>Contacto</h2>
   <div class="card">
     📍 Bogotá, Colombia<br><br>
@@ -151,13 +164,10 @@
 
 </main>
 
-<!-- FOOTER -->
-<footer>
+<!-- ===== FOOTER ===== -->
+<footer class="footer">
   © 2026 · Portafolio Académico de Ingeniería de Software
 </footer>
 
 </body>
 </html>
-
-
-
