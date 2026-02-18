@@ -4,19 +4,22 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Andres Felipe Solano Moreno | Portafolio</title>
+<title>Portafolio Académico | Andres Felipe Solano Moreno</title>
 
-<meta name="description" content="Portafolio profesional de Andres Felipe Solano Moreno, estudiante de Ingeniería de Software con certificaciones en redes, Linux y ciberseguridad.">
+<meta name="description" content="Portafolio académico de Ingeniería de Software con horario de clases, organigrama diario, certificaciones y proyectos.">
 
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 
 <style>
 :root{
   --primary:#0a66c2;
+  --secondary:#004182;
   --dark:#111827;
   --light:#f3f4f6;
+  --white:#ffffff;
 }
 
+/* RESET */
 *{margin:0;padding:0;box-sizing:border-box;}
 
 body{
@@ -28,14 +31,14 @@ body{
 
 /* HEADER */
 header{
-  background:linear-gradient(135deg,#0a66c2,#004182);
+  background:linear-gradient(135deg,var(--primary),var(--secondary));
   color:white;
-  padding:80px 20px;
   text-align:center;
+  padding:80px 20px;
 }
 
-header h1{font-size:2.5rem;margin-bottom:10px;}
-header p{font-weight:300;}
+header h1{font-size:2.6rem;}
+header p{opacity:.9;margin-top:10px;}
 
 nav{margin-top:25px;}
 
@@ -49,7 +52,7 @@ nav a{
 
 nav a:hover{opacity:.8;}
 
-/* CONTENIDO */
+/* CONTENEDOR */
 .container{
   max-width:1100px;
   margin:auto;
@@ -66,10 +69,10 @@ section h2{
 
 /* TARJETAS */
 .card{
-  background:white;
+  background:var(--white);
   padding:25px;
-  border-radius:12px;
-  box-shadow:0 8px 25px rgba(0,0,0,.05);
+  border-radius:14px;
+  box-shadow:0 10px 25px rgba(0,0,0,.06);
 }
 
 .grid{
@@ -87,27 +90,36 @@ section h2{
   transition:.3s;
 }
 
-.cert:hover{transform:translateY(-5px);}
-
-.btn{
-  display:inline-block;
-  margin-top:10px;
-  background:var(--primary);
-  color:white;
-  padding:8px 14px;
-  border-radius:6px;
-  text-decoration:none;
-  font-size:.9rem;
+.cert:hover{
+  transform:translateY(-6px);
 }
 
-.btn:hover{background:#004182;}
+/* BOTONES */
+.btn{
+  display:inline-block;
+  margin-top:12px;
+  background:var(--primary);
+  color:white;
+  padding:9px 16px;
+  border-radius:8px;
+  text-decoration:none;
+  font-size:.9rem;
+  transition:.3s;
+}
+
+.btn:hover{background:var(--secondary);}
+
+/* ARTÍCULOS */
+.article{
+  border-left:4px solid var(--primary);
+}
 
 /* LINKS EXTRA */
 .extra-links a{
   display:inline-block;
   margin:8px 12px 0 0;
-  color:var(--primary);
   font-weight:600;
+  color:var(--primary);
   text-decoration:none;
 }
 
@@ -115,10 +127,10 @@ section h2{
 
 /* FOOTER */
 footer{
-  background:#111827;
+  background:var(--dark);
   color:white;
   text-align:center;
-  padding:30px 20px;
+  padding:35px 20px;
   margin-top:40px;
 }
 
@@ -133,13 +145,13 @@ footer{
 
 <header>
   <h1>Andres Felipe Solano Moreno</h1>
-  <p>Ingeniería de Software · Redes · Linux · Ciberseguridad</p>
+  <p>Portafolio Académico · Ingeniería de Software</p>
 
   <nav>
     <a href="#perfil">Perfil</a>
-    <a href="#educacion">Educación</a>
+    <a href="#proyectos">Proyecto de Clase</a>
     <a href="#certificados">Certificados</a>
-    <a href="#extras">Más</a>
+    <a href="#articulos">Artículos</a>
     <a href="#contacto">Contacto</a>
   </nav>
 </header>
@@ -151,30 +163,39 @@ footer{
   <h2>Perfil Profesional</h2>
   <div class="card">
     Estudiante de Ingeniería de Software con formación en redes, Linux, ciberseguridad y desarrollo web.
-    Poseo certificaciones técnicas y enfoque en crecimiento profesional dentro del sector tecnológico.
-    Me caracterizo por responsabilidad, disciplina y aprendizaje continuo.
+    Este portafolio integra un módulo académico compuesto por horario semanal y organigrama diario,
+    aplicando arquitectura CSS modular, diseño responsive y coherencia visual escalable.
   </div>
 </section>
 
-<!-- EDUCACION -->
-<section id="educacion">
-  <h2>Educación</h2>
+<!-- PROYECTO DE CLASE -->
+<section id="proyectos">
+  <h2>Módulo Académico Integrado</h2>
+
   <div class="grid">
+
     <div class="card">
-      <strong>Universidad Manuela Beltrán</strong><br>
-      Ingeniería de Software (En curso)
+      <h3>Horario de Clases</h3>
+      Visualización semanal estructurada con CSS Grid, variables de color por materia
+      y adaptación responsive a tarjetas móviles.
+      <br>
+      <a class="btn" href="horario.html">Ver Horario</a>
     </div>
 
     <div class="card">
-      <strong>Colegio Americano de Bogotá</strong><br>
-      Bachiller Académico
+      <h3>Organigrama Diario</h3>
+      Representación visual del flujo académico diario mediante Flexbox, Grid,
+      conectores estructurales y categorías de actividad.
+      <br>
+      <a class="btn" href="organigrama.html">Ver Organigrama</a>
     </div>
+
   </div>
 </section>
 
 <!-- CERTIFICADOS -->
 <section id="certificados">
-  <h2>Certificaciones</h2>
+  <h2>Certificaciones Técnicas</h2>
 
   <div class="grid">
 
@@ -202,27 +223,32 @@ footer{
       <a class="btn" target="_blank" href="assets/img/pdf/Partner-_NDG_Linux_Unhatched_certificate_fsolano2509-gmail-com_6ed94c47-5bf4-4310-9c25-570e44241ce4.pdf">Ver PDF</a>
     </div>
 
-    <div class="cert">
-      Fundamentos de Ciberseguridad
-      <br>
-      <a class="btn" target="_blank" href="assets/img/pdf/ciber seguridad.pdf">Ver PDF</a>
-    </div>
-
-    <div class="cert">
-      Gestión de Amenazas Cibernéticas
-      <br>
-      <a class="btn" target="_blank" href="assets/img/pdf/gestion de amenazas ciberneticas.pdf">Ver PDF</a>
-    </div>
-
   </div>
 </section>
 
-<!-- EXTRAS -->
-<section id="extras">
-  <h2>Información Adicional</h2>
-  <div class="card extra-links">
-    <a href="horario.html">📅 Ver Horario</a>
-    <a href="organigrama.html">🏢 Ver Organigrama</a>
+<!-- ARTÍCULOS -->
+<section id="articulos">
+  <h2>Artículos y Reflexiones Académicas</h2>
+
+  <div class="grid">
+
+    <div class="card article">
+      <strong>Importancia del Diseño Responsive</strong><br>
+      Análisis del impacto de la adaptabilidad móvil en la experiencia de usuario
+      dentro de proyectos web académicos.
+    </div>
+
+    <div class="card article">
+      <strong>Grid vs Flexbox en Arquitecturas Modernas</strong><br>
+      Justificación técnica del uso combinado de CSS Grid para estructura global
+      y Flexbox para alineación interna de componentes.
+    </div>
+
+    <div class="card article">
+      <strong>Escalabilidad en Proyectos Web Educativos</strong><br>
+      Aplicación de modularización CSS, reutilización de componentes y coherencia visual.
+    </div>
+
   </div>
 </section>
 
@@ -241,7 +267,7 @@ footer{
 </div>
 
 <footer>
-  © 2026 Andres Felipe Solano Moreno · Portafolio Profesional
+  © 2026 · Portafolio Académico de Ingeniería de Software
 </footer>
 
 </body>
