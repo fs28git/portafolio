@@ -4,9 +4,9 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Andres Felipe Solano Moreno | Portafolio Profesional</title>
+<title>Andres Felipe Solano Moreno | Portafolio</title>
 
-<meta name="description" content="Portafolio profesional de Andres Felipe Solano Moreno, estudiante de Ingeniería de Software con certificaciones en redes, ciberseguridad y desarrollo web.">
+<meta name="description" content="Portafolio profesional de Andres Felipe Solano Moreno, estudiante de Ingeniería de Software con certificaciones en redes, Linux y ciberseguridad.">
 
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 
@@ -14,15 +14,10 @@
 :root{
   --primary:#0a66c2;
   --dark:#111827;
-  --gray:#6b7280;
   --light:#f3f4f6;
 }
 
-*{
-  margin:0;
-  padding:0;
-  box-sizing:border-box;
-}
+*{margin:0;padding:0;box-sizing:border-box;}
 
 body{
   font-family:'Poppins',sans-serif;
@@ -31,6 +26,7 @@ body{
   line-height:1.6;
 }
 
+/* HEADER */
 header{
   background:linear-gradient(135deg,#0a66c2,#004182);
   color:white;
@@ -38,19 +34,10 @@ header{
   text-align:center;
 }
 
-header h1{
-  font-size:2.5rem;
-  margin-bottom:10px;
-}
+header h1{font-size:2.5rem;margin-bottom:10px;}
+header p{font-weight:300;}
 
-header p{
-  font-weight:300;
-  font-size:1.1rem;
-}
-
-nav{
-  margin-top:25px;
-}
+nav{margin-top:25px;}
 
 nav a{
   color:white;
@@ -60,84 +47,84 @@ nav a{
   transition:.3s;
 }
 
-nav a:hover{
-  opacity:.8;
-}
+nav a:hover{opacity:.8;}
 
+/* CONTENIDO */
 .container{
-  max-width:1200px;
+  max-width:1100px;
   margin:auto;
   padding:60px 20px;
 }
 
-section{
-  margin-bottom:70px;
-}
+section{margin-bottom:70px;}
 
 section h2{
+  color:var(--primary);
   margin-bottom:25px;
   font-size:1.8rem;
-  color:var(--primary);
 }
 
+/* TARJETAS */
 .card{
   background:white;
   padding:25px;
   border-radius:12px;
   box-shadow:0 8px 25px rgba(0,0,0,.05);
-  margin-bottom:20px;
 }
 
 .grid{
   display:grid;
-  grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
-  gap:25px;
+  grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+  gap:20px;
 }
 
-.cert-card{
+/* CERTIFICADOS */
+.cert{
   background:white;
   padding:20px;
   border-radius:12px;
-  box-shadow:0 8px 20px rgba(0,0,0,.05);
+  box-shadow:0 6px 18px rgba(0,0,0,.05);
   transition:.3s;
 }
 
-.cert-card:hover{
-  transform:translateY(-5px);
-}
-
-.cert-card h3{
-  margin-bottom:15px;
-  font-size:1rem;
-}
+.cert:hover{transform:translateY(-5px);}
 
 .btn{
   display:inline-block;
+  margin-top:10px;
   background:var(--primary);
   color:white;
-  padding:8px 15px;
+  padding:8px 14px;
   border-radius:6px;
   text-decoration:none;
   font-size:.9rem;
-  transition:.3s;
 }
 
-.btn:hover{
-  background:#004182;
+.btn:hover{background:#004182;}
+
+/* LINKS EXTRA */
+.extra-links a{
+  display:inline-block;
+  margin:8px 12px 0 0;
+  color:var(--primary);
+  font-weight:600;
+  text-decoration:none;
 }
 
+.extra-links a:hover{text-decoration:underline;}
+
+/* FOOTER */
 footer{
   background:#111827;
   color:white;
   text-align:center;
   padding:30px 20px;
-  margin-top:50px;
+  margin-top:40px;
 }
 
+/* RESPONSIVE */
 @media(max-width:768px){
-  header h1{
-    font-size:2rem;
-  }
+  header h1{font-size:2rem;}
 }
 </style>
 </head>
@@ -146,27 +133,30 @@ footer{
 
 <header>
   <h1>Andres Felipe Solano Moreno</h1>
-  <p>Ingeniería de Software | Redes | Ciberseguridad | Desarrollo Web</p>
+  <p>Ingeniería de Software · Redes · Linux · Ciberseguridad</p>
 
   <nav>
     <a href="#perfil">Perfil</a>
     <a href="#educacion">Educación</a>
-    <a href="#certificados">Certificaciones</a>
+    <a href="#certificados">Certificados</a>
+    <a href="#extras">Más</a>
     <a href="#contacto">Contacto</a>
   </nav>
 </header>
 
 <div class="container">
 
+<!-- PERFIL -->
 <section id="perfil">
   <h2>Perfil Profesional</h2>
   <div class="card">
-    Estudiante de Ingeniería de Software con formación en redes, ciberseguridad y desarrollo web. 
-    Cuento con certificaciones técnicas y experiencia en entornos tecnológicos.
-    Me caracterizo por la disciplina, responsabilidad y capacidad de aprendizaje continuo.
+    Estudiante de Ingeniería de Software con formación en redes, Linux, ciberseguridad y desarrollo web.
+    Poseo certificaciones técnicas y enfoque en crecimiento profesional dentro del sector tecnológico.
+    Me caracterizo por responsabilidad, disciplina y aprendizaje continuo.
   </div>
 </section>
 
+<!-- EDUCACION -->
 <section id="educacion">
   <h2>Educación</h2>
   <div class="grid">
@@ -182,58 +172,78 @@ footer{
   </div>
 </section>
 
+<!-- CERTIFICADOS -->
 <section id="certificados">
   <h2>Certificaciones</h2>
 
   <div class="grid">
 
-    <div class="cert-card">
-      <h3>CCNA – Introduction to Networks</h3>
-      <a href="assets/img/pdf/CCNA-_Introduction_to_Networks_certificate_fsolano2509-gmail-com_5c511102-d5bf-4ec7-978e-9ccabe1e7512.pdf" target="_blank" class="btn">Ver Certificado</a>
+    <div class="cert">
+      CCNA – Introduction to Networks
+      <br>
+      <a class="btn" target="_blank" href="assets/img/pdf/CCNA-_Introduction_to_Networks_certificate_fsolano2509-gmail-com_5c511102-d5bf-4ec7-978e-9ccabe1e7512.pdf">Ver PDF</a>
     </div>
 
-    <div class="cert-card">
-      <h3>Ethical Hacker</h3>
-      <a href="assets/img/pdf/Ethical_Hacker_certificate_fsolano2509-gmail-com_c9e923dd-5d0a-4eef-b17f-f6ffc930d448.pdf" target="_blank" class="btn">Ver Certificado</a>
+    <div class="cert">
+      Ethical Hacker
+      <br>
+      <a class="btn" target="_blank" href="assets/img/pdf/Ethical_Hacker_certificate_fsolano2509-gmail-com_c9e923dd-5d0a-4eef-b17f-f6ffc930d448.pdf">Ver PDF</a>
     </div>
 
-    <div class="cert-card">
-      <h3>NDG Linux Essentials</h3>
-      <a href="assets/img/pdf/Partner-_NDG_Linux_Essentials_certificate_fsolano2509-gmail-com_4063a1d7-dfe4-4911-98d4-b33f71507573.pdf" target="_blank" class="btn">Ver Certificado</a>
+    <div class="cert">
+      NDG Linux Essentials
+      <br>
+      <a class="btn" target="_blank" href="assets/img/pdf/Partner-_NDG_Linux_Essentials_certificate_fsolano2509-gmail-com_4063a1d7-dfe4-4911-98d4-b33f71507573.pdf">Ver PDF</a>
     </div>
 
-    <div class="cert-card">
-      <h3>NDG Linux Unhatched</h3>
-      <a href="assets/img/pdf/Partner-_NDG_Linux_Unhatched_certificate_fsolano2509-gmail-com_6ed94c47-5bf4-4310-9c25-570e44241ce4.pdf" target="_blank" class="btn">Ver Certificado</a>
+    <div class="cert">
+      NDG Linux Unhatched
+      <br>
+      <a class="btn" target="_blank" href="assets/img/pdf/Partner-_NDG_Linux_Unhatched_certificate_fsolano2509-gmail-com_6ed94c47-5bf4-4310-9c25-570e44241ce4.pdf">Ver PDF</a>
     </div>
 
-    <div class="cert-card">
-      <h3>Fundamentos de Ciberseguridad</h3>
-      <a href="assets/img/pdf/ciber seguridad.pdf" target="_blank" class="btn">Ver Certificado</a>
+    <div class="cert">
+      Fundamentos de Ciberseguridad
+      <br>
+      <a class="btn" target="_blank" href="assets/img/pdf/ciber seguridad.pdf">Ver PDF</a>
     </div>
 
-    <div class="cert-card">
-      <h3>Gestión de Amenazas Cibernéticas</h3>
-      <a href="assets/img/pdf/gestion de amenazas ciberneticas.pdf" target="_blank" class="btn">Ver Certificado</a>
+    <div class="cert">
+      Gestión de Amenazas Cibernéticas
+      <br>
+      <a class="btn" target="_blank" href="assets/img/pdf/gestion de amenazas ciberneticas.pdf">Ver PDF</a>
     </div>
 
   </div>
 </section>
 
+<!-- EXTRAS -->
+<section id="extras">
+  <h2>Información Adicional</h2>
+  <div class="card extra-links">
+    <a href="horario.html">📅 Ver Horario</a>
+    <a href="organigrama.html">🏢 Ver Organigrama</a>
+  </div>
+</section>
+
+<!-- CONTACTO -->
 <section id="contacto">
   <h2>Contacto</h2>
   <div class="card">
-    📍 Bogotá, Colombia<br>
-    📧 fsolano2509@gmail.com<br>
-    📱 324 633 9042
+    📍 Bogotá, Colombia<br><br>
+
+    📧 <a href="mailto:fsolano2509@gmail.com">fsolano2509@gmail.com</a><br><br>
+
+    📱 <a href="tel:+573246339042">+57 324 633 9042</a>
   </div>
 </section>
 
 </div>
 
 <footer>
-  © 2026 Andres Felipe Solano Moreno | Portafolio Profesional
+  © 2026 Andres Felipe Solano Moreno · Portafolio Profesional
 </footer>
 
 </body>
 </html>
+
