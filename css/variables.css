@@ -1,14 +1,14 @@
 :root {
-  --color-fondo: #f8f9fa;
-  --color-principal: #004aad;
-  --color-secundario: #0077ff;
-  --color-texto: #222;
-  --fuente-base: 'Poppins', sans-serif;
+  --color-primario: #2563eb;
+  --color-secundario: #1e293b;
+  --color-fondo: #f5f7fb;
+  --color-blanco: #ffffff;
+  --color-texto: #0f172a;
+  --color-borde: #e2e8f0;
 
-  /* Materias */
-  --materia1: #ffd166;
-  --materia2: #06d6a0;
-  --materia3: #118ab2;
-  --materia4: #ef476f;
-  --materia5: #8338ec;
+  --radio: 14px;
+  --sombra: 0 10px 25px rgba(0,0,0,0.08);
+
+  --max-width: 1100px;
+  --font: 'Poppins', sans-serif;
 }
