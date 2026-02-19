@@ -1,173 +1,159 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portafolio Académico</title>
 
-<title>Portafolio Académico | Andres Felipe Solano Moreno</title>
-
-<meta name="description" content="Portafolio académico de Ingeniería de Software con horario, organigrama, certificaciones y proyectos.">
-
-<!-- CSS modular del proyecto -->
-<link rel="stylesheet" href="css/variables.css">
-<link rel="stylesheet" href="css/layout.css">
-<link rel="stylesheet" href="css/components.css">
-<link rel="stylesheet" href="css/responsive.css">
-
-<!-- Fuente -->
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/responsive.css">
 </head>
 
 <body>
 
-<!-- ===== HERO ===== -->
-<header class="hero">
-  <div class="container hero-content">
+<!-- ===== NAVBAR ===== -->
+<header class="navbar">
+  <div class="container nav-content">
+    <h2 class="logo">Mi Portafolio</h2>
 
-    <!-- TEXTO -->
-    <div class="hero-text">
-      <h1>Andres Felipe Solano Moreno</h1>
-      <p>
-        Estudiante de Ingeniería de Software enfocado en desarrollo web,
-        redes, Linux y ciberseguridad.
-      </p>
-
-      <div class="hero-buttons">
-        <a href="#proyectos" class="btn">Proyecto Académico</a>
-        <a href="#contacto" class="btn btn-outline">Contacto</a>
-      </div>
-    </div>
-
-    <!-- FOTO -->
-    <div class="hero-image">
-      <img src="assets/img/perfil.jpg" alt="Foto de Andres Felipe Solano">
-    </div>
-
+    <nav>
+      <a href="#inicio">Inicio</a>
+      <a href="#proyectos">Proyectos</a>
+      <a href="horario.html">Horario</a>
+      <a href="organigrama.html">Organigrama</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
   </div>
 </header>
 
-<!-- ===== CONTENIDO ===== -->
-<main class="container">
 
-<!-- PERFIL -->
-<section id="perfil" class="section">
-  <h2>Perfil Profesional</h2>
-  <div class="card">
-    Estudiante de Ingeniería de Software con formación en redes, Linux,
-    ciberseguridad y desarrollo web.  
-    Este portafolio integra un módulo académico compuesto por horario semanal
-    y organigrama diario, aplicando arquitectura CSS modular y diseño responsive.
+<!-- ===== HERO ===== -->
+<section id="inicio" class="hero">
+  <div class="container hero-content">
+
+    <div class="hero-text">
+      <h1>Hola, soy Armando 👋</h1>
+      <p>
+        Estudiante de Ingeniería de Software enfocado en desarrollo web,
+        arquitectura de interfaces y diseño de aplicaciones modernas.
+        Este portafolio integra proyectos académicos, horario profesional
+        y organización diaria.
+      </p>
+
+      <a class="btn" href="#proyectos">Ver proyectos</a>
+      <a class="btn btn-outline" href="#contacto">Contactar</a>
+    </div>
+
+    <div class="hero-image">
+      <img src="assets/img/perfil.jpg" alt="Foto de perfil">
+    </div>
+
   </div>
 </section>
 
-<!-- PROYECTO ACADÉMICO -->
+
+<!-- ===== PROYECTOS ===== -->
 <section id="proyectos" class="section">
-  <h2>Módulo Académico</h2>
+  <div class="container">
 
-  <div class="grid">
+    <h2>Proyectos Académicos</h2>
 
-    <div class="card">
-      <h3>Horario de Clases</h3>
-      Visualización semanal estructurada con CSS Grid, colores por materia
-      y adaptación responsive.
-      <br><br>
-      <a href="horario.html" class="btn">Ver Horario</a>
+    <div class="grid">
+
+      <div class="card">
+        <h3>Portafolio Web</h3>
+        <p>
+          Sitio web responsive desarrollado con arquitectura CSS modular,
+          navegación estructurada y diseño profesional adaptable.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>Horario Académico</h3>
+        <p>
+          Visualización semanal usando CSS Grid, variables globales,
+          diferenciación por materias y adaptación a dispositivos móviles.
+        </p>
+        <a class="btn" href="horario.html">Ver horario</a>
+      </div>
+
+      <div class="card">
+        <h3>Organigrama Diario</h3>
+        <p>
+          Representación estructurada del flujo académico mediante timeline,
+          categorías visuales y animaciones CSS progresivas.
+        </p>
+        <a class="btn" href="organigrama.html">Ver organigrama</a>
+      </div>
+
     </div>
+  </div>
+</section>
 
-    <div class="card">
-      <h3>Organigrama Diario</h3>
-      Representación del flujo académico mediante timeline,
-      Flexbox y categorías de actividad.
-      <br><br>
-      <a href="organigrama.html" class="btn">Ver Organigrama</a>
+
+<!-- ===== ARTÍCULOS / APRENDIZAJE ===== -->
+<section class="section">
+  <div class="container">
+
+    <h2>Aprendizaje y Artículos</h2>
+
+    <div class="grid">
+      <div class="card">
+        <h3>Arquitectura CSS Modular</h3>
+        <p>Organización escalable de estilos usando variables, layout y componentes reutilizables.</p>
+      </div>
+
+      <div class="card">
+        <h3>Diseño Responsive</h3>
+        <p>Implementación de media queries, grid adaptable y priorización de contenido móvil.</p>
+      </div>
+
+      <div class="card">
+        <h3>Buenas Prácticas Web</h3>
+        <p>Estructura semántica HTML, rendimiento visual y coherencia de interfaz.</p>
+      </div>
     </div>
 
   </div>
 </section>
 
-<!-- CERTIFICADOS -->
-<section id="certificados" class="section">
-  <h2>Certificaciones Técnicas</h2>
 
-  <div class="grid">
-
-    <div class="card">
-      CCNA – Introduction to Networks<br>
-      <a class="btn" target="_blank"
-        href="assets/img/pdf/CCNA-_Introduction_to_Networks_certificate_fsolano2509-gmail-com_5c511102-d5bf-4ec7-978e-9ccabe1e7512.pdf">
-        Ver PDF
-      </a>
-    </div>
-
-    <div class="card">
-      Ethical Hacker<br>
-      <a class="btn" target="_blank"
-        href="assets/img/pdf/Ethical_Hacker_certificate_fsolano2509-gmail-com_c9e923dd-5d0a-4eef-b17f-f6ffc930d448.pdf">
-        Ver PDF
-      </a>
-    </div>
-
-    <div class="card">
-      NDG Linux Essentials<br>
-      <a class="btn" target="_blank"
-        href="assets/img/pdf/Partner-_NDG_Linux_Essentials_certificate_fsolano2509-gmail-com_4063a1d7-dfe4-4911-98d4-b33f71507573.pdf">
-        Ver PDF
-      </a>
-    </div>
-
-    <div class="card">
-      NDG Linux Unhatched<br>
-      <a class="btn" target="_blank"
-        href="assets/img/pdf/Partner-_NDG_Linux_Unhatched_certificate_fsolano2509-gmail-com_6ed94c47-5bf4-4310-9c25-570e44241ce4.pdf">
-        Ver PDF
-      </a>
-    </div>
-
-  </div>
-</section>
-
-<!-- ARTÍCULOS -->
-<section id="articulos" class="section">
-  <h2>Artículos Académicos</h2>
-
-  <div class="grid">
-
-    <div class="card">
-      <strong>Importancia del Diseño Responsive</strong><br>
-      Adaptabilidad móvil como factor clave en la experiencia de usuario.
-    </div>
-
-    <div class="card">
-      <strong>Grid vs Flexbox en Arquitecturas Modernas</strong><br>
-      Grid para estructura global y Flexbox para alineación interna.
-    </div>
-
-    <div class="card">
-      <strong>Escalabilidad en Proyectos Web</strong><br>
-      Modularización CSS y reutilización de componentes.
-    </div>
-
-  </div>
-</section>
-
-<!-- CONTACTO -->
+<!-- ===== CONTACTO ===== -->
 <section id="contacto" class="section">
-  <h2>Contacto</h2>
-  <div class="card">
-    📍 Bogotá, Colombia<br><br>
+  <div class="container">
 
-    📧 <a href="mailto:fsolano2509@gmail.com">fsolano2509@gmail.com</a><br><br>
+    <h2>Contacto</h2>
 
-    📱 <a href="tel:+573246339042">+57 324 633 9042</a>
+    <div class="grid">
+
+      <div class="card">
+        <h3>Email</h3>
+        <p>armando@email.com</p>
+      </div>
+
+      <div class="card">
+        <h3>GitHub</h3>
+        <p>github.com/fs28git</p>
+      </div>
+
+      <div class="card">
+        <h3>Ubicación</h3>
+        <p>Colombia</p>
+      </div>
+
+    </div>
   </div>
 </section>
 
-</main>
 
 <!-- ===== FOOTER ===== -->
 <footer class="footer">
-  © 2026 · Portafolio Académico de Ingeniería de Software
+  <p>© 2026 Armando — Portafolio Académico de Ingeniería de Software</p>
 </footer>
 
 </body>
 </html>
+
