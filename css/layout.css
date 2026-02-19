@@ -1,37 +1,38 @@
-body {
-  font-family: var(--fuente-base);
+
+* {
   margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font);
   background: var(--color-fondo);
   color: var(--color-texto);
+  line-height: 1.6;
 }
 
-header {
-  background: var(--color-principal);
-  color: white;
-  padding: 10px 0;
-}
-
-nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 90%;
+/* contenedor general */
+.container {
+  max-width: var(--max-width);
   margin: auto;
+  padding: 0 20px;
 }
 
-nav ul {
-  list-style: none;
-  display: flex;
-  gap: 1.5rem;
+/* secciones */
+.section {
+  padding: 70px 0;
 }
 
-nav a {
-  color: white;
-  text-decoration: none;
-  font-weight: 500;
+.section h2 {
+  text-align: center;
+  margin-bottom: 40px;
+  font-size: 32px;
 }
 
-nav a.active,
-nav a:hover {
-  text-decoration: underline;
+/* grid general */
+.grid {
+  display: grid;
+  gap: 24px;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
 }
