@@ -3,13 +3,19 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Portafolio Académico</title>
 
-  <!-- CSS -->
+  <title>Portafolio Académico | Andres Felipe Solano Moreno</title>
+
+  <meta name="description" content="Portafolio académico de Andres Felipe Solano Moreno, estudiante de Ingeniería de Software.">
+
+  <!-- CSS del proyecto -->
   <link rel="stylesheet" href="css/variables.css">
   <link rel="stylesheet" href="css/layout.css">
   <link rel="stylesheet" href="css/components.css">
   <link rel="stylesheet" href="css/responsive.css">
+
+  <!-- Fuente -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -17,11 +23,14 @@
 <!-- ===== NAVBAR ===== -->
 <header class="navbar">
   <div class="container nav-content">
-    <h2 class="logo">Mi Portafolio</h2>
+    <h2 class="logo">Portafolio</h2>
 
     <nav>
       <a href="#inicio">Inicio</a>
-      <a href="#proyectos">Proyectos</a>
+      <a href="#perfil">Perfil</a>
+      <a href="#proyectos">Proyecto</a>
+      <a href="#certificados">Certificados</a>
+      <a href="#articulos">Artículos</a>
       <a href="horario.html">Horario</a>
       <a href="organigrama.html">Organigrama</a>
       <a href="#contacto">Contacto</a>
@@ -35,47 +44,54 @@
   <div class="container hero-content">
 
     <div class="hero-text">
-      <h1>Hola, soy Armando 👋</h1>
+      <h1>Andres Felipe Solano Moreno</h1>
       <p>
-        Estudiante de Ingeniería de Software enfocado en desarrollo web,
-        arquitectura de interfaces y diseño de aplicaciones modernas.
-        Este portafolio integra proyectos académicos, horario profesional
-        y organización diaria.
+        Estudiante de Ingeniería de Software con formación en desarrollo web,
+        redes, Linux y ciberseguridad.  
+        Este portafolio integra un módulo académico con horario semanal,
+        organigrama diario y arquitectura CSS modular responsive.
       </p>
 
-      <a class="btn" href="#proyectos">Ver proyectos</a>
+      <a class="btn" href="#proyectos">Ver proyecto académico</a>
       <a class="btn btn-outline" href="#contacto">Contactar</a>
     </div>
 
     <div class="hero-image">
-      <img src="assets/img/perfil.jpg" alt="Foto de perfil">
+      <img src="assets/img/perfil.jpg" alt="Foto de Andres Felipe Solano Moreno">
     </div>
 
   </div>
 </section>
 
 
-<!-- ===== PROYECTOS ===== -->
+<!-- ===== PERFIL ===== -->
+<section id="perfil" class="section">
+  <div class="container">
+    <h2>Perfil Profesional</h2>
+
+    <div class="card">
+      Estudiante de Ingeniería de Software con interés en el desarrollo de
+      aplicaciones web, seguridad informática y tecnologías de red.
+      Me caracterizo por la responsabilidad, disciplina y aprendizaje continuo
+      orientado al crecimiento profesional en el sector tecnológico.
+    </div>
+  </div>
+</section>
+
+
+<!-- ===== PROYECTO ACADÉMICO ===== -->
 <section id="proyectos" class="section">
   <div class="container">
 
-    <h2>Proyectos Académicos</h2>
+    <h2>Módulo Académico</h2>
 
     <div class="grid">
 
       <div class="card">
-        <h3>Portafolio Web</h3>
+        <h3>Horario de Clases</h3>
         <p>
-          Sitio web responsive desarrollado con arquitectura CSS modular,
-          navegación estructurada y diseño profesional adaptable.
-        </p>
-      </div>
-
-      <div class="card">
-        <h3>Horario Académico</h3>
-        <p>
-          Visualización semanal usando CSS Grid, variables globales,
-          diferenciación por materias y adaptación a dispositivos móviles.
+          Visualización semanal estructurada con CSS Grid, diferenciación por
+          materias y adaptación responsive para dispositivos móviles.
         </p>
         <a class="btn" href="horario.html">Ver horario</a>
       </div>
@@ -83,8 +99,8 @@
       <div class="card">
         <h3>Organigrama Diario</h3>
         <p>
-          Representación estructurada del flujo académico mediante timeline,
-          categorías visuales y animaciones CSS progresivas.
+          Representación del flujo académico diario mediante timeline,
+          categorías visuales y estructura flexible con CSS.
         </p>
         <a class="btn" href="organigrama.html">Ver organigrama</a>
       </div>
@@ -94,29 +110,71 @@
 </section>
 
 
-<!-- ===== ARTÍCULOS / APRENDIZAJE ===== -->
-<section class="section">
+<!-- ===== CERTIFICADOS ===== -->
+<section id="certificados" class="section">
   <div class="container">
 
-    <h2>Aprendizaje y Artículos</h2>
+    <h2>Certificaciones Técnicas</h2>
 
     <div class="grid">
+
       <div class="card">
-        <h3>Arquitectura CSS Modular</h3>
-        <p>Organización escalable de estilos usando variables, layout y componentes reutilizables.</p>
+        CCNA – Introduction to Networks<br>
+        <a class="btn" target="_blank"
+        href="assets/img/pdf/CCNA-_Introduction_to_Networks_certificate_fsolano2509-gmail-com_5c511102-d5bf-4ec7-978e-9ccabe1e7512.pdf">
+        Ver PDF</a>
       </div>
+
+      <div class="card">
+        Ethical Hacker<br>
+        <a class="btn" target="_blank"
+        href="assets/img/pdf/Ethical_Hacker_certificate_fsolano2509-gmail-com_c9e923dd-5d0a-4eef-b17f-f6ffc930d448.pdf">
+        Ver PDF</a>
+      </div>
+
+      <div class="card">
+        NDG Linux Essentials<br>
+        <a class="btn" target="_blank"
+        href="assets/img/pdf/Partner-_NDG_Linux_Essentials_certificate_fsolano2509-gmail-com_4063a1d7-dfe4-4911-98d4-b33f71507573.pdf">
+        Ver PDF</a>
+      </div>
+
+      <div class="card">
+        NDG Linux Unhatched<br>
+        <a class="btn" target="_blank"
+        href="assets/img/pdf/Partner-_NDG_Linux_Unhatched_certificate_fsolano2509-gmail-com_6ed94c47-5bf4-4310-9c25-570e44241ce4.pdf">
+        Ver PDF</a>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- ===== ARTÍCULOS ===== -->
+<section id="articulos" class="section">
+  <div class="container">
+
+    <h2>Artículos Académicos</h2>
+
+    <div class="grid">
 
       <div class="card">
         <h3>Diseño Responsive</h3>
-        <p>Implementación de media queries, grid adaptable y priorización de contenido móvil.</p>
+        <p>Adaptación de interfaces web a distintos dispositivos mediante media queries y grid flexible.</p>
       </div>
 
       <div class="card">
-        <h3>Buenas Prácticas Web</h3>
-        <p>Estructura semántica HTML, rendimiento visual y coherencia de interfaz.</p>
+        <h3>Grid vs Flexbox</h3>
+        <p>Uso de Grid para estructura global y Flexbox para alineación interna de componentes.</p>
       </div>
-    </div>
 
+      <div class="card">
+        <h3>Arquitectura CSS Modular</h3>
+        <p>Separación de estilos en variables, layout, componentes y responsive para escalabilidad.</p>
+      </div>
+
+    </div>
   </div>
 </section>
 
@@ -127,31 +185,21 @@
 
     <h2>Contacto</h2>
 
-    <div class="grid">
+    <div class="card">
+      📍 Bogotá, Colombia<br><br>
 
-      <div class="card">
-        <h3>Email</h3>
-        <p>armando@email.com</p>
-      </div>
+      📧 <a href="mailto:fsolano2509@gmail.com">fsolano2509@gmail.com</a><br><br>
 
-      <div class="card">
-        <h3>GitHub</h3>
-        <p>github.com/fs28git</p>
-      </div>
-
-      <div class="card">
-        <h3>Ubicación</h3>
-        <p>Colombia</p>
-      </div>
-
+      📱 <a href="tel:+573246339042">+57 324 633 9042</a>
     </div>
+
   </div>
 </section>
 
 
 <!-- ===== FOOTER ===== -->
 <footer class="footer">
-  <p>© 2026 Armando — Portafolio Académico de Ingeniería de Software</p>
+  © 2026 · Portafolio Académico de Andres Felipe Solano Moreno
 </footer>
 
 </body>
