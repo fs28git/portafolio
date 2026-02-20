@@ -3,156 +3,54 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Organigrama Diario | Portafolio</title>
+  <title>Organigrama Diario</title>
   <link rel="stylesheet" href="css/variables.css">
-  <link rel="stylesheet" href="css/tech.css">
-  <style>
-    body {
-      padding: 2rem;
-      text-align: center;
-    }
-
-    h1 {
-      color: var(--azul-tech);
-      text-shadow: 0 0 15px rgba(0,183,255,0.7);
-      margin-bottom: 2rem;
-    }
-
-    .timeline {
-      position: relative;
-      max-width: 800px;
-      margin: auto;
-      padding: 2rem 0;
-    }
-
-    .timeline::after {
-      content: '';
-      position: absolute;
-      width: 4px;
-      background: var(--azul-tech);
-      top: 0;
-      bottom: 0;
-      left: 50%;
-      margin-left: -2px;
-      animation: pulseLine 3s infinite ease-in-out;
-    }
-
-    @keyframes pulseLine {
-      0%,100% {opacity: 0.5;}
-      50% {opacity: 1;}
-    }
-
-    .timeline-box {
-      padding: 1rem;
-      background: rgba(255,255,255,0.05);
-      border: 1px solid rgba(0,183,255,0.3);
-      position: relative;
-      border-radius: 10px;
-      width: 45%;
-      box-shadow: 0 0 10px rgba(0,183,255,0.15);
-      transition: all .4s ease;
-    }
-
-    .timeline-box:hover {
-      transform: scale(1.05);
-      box-shadow: 0 0 25px rgba(0,183,255,0.5);
-      background: rgba(0,183,255,0.1);
-    }
-
-    .timeline-box.left { left: 0; }
-    .timeline-box.right { left: 55%; }
-
-    .timeline-box::after {
-      content: '';
-      position: absolute;
-      top: 15px;
-      width: 20px;
-      height: 20px;
-      border-radius: 50%;
-      background: var(--azul-tech);
-      box-shadow: 0 0 15px rgba(0,183,255,0.8);
-      border: 2px solid #fff;
-    }
-
-    .timeline-box.left::after { right: -12px; }
-    .timeline-box.right::after { left: -12px; }
-
-    .timeline-content h3 {
-      color: var(--azul-claro);
-      margin-bottom: .5rem;
-    }
-
-    .timeline-content p {
-      color: var(--texto);
-      font-size: 0.95rem;
-    }
-
-    @media (max-width: 768px) {
-      .timeline::after { left: 8px; }
-      .timeline-box { width: 100%; left: 0; margin-bottom: 2rem; }
-      .timeline-box::after { left: -12px; }
-    }
-
-    a.volver {
-      display: inline-block;
-      margin-top: 2rem;
-      color: var(--azul-claro);
-      text-decoration: none;
-      border: 1px solid rgba(0,183,255,0.4);
-      padding: .6rem 1rem;
-      border-radius: 8px;
-      transition: all .3s ease;
-    }
-    a.volver:hover {
-      background: rgba(0,183,255,0.3);
-      color: #fff;
-      box-shadow: 0 0 15px rgba(0,183,255,0.3);
-    }
-  </style>
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/organigrama.css">
+  <link rel="stylesheet" href="css/responsive.css">
 </head>
 <body>
+  <header class="navbar">
+    <h2 class="logo">Portafolio</h2>
+    <nav>
+      <a href="index.html">Inicio</a>
+      <a href="horario.html">Horario</a>
+      <a href="organigrama.html">Organigrama</a>
+    </nav>
+  </header>
 
-  <h1>🧠 Organigrama Diario</h1>
-
-  <div class="timeline reveal-on-scroll">
-    <div class="timeline-box left">
-      <div class="timeline-content">
-        <h3>08:00 - Inicio del Día</h3>
-        <p>Revisión de pendientes académicos y preparación para clases.</p>
+  <main class="reveal-on-scroll">
+    <h1>🧠 Organigrama Diario</h1>
+    <div class="timeline">
+      <div class="timeline-box left academica">
+        <h3>08:00 — Inicio del día</h3>
+        <p>Planificación general y repaso de tareas académicas.</p>
+      </div>
+      <div class="timeline-box right academica">
+        <h3>10:00 — Clases principales</h3>
+        <p>Participación en clases de desarrollo e IA.</p>
+      </div>
+      <div class="timeline-box left investigacion">
+        <h3>13:00 — Investigación</h3>
+        <p>Avance en proyectos de modelamiento estocástico.</p>
+      </div>
+      <div class="timeline-box right tutoria">
+        <h3>15:00 — Tutorías / Laboratorios</h3>
+        <p>Asistencia y apoyo a compañeros.</p>
+      </div>
+      <div class="timeline-box left administrativa">
+        <h3>18:00 — Revisión administrativa</h3>
+        <p>Entrega de informes y coordinación académica.</p>
+      </div>
+      <div class="timeline-box right personal">
+        <h3>20:00 — Cierre del día</h3>
+        <p>Lectura y descanso personal.</p>
       </div>
     </div>
+  </main>
 
-    <div class="timeline-box right">
-      <div class="timeline-content">
-        <h3>10:00 - Clases Principales</h3>
-        <p>Participación activa en materias clave de desarrollo y redes.</p>
-      </div>
-    </div>
-
-    <div class="timeline-box left">
-      <div class="timeline-content">
-        <h3>13:00 - Almuerzo & Revisión</h3>
-        <p>Descanso breve y repaso de los apuntes del día.</p>
-      </div>
-    </div>
-
-    <div class="timeline-box right">
-      <div class="timeline-content">
-        <h3>15:00 - Prácticas o Laboratorios</h3>
-        <p>Implementación de proyectos prácticos de software y análisis.</p>
-      </div>
-    </div>
-
-    <div class="timeline-box left">
-      <div class="timeline-content">
-        <h3>19:00 - Cierre del Día</h3>
-        <p>Revisión final de actividades y documentación de avances.</p>
-      </div>
-    </div>
-  </div>
-
-  <a href="index.html" class="volver">⬅ Volver al Portafolio</a>
-
-  <script src="js/tech.js" defer></script>
+  <footer>© 2026 Pipe Solano</footer>
+  <script src="js/ui.js" defer></script>
 </body>
 </html>
