@@ -1,129 +1,158 @@
-/* css/tech.css — versión fuerte: fondo negro forzado y animaciones de sección mejoradas */
+/* css/tech.css — versión avanzada: fondo negro, header azul brillante y animaciones tipo portal */
 
-/* Fuentes */
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;400;700&family=Inter:wght@300;400;600&display=swap');
 
 :root{
-  --bg-plain: #000000;
+  --bg: #000;
+  --azul-tech: #00b7ff;
+  --azul-claro: #4fd9ff;
   --neon-cyan: #00f0ff;
-  --neon-mag: #c600ff;
-  --muted: #b8c5c9;
-  --card-bg: rgba(255,255,255,0.03);
-  --accent: #00e5ff;
+  --blanco-card: rgba(255,255,255,0.05);
+  --borde-card: rgba(0,183,255,0.4);
+  --texto: #d5e8ff;
 }
 
-/* ---------- Fondo NEGRO forzado ---------- */
-html, body {
-  background-color: var(--bg-plain) !important;
-  background-image: none !important;
-  color: #cfeefc;
-  min-height: 100%;
-  height: 100%;
-  margin: 0;
+/* ======== FONDO GENERAL ======== */
+html, body{
+  background-color: var(--bg) !important;
+  color: var(--texto);
   font-family: "Inter", "Roboto Mono", monospace;
-  -webkit-font-smoothing:antialiased;
-  -moz-osx-font-smoothing:grayscale;
+  margin: 0;
+  min-height: 100%;
+  overflow-x: hidden;
+}
+body::before{
+  content:"";
+  position:fixed;
+  inset:0;
+  background: radial-gradient(circle at 15% 20%, rgba(0,183,255,0.06), transparent 40%),
+              radial-gradient(circle at 80% 90%, rgba(0,0,255,0.08), transparent 50%);
+  opacity:0.6;
+  pointer-events:none;
+  z-index:0;
+  animation: fondoPulse 12s ease-in-out infinite alternate;
+}
+@keyframes fondoPulse{
+  from {filter: hue-rotate(0deg);}
+  to {filter: hue-rotate(40deg);}
 }
 
-/* overlay sutil (colocado DETRÁS del contenido) */
-:root { --overlay-opacity: 0.14; }
-body::before {
-  content: "";
-  position: fixed;
-  inset: 0;
-  pointer-events: none;
-  z-index: -1; /* importante: atrás del contenido */
-  background:
-    radial-gradient(circle at 10% 10%, rgba(0,200,255,0.03), transparent 8%),
-    radial-gradient(circle at 90% 80%, rgba(200,0,255,0.03), transparent 8%),
-    linear-gradient(0deg, rgba(255,255,255,0.01), transparent);
-  opacity: var(--overlay-opacity);
-  filter: blur(8px);
+/* ======== HEADER ======== */
+.navbar{
+  background: linear-gradient(90deg, rgba(0,183,255,0.15), rgba(0,0,40,0.5));
+  backdrop-filter: blur(8px);
+  box-shadow: 0 0 18px rgba(0,183,255,0.1);
+  border-bottom: 1px solid rgba(0,183,255,0.25);
+  position: sticky;
+  top: 0;
+  z-index: 99;
+  transition: background 0.3s ease;
+}
+.navbar .logo{
+  color: var(--azul-claro);
+  text-shadow: 0 0 10px rgba(0,183,255,0.4);
+}
+.navbar nav a{
+  color: var(--azul-claro);
+  font-weight: 500;
+  text-decoration: none;
+  margin-left: 14px;
+  transition: color 0.3s, text-shadow 0.3s;
+}
+.navbar nav a:hover{
+  color: #fff;
+  text-shadow: 0 0 12px var(--azul-tech);
 }
 
-/* Forzar que otros pseudo overlays no tapen el contenido:
-   si otras hojas intentan poner overlays con z-index mayores, esto reduce conflictos. */
-* { backface-visibility: hidden; -webkit-backface-visibility: hidden; }
-
-/* ---------- TITULO / NEON / GLITCH ---------- */
-.neon {
-  color: var(--neon-cyan);
-  text-shadow: 0 0 6px rgba(0,240,255,0.8), 0 0 26px rgba(0,240,255,0.18);
+/* ======== TITULOS ======== */
+.neon{
+  color: var(--azul-tech);
+  text-shadow: 0 0 10px rgba(0,183,255,0.6), 0 0 25px rgba(0,183,255,0.2);
   letter-spacing: 0.6px;
 }
-
-.glitch { position:relative; display:inline-block; }
+.glitch{ position:relative; display:inline-block; }
 .glitch::before, .glitch::after{
   content: attr(data-text);
   position:absolute; left:0; top:0; width:100%;
   overflow:hidden; clip:rect(0,9999px,0,0);
 }
-.glitch::before{ animation: g1 2.6s linear infinite; color:var(--neon-mag); opacity:0.78; transform:translateX(-1px); }
-.glitch::after{ animation: g2 3.1s linear infinite; color:var(--neon-cyan); opacity:0.78; transform:translateX(1px); }
-@keyframes g1 { 0%,100%{clip:rect(0,9999px,0,0);} 10%{clip:rect(2px,9999px,18px,0);} 20%{clip:rect(8px,9999px,36px,0);} }
-@keyframes g2 { 0%,100%{clip:rect(0,9999px,0,0);} 12%{clip:rect(20px,9999px,42px,0);} 25%{clip:rect(6px,9999px,30px,0);} }
+.glitch::before{ animation:g1 2.6s linear infinite; color:#4fd9ff; opacity:.7; transform:translateX(-1px);}
+.glitch::after{ animation:g2 3.1s linear infinite; color:#008cff; opacity:.7; transform:translateX(1px);}
+@keyframes g1{0%,100%{clip:rect(0,9999px,0,0);}10%{clip:rect(3px,9999px,16px,0);}20%{clip:rect(7px,9999px,36px,0);}}
+@keyframes g2{0%,100%{clip:rect(0,9999px,0,0);}15%{clip:rect(18px,9999px,40px,0);}30%{clip:rect(5px,9999px,32px,0);}}
 
-/* ---------- CARTAS / BOTONES ---------- */
-.card {
-  background: var(--card-bg);
+/* ======== TARJETAS ======== */
+.card{
+  background: var(--blanco-card);
+  border: 1px solid var(--borde-card);
   border-radius: 10px;
-  border: 1px solid rgba(255,255,255,0.03);
-  padding: 1rem;
-  transition: transform .28s cubic-bezier(.2,.9,.2,1), box-shadow .28s, border-color .28s;
+  padding: 1.2rem;
+  transition: all .35s ease;
+  box-shadow: 0 0 10px rgba(0,183,255,0.05);
 }
-.card:hover{ transform: translateY(-6px); box-shadow: 0 18px 40px rgba(0,0,0,0.6); border-color: rgba(0,230,255,0.08); }
+.card:hover{
+  box-shadow: 0 0 25px rgba(0,183,255,0.25), 0 0 6px rgba(0,183,255,0.6) inset;
+  transform: translateY(-5px) scale(1.02);
+}
 
-.btn {
+/* ======== BOTONES ======== */
+.btn{
   border-radius: 8px;
-  padding: .6rem 1rem;
-  border: 1px solid rgba(0,255,255,0.2);
-  background: rgba(0,255,255,0.035);
-  color: var(--neon-cyan);
-  text-decoration: none;
-  transition: transform .18s ease, box-shadow .18s ease, background .18s;
+  border: 1px solid rgba(0,183,255,0.5);
+  background: rgba(0,183,255,0.1);
+  color: var(--azul-claro);
+  text-decoration:none;
+  padding:.6rem 1rem;
+  transition: all .3s ease;
 }
-.btn:hover{ transform: translateY(-3px); box-shadow: 0 10px 30px rgba(0,255,255,0.06); background: rgba(0,255,255,0.06); }
+.btn:hover{
+  background: rgba(0,183,255,0.3);
+  color:#fff;
+  box-shadow: 0 0 18px rgba(0,183,255,0.4);
+}
 
-/* ---------- REVEAL ON SCROLL (más suave) ---------- */
-.reveal-on-scroll {
-  opacity: 0;
-  transform: translateY(18px) scale(.995);
-  transition: opacity .8s cubic-bezier(.2,.9,.2,1), transform .8s cubic-bezier(.2,.9,.2,1);
-  will-change: opacity, transform;
+/* ======== REVEAL ON SCROLL ======== */
+.reveal-on-scroll{
+  opacity:0;
+  transform: translateY(25px) scale(.97);
+  transition: opacity .9s cubic-bezier(.2,.9,.2,1), transform .9s cubic-bezier(.2,.9,.2,1);
 }
-.reveal-on-scroll.revealed {
-  opacity: 1;
+.reveal-on-scroll.revealed{
+  opacity:1;
   transform: translateY(0) scale(1);
 }
 
-/* ---------- TRANSICIONES ENTRE SECCIONES (MEJORADAS) ---------- */
-/* Por defecto, todas las secciones están ocultas (inactivas),
-   activamos solo la actual con .active-section */
-
-section {
-  opacity: 0;
-  transform: translateY(12px);
-  transition: opacity .62s cubic-bezier(.2,.9,.2,1), transform .62s cubic-bezier(.2,.9,.2,1);
-  pointer-events: none;
+/* ======== ANIMACIÓN ENTRE SECCIONES ======== */
+section{
+  opacity:0;
+  transform: scale(0.98) translateY(20px);
+  transition: opacity 0.9s ease, transform 0.9s ease;
+  pointer-events:none;
 }
-section.active-section {
-  opacity: 1;
-  transform: translateY(0);
-  pointer-events: auto;
+section.active-section{
+  opacity:1;
+  transform: scale(1) translateY(0);
+  pointer-events:auto;
 }
-section.fading-out {
-  opacity: 0;
-  transform: translateY(8px);
-  pointer-events: none;
+section.fading-out{
+  opacity:0;
+  transform: scale(1.02) translateY(-20px);
+  pointer-events:none;
 }
 
-/* pequeño delay visual para que el fade-out se note */
-.section-transition-shim {
-  transition: opacity .28s linear;
+/* ======== IMÁGENES / FOOTER ======== */
+img{
+  border-radius:8px;
+  transition: all .35s ease;
 }
-
-/* ---------- IMAGENES / FOOTER ---------- */
-img { transition: transform .28s ease, box-shadow .28s ease; }
-img:hover { transform: translateY(-6px) scale(1.02); box-shadow: 0 18px 40px rgba(0,0,0,0.6); }
-
-.footer { background: rgba(0,0,0,0.85); color: #8b98a0; padding: 1rem; text-align:center; border-top:1px solid rgba(255,255,255,0.03); }
+img:hover{
+  transform: scale(1.05);
+  box-shadow: 0 0 18px rgba(0,183,255,0.25);
+}
+.footer{
+  background: rgba(0,0,30,0.8);
+  border-top: 1px solid rgba(0,183,255,0.2);
+  color: #8bb8ff;
+  padding: 1rem;
+  text-align:center;
+}
