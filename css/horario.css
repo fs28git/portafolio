@@ -1,46 +1,55 @@
-.horario-grid{
-  display:grid;
-  grid-template-columns:120px repeat(5,1fr);
-  gap:6px;
-  margin-top:20px;
+.horario {
+  display: grid;
+  grid-template-columns: 130px repeat(5, 1fr);
+  gap: 8px;
+  padding: 1rem;
 }
 
-.head{
-  background:var(--primary);
-  color:white;
-  font-weight:600;
-  text-align:center;
-  padding:10px;
-  border-radius:6px;
+.h-cell, .h-header {
+  border: 1px solid rgba(0,183,255,0.25);
+  border-radius: 6px;
+  text-align: center;
+  padding: 0.8rem;
+  transition: 0.3s;
 }
 
-.hora{
-  background:#e5e7eb;
-  font-weight:600;
-  display:flex;
-  align-items:center;
-  justify-content:center;
-  border-radius:6px;
+.h-header {
+  background: rgba(0,183,255,0.25);
+  font-weight: bold;
+  color: #fff;
 }
 
-.materia{
-  background:white;
-  padding:10px;
-  border-radius:8px;
-  font-size:.9rem;
-  box-shadow:0 4px 10px rgba(0,0,0,.05);
+.h-cell:hover {
+  background: rgba(0,183,255,0.15);
+  transform: scale(1.05);
+  box-shadow: 0 0 15px rgba(0,183,255,0.25);
 }
 
-.materia span{
-  font-size:.8rem;
-  opacity:.7;
+.materia {
+  font-weight: 600;
+  color: #fff;
+}
+.aula {
+  font-size: 0.8rem;
+  color: var(--azul-claro);
+}
+.estado {
+  display: block;
+  font-size: 0.75rem;
+  color: #bbb;
+  margin-top: 0.3rem;
 }
 
-/* colores por materia */
-.ia{border-left:5px solid #ef4444;}
-.model{border-left:5px solid #f59e0b;}
-.gp{border-left:5px solid #22c55e;}
-.web{border-left:5px solid #3b82f6;}
-.leg{border-left:5px solid #8b5cf6;}
-
-.vacio{background:transparent;}
+/* Responsive */
+@media (max-width: 768px) {
+  .horario {
+    grid-template-columns: 1fr;
+  }
+  .h-header {
+    display: none;
+  }
+  .h-cell {
+    background: rgba(0,183,255,0.1);
+    margin-bottom: 10px;
+  }
+}
