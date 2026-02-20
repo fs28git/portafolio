@@ -4,60 +4,69 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Horario Académico | Portafolio</title>
+
+  <!-- Usa solo estas dos hojas -->
   <link rel="stylesheet" href="css/variables.css">
   <link rel="stylesheet" href="css/tech.css">
+
   <style>
     body {
       padding: 2rem;
       text-align: center;
+      background-color: #000 !important;
     }
 
     h1 {
       color: var(--azul-tech);
       text-shadow: 0 0 15px rgba(0,183,255,0.7);
       margin-bottom: 2rem;
+      animation: fadeIn 1.2s ease;
     }
 
-    .horario-grid {
-      display: grid;
-      grid-template-columns: repeat(6, 1fr);
-      gap: 1rem;
-      text-align: center;
-      animation: fadeInUp 1s ease;
-    }
-
-    .horario-cell {
+    .tabla-horario {
+      width: 100%;
+      border-collapse: collapse;
       background: rgba(255,255,255,0.05);
       border: 1px solid rgba(0,183,255,0.3);
       border-radius: 10px;
+      box-shadow: 0 0 20px rgba(0,183,255,0.15);
+      overflow: hidden;
+      animation: fadeInUp 1s ease;
+    }
+
+    th, td {
       padding: 1rem;
-      transition: all 0.4s ease;
-      box-shadow: 0 0 10px rgba(0,183,255,0.1);
+      border: 1px solid rgba(0,183,255,0.2);
+      color: #dff9ff;
+      text-align: center;
+      transition: background .3s ease, transform .3s ease;
     }
 
-    .horario-cell:hover {
-      transform: scale(1.05);
-      box-shadow: 0 0 25px rgba(0,183,255,0.4);
-      background: rgba(0,183,255,0.1);
-    }
-
-    .horario-header {
+    th {
       background: rgba(0,183,255,0.2);
-      font-weight: bold;
       color: #fff;
-      border: 1px solid rgba(0,183,255,0.5);
       text-shadow: 0 0 6px rgba(0,183,255,0.6);
+      font-weight: 600;
+    }
+
+    td:hover {
+      background: rgba(0,183,255,0.15);
+      transform: scale(1.05);
+      box-shadow: 0 0 15px rgba(0,183,255,0.25);
+    }
+
+    tr:nth-child(even) td {
+      background: rgba(255,255,255,0.02);
+    }
+
+    @keyframes fadeIn {
+      from {opacity: 0;}
+      to {opacity: 1;}
     }
 
     @keyframes fadeInUp {
-      from { opacity: 0; transform: translateY(20px); }
-      to { opacity: 1; transform: translateY(0); }
-    }
-
-    @media (max-width: 768px) {
-      .horario-grid {
-        grid-template-columns: repeat(2, 1fr);
-      }
+      from {opacity: 0; transform: translateY(20px);}
+      to {opacity: 1; transform: translateY(0);}
     }
 
     a.volver {
@@ -75,34 +84,55 @@
       color: #fff;
       box-shadow: 0 0 15px rgba(0,183,255,0.3);
     }
+
+    @media (max-width: 768px) {
+      th, td { padding: .6rem; font-size: .85rem; }
+    }
   </style>
 </head>
+
 <body>
 
   <h1>📘 Horario Académico</h1>
 
-  <div class="horario-grid reveal-on-scroll">
-    <div class="horario-header">Hora</div>
-    <div class="horario-header">Lunes</div>
-    <div class="horario-header">Martes</div>
-    <div class="horario-header">Miércoles</div>
-    <div class="horario-header">Jueves</div>
-    <div class="horario-header">Viernes</div>
-
-    <div class="horario-cell">7:00 - 9:00</div>
-    <div class="horario-cell">Redes</div>
-    <div class="horario-cell">Ética Profesional</div>
-    <div class="horario-cell">Diseño de Interfaces</div>
-    <div class="horario-cell">Sistemas Expertos</div>
-    <div class="horario-cell">Cloud Computing</div>
-
-    <div class="horario-cell">9:00 - 11:00</div>
-    <div class="horario-cell">Inteligencia de Negocios</div>
-    <div class="horario-cell">Diseño Web</div>
-    <div class="horario-cell">Programación Cuántica</div>
-    <div class="horario-cell">Probabilidad y Estadística</div>
-    <div class="horario-cell">Ética</div>
-  </div>
+  <table class="tabla-horario reveal-on-scroll">
+    <thead>
+      <tr>
+        <th>Hora</th>
+        <th>Lunes</th>
+        <th>Martes</th>
+        <th>Miércoles</th>
+        <th>Jueves</th>
+        <th>Viernes</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>7:00 - 9:00</td>
+        <td>Redes</td>
+        <td>Ética Profesional</td>
+        <td>Diseño de Interfaces</td>
+        <td>Sistemas Expertos</td>
+        <td>Cloud Computing</td>
+      </tr>
+      <tr>
+        <td>9:00 - 11:00</td>
+        <td>Inteligencia de Negocios</td>
+        <td>Diseño Web</td>
+        <td>Programación Cuántica</td>
+        <td>Probabilidad y Estadística</td>
+        <td>Ética</td>
+      </tr>
+      <tr>
+        <td>11:00 - 1:00</td>
+        <td>Libre</td>
+        <td>Laboratorio Redes</td>
+        <td>Proyecto Integrador</td>
+        <td>Cloud Computing</td>
+        <td>Revisión</td>
+      </tr>
+    </tbody>
+  </table>
 
   <a href="index.html" class="volver">⬅ Volver al Portafolio</a>
 
