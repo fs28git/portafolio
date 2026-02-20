@@ -5,7 +5,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Horario Académico | Portafolio</title>
 
-  <!-- Usa solo estas dos hojas -->
   <link rel="stylesheet" href="css/variables.css">
   <link rel="stylesheet" href="css/tech.css">
 
@@ -23,10 +22,10 @@
       animation: fadeIn 1.2s ease;
     }
 
-    .tabla-horario {
+    table {
       width: 100%;
       border-collapse: collapse;
-      background: rgba(255,255,255,0.05);
+      background: rgba(255,255,255,0.03);
       border: 1px solid rgba(0,183,255,0.3);
       border-radius: 10px;
       box-shadow: 0 0 20px rgba(0,183,255,0.15);
@@ -35,28 +34,33 @@
     }
 
     th, td {
-      padding: 1rem;
-      border: 1px solid rgba(0,183,255,0.2);
+      padding: 0.8rem;
+      border: 1px solid rgba(0,183,255,0.15);
       color: #dff9ff;
       text-align: center;
       transition: background .3s ease, transform .3s ease;
     }
 
     th {
-      background: rgba(0,183,255,0.2);
+      background: rgba(0,183,255,0.25);
       color: #fff;
-      text-shadow: 0 0 6px rgba(0,183,255,0.6);
+      text-shadow: 0 0 8px rgba(0,183,255,0.7);
       font-weight: 600;
     }
 
     td:hover {
-      background: rgba(0,183,255,0.15);
+      background: rgba(0,183,255,0.1);
       transform: scale(1.05);
       box-shadow: 0 0 15px rgba(0,183,255,0.25);
     }
 
-    tr:nth-child(even) td {
-      background: rgba(255,255,255,0.02);
+    .materia {
+      color: #fff;
+      font-weight: 600;
+    }
+    .aula {
+      font-size: 0.85rem;
+      color: var(--azul-claro);
     }
 
     @keyframes fadeIn {
@@ -86,7 +90,7 @@
     }
 
     @media (max-width: 768px) {
-      th, td { padding: .6rem; font-size: .85rem; }
+      th, td { padding: .6rem; font-size: .8rem; }
     }
   </style>
 </head>
@@ -95,7 +99,7 @@
 
   <h1>📘 Horario Académico</h1>
 
-  <table class="tabla-horario reveal-on-scroll">
+  <table class="reveal-on-scroll">
     <thead>
       <tr>
         <th>Hora</th>
@@ -108,28 +112,76 @@
     </thead>
     <tbody>
       <tr>
-        <td>7:00 - 9:00</td>
-        <td>Redes</td>
-        <td>Ética Profesional</td>
-        <td>Diseño de Interfaces</td>
-        <td>Sistemas Expertos</td>
-        <td>Cloud Computing</td>
+        <td>03:00 - 04:00 pm</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
       </tr>
       <tr>
-        <td>9:00 - 11:00</td>
-        <td>Inteligencia de Negocios</td>
-        <td>Diseño Web</td>
-        <td>Programación Cuántica</td>
-        <td>Probabilidad y Estadística</td>
-        <td>Ética</td>
+        <td>04:00 - 05:00 pm</td>
+        <td class="materia">INTELIGENCIA ARTIFICIAL<br><span class="aula">A413</span></td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
       </tr>
       <tr>
-        <td>11:00 - 1:00</td>
-        <td>Libre</td>
-        <td>Laboratorio Redes</td>
-        <td>Proyecto Integrador</td>
-        <td>Cloud Computing</td>
-        <td>Revisión</td>
+        <td>05:00 - 06:00 pm</td>
+        <td class="materia">INTELIGENCIA ARTIFICIAL<br><span class="aula">A413</span></td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td class="materia">MODELAMIENTO ESTOCÁSTICO<br><span class="aula">A403</span></td>
+      </tr>
+      <tr>
+        <td>06:00 - 07:00 pm</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td class="materia">MODELAMIENTO ESTOCÁSTICO<br><span class="aula">A403</span></td>
+        <td class="materia">GERENCIA DE PROYECTOS<br><span class="aula">A403</span></td>
+      </tr>
+      <tr>
+        <td>07:00 - 08:00 pm</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td class="materia">MODELAMIENTO ESTOCÁSTICO<br><span class="aula">A403</span></td>
+        <td class="materia">GERENCIA DE PROYECTOS<br><span class="aula">A403</span></td>
+      </tr>
+      <tr>
+        <td>08:00 - 09:00 pm</td>
+        <td class="materia">INGENIERÍA WEB II<br><span class="aula">A406</span></td>
+        <td class="materia">LEGISLACIÓN INFORMÁTICA<br><span class="aula">A205</span></td>
+        <td>-</td>
+        <td>-</td>
+        <td class="materia">MODELAMIENTO ESTOCÁSTICO<br><span class="aula">A403</span></td>
+      </tr>
+      <tr>
+        <td>09:00 - 10:00 pm</td>
+        <td class="materia">INGENIERÍA WEB II<br><span class="aula">A406</span></td>
+        <td class="materia">LEGISLACIÓN INFORMÁTICA<br><span class="aula">A205</span></td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+      </tr>
+      <tr>
+        <td>10:00 - 11:00 pm</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+      </tr>
+      <tr>
+        <td>11:00 - 12:00 pm</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
       </tr>
     </tbody>
   </table>
@@ -139,3 +191,4 @@
   <script src="js/tech.js" defer></script>
 </body>
 </html>
+
