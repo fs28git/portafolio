@@ -1,91 +1,111 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Horario Académico</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Horario Académico | Portafolio</title>
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/tech.css">
+  <style>
+    body {
+      padding: 2rem;
+      text-align: center;
+    }
 
-<link rel="stylesheet" href="css/variables.css">
-<link rel="stylesheet" href="css/layout.css">
-<link rel="stylesheet" href="css/components.css">
-<link rel="stylesheet" href="css/horario.css">
-<link rel="stylesheet" href="css/responsive.css">
+    h1 {
+      color: var(--azul-tech);
+      text-shadow: 0 0 15px rgba(0,183,255,0.7);
+      margin-bottom: 2rem;
+    }
+
+    .horario-grid {
+      display: grid;
+      grid-template-columns: repeat(6, 1fr);
+      gap: 1rem;
+      text-align: center;
+      animation: fadeInUp 1s ease;
+    }
+
+    .horario-cell {
+      background: rgba(255,255,255,0.05);
+      border: 1px solid rgba(0,183,255,0.3);
+      border-radius: 10px;
+      padding: 1rem;
+      transition: all 0.4s ease;
+      box-shadow: 0 0 10px rgba(0,183,255,0.1);
+    }
+
+    .horario-cell:hover {
+      transform: scale(1.05);
+      box-shadow: 0 0 25px rgba(0,183,255,0.4);
+      background: rgba(0,183,255,0.1);
+    }
+
+    .horario-header {
+      background: rgba(0,183,255,0.2);
+      font-weight: bold;
+      color: #fff;
+      border: 1px solid rgba(0,183,255,0.5);
+      text-shadow: 0 0 6px rgba(0,183,255,0.6);
+    }
+
+    @keyframes fadeInUp {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @media (max-width: 768px) {
+      .horario-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    a.volver {
+      display: inline-block;
+      margin-top: 2rem;
+      color: var(--azul-claro);
+      text-decoration: none;
+      border: 1px solid rgba(0,183,255,0.4);
+      padding: .6rem 1rem;
+      border-radius: 8px;
+      transition: all .3s ease;
+    }
+    a.volver:hover {
+      background: rgba(0,183,255,0.3);
+      color: #fff;
+      box-shadow: 0 0 15px rgba(0,183,255,0.3);
+    }
+  </style>
 </head>
-
 <body>
 
-<header class="page-header">
-  <h1>Horario Académico</h1>
-  <a href="index.html" class="btn">← Volver</a>
-</header>
+  <h1>📘 Horario Académico</h1>
 
-<main class="container">
+  <div class="horario-grid reveal-on-scroll">
+    <div class="horario-header">Hora</div>
+    <div class="horario-header">Lunes</div>
+    <div class="horario-header">Martes</div>
+    <div class="horario-header">Miércoles</div>
+    <div class="horario-header">Jueves</div>
+    <div class="horario-header">Viernes</div>
 
-<section class="card">
-  <h2>Horario Semanal</h2>
+    <div class="horario-cell">7:00 - 9:00</div>
+    <div class="horario-cell">Redes</div>
+    <div class="horario-cell">Ética Profesional</div>
+    <div class="horario-cell">Diseño de Interfaces</div>
+    <div class="horario-cell">Sistemas Expertos</div>
+    <div class="horario-cell">Cloud Computing</div>
 
-  <div class="horario-grid">
-
-    <!-- Encabezados -->
-    <div class="hora head"></div>
-    <div class="head">Lunes</div>
-    <div class="head">Martes</div>
-    <div class="head">Miércoles</div>
-    <div class="head">Jueves</div>
-    <div class="head">Viernes</div>
-
-    <!-- 4-5 pm -->
-    <div class="hora">4-5 pm</div>
-    <div class="materia ia">Inteligencia Artificial<br><span>A413</span></div>
-    <div class="vacio"></div>
-    <div class="vacio"></div>
-    <div class="vacio"></div>
-    <div class="vacio"></div>
-
-    <!-- 5-6 pm -->
-    <div class="hora">5-6 pm</div>
-    <div class="materia ia">Inteligencia Artificial<br><span>A413</span></div>
-    <div class="vacio"></div>
-    <div class="vacio"></div>
-    <div class="vacio"></div>
-    <div class="vacio"></div>
-
-    <!-- 6-7 pm -->
-    <div class="hora">6-7 pm</div>
-    <div class="vacio"></div>
-    <div class="vacio"></div>
-    <div class="vacio"></div>
-    <div class="materia model">Modelamiento Estocástico<br><span>A403</span></div>
-    <div class="materia gp">Gerencia de Proyectos<br><span>A403</span></div>
-
-    <!-- 7-8 pm -->
-    <div class="hora">7-8 pm</div>
-    <div class="vacio"></div>
-    <div class="vacio"></div>
-    <div class="vacio"></div>
-    <div class="materia model">Modelamiento Estocástico<br><span>A403</span></div>
-    <div class="materia gp">Gerencia de Proyectos<br><span>A403</span></div>
-
-    <!-- 8-9 pm -->
-    <div class="hora">8-9 pm</div>
-    <div class="materia web">Ingeniería Web II<br><span>A406</span></div>
-    <div class="materia leg">Legislación Informática<br><span>A205</span></div>
-    <div class="vacio"></div>
-    <div class="materia model">Modelamiento Estocástico<br><span>A403</span></div>
-    <div class="vacio"></div>
-
-    <!-- 9-10 pm -->
-    <div class="hora">9-10 pm</div>
-    <div class="materia web">Ingeniería Web II<br><span>A406</span></div>
-    <div class="materia leg">Legislación Informática<br><span>A205</span></div>
-    <div class="vacio"></div>
-    <div class="vacio"></div>
-    <div class="vacio"></div>
-
+    <div class="horario-cell">9:00 - 11:00</div>
+    <div class="horario-cell">Inteligencia de Negocios</div>
+    <div class="horario-cell">Diseño Web</div>
+    <div class="horario-cell">Programación Cuántica</div>
+    <div class="horario-cell">Probabilidad y Estadística</div>
+    <div class="horario-cell">Ética</div>
   </div>
-</section>
 
-</main>
+  <a href="index.html" class="volver">⬅ Volver al Portafolio</a>
+
+  <script src="js/tech.js" defer></script>
 </body>
 </html>
-
