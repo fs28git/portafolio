@@ -1,171 +1,129 @@
-/* css/tech.css actualizado — fondo negro + animaciones suaves entre secciones */
+/* css/tech.css — versión fuerte: fondo negro forzado y animaciones de sección mejoradas */
 
+/* Fuentes */
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;400;700&family=Inter:wght@300;400;600&display=swap');
 
 :root{
-  --bg-1: #000000;
+  --bg-plain: #000000;
   --neon-cyan: #00f0ff;
   --neon-mag: #c600ff;
   --muted: #b8c5c9;
   --card-bg: rgba(255,255,255,0.03);
   --accent: #00e5ff;
-  --glow: 0 0 22px rgba(0,240,255,0.2), 0 0 60px rgba(0,230,255,0.08);
 }
 
-/* Fondo general */
-body{
-  background: radial-gradient(circle at 25% 25%, rgba(0,200,255,0.04), transparent 40%),
-              radial-gradient(circle at 80% 80%, rgba(255,0,255,0.05), transparent 40%),
-              #000;
+/* ---------- Fondo NEGRO forzado ---------- */
+html, body {
+  background-color: var(--bg-plain) !important;
+  background-image: none !important;
   color: #cfeefc;
+  min-height: 100%;
+  height: 100%;
+  margin: 0;
   font-family: "Inter", "Roboto Mono", monospace;
-  overflow-x: hidden;
-  scroll-behavior: smooth;
+  -webkit-font-smoothing:antialiased;
+  -moz-osx-font-smoothing:grayscale;
 }
 
-/* Efecto matrix-like de líneas verticales */
-body::before{
-  content:"";
-  position:fixed;
-  inset:0;
-  background: repeating-linear-gradient(
-    90deg,
-    rgba(0,255,255,0.04) 0px,
-    rgba(0,255,255,0.04) 1px,
-    transparent 2px,
-    transparent 4px
-  );
-  opacity: 0.2;
-  pointer-events:none;
-  animation: scrollLines 18s linear infinite;
-  z-index:0;
-}
-@keyframes scrollLines {
-  from { transform: translateY(0); }
-  to { transform: translateY(100px); }
+/* overlay sutil (colocado DETRÁS del contenido) */
+:root { --overlay-opacity: 0.14; }
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: -1; /* importante: atrás del contenido */
+  background:
+    radial-gradient(circle at 10% 10%, rgba(0,200,255,0.03), transparent 8%),
+    radial-gradient(circle at 90% 80%, rgba(200,0,255,0.03), transparent 8%),
+    linear-gradient(0deg, rgba(255,255,255,0.01), transparent);
+  opacity: var(--overlay-opacity);
+  filter: blur(8px);
 }
 
-/* Neon titles */
+/* Forzar que otros pseudo overlays no tapen el contenido:
+   si otras hojas intentan poner overlays con z-index mayores, esto reduce conflictos. */
+* { backface-visibility: hidden; -webkit-backface-visibility: hidden; }
+
+/* ---------- TITULO / NEON / GLITCH ---------- */
 .neon {
   color: var(--neon-cyan);
-  text-shadow:
-    0 0 6px rgba(0,240,255,0.7),
-    0 0 25px rgba(0,240,255,0.25),
-    0 8px 40px rgba(0,0,0,0.7);
+  text-shadow: 0 0 6px rgba(0,240,255,0.8), 0 0 26px rgba(0,240,255,0.18);
   letter-spacing: 0.6px;
 }
 
-/* Glitch effect for main title */
-.glitch {
-  position:relative;
-  display:inline-block;
-}
-.glitch::before,
-.glitch::after{
+.glitch { position:relative; display:inline-block; }
+.glitch::before, .glitch::after{
   content: attr(data-text);
-  position:absolute;
-  left:0; top:0;
-  width:100%;
-  overflow:hidden;
-  clip:rect(0,9999px,0,0);
+  position:absolute; left:0; top:0; width:100%;
+  overflow:hidden; clip:rect(0,9999px,0,0);
 }
-.glitch::before{
-  animation: glitchTop 2.6s linear infinite;
-  color: var(--neon-mag);
-  opacity:0.8;
-  transform:translateX(-1px);
-}
-.glitch::after{
-  animation: glitchBottom 3.1s linear infinite;
-  color: var(--neon-cyan);
-  opacity:0.8;
-  transform:translateX(1px);
-}
-@keyframes glitchTop{
-  0%,100%{ clip:rect(0,9999px,0,0); }
-  10%{ clip:rect(2px,9999px,18px,0); }
-  20%{ clip:rect(8px,9999px,36px,0); }
-  30%{ clip:rect(4px,9999px,28px,0); }
-}
-@keyframes glitchBottom{
-  0%,100%{ clip:rect(0,9999px,0,0); }
-  12%{ clip:rect(20px,9999px,42px,0); }
-  25%{ clip:rect(6px,9999px,30px,0); }
-  50%{ clip:rect(0,9999px,0,0); }
-}
+.glitch::before{ animation: g1 2.6s linear infinite; color:var(--neon-mag); opacity:0.78; transform:translateX(-1px); }
+.glitch::after{ animation: g2 3.1s linear infinite; color:var(--neon-cyan); opacity:0.78; transform:translateX(1px); }
+@keyframes g1 { 0%,100%{clip:rect(0,9999px,0,0);} 10%{clip:rect(2px,9999px,18px,0);} 20%{clip:rect(8px,9999px,36px,0);} }
+@keyframes g2 { 0%,100%{clip:rect(0,9999px,0,0);} 12%{clip:rect(20px,9999px,42px,0);} 25%{clip:rect(6px,9999px,30px,0);} }
 
-/* Cards */
-.card{
+/* ---------- CARTAS / BOTONES ---------- */
+.card {
   background: var(--card-bg);
-  border: 1px solid rgba(255,255,255,0.04);
   border-radius: 10px;
+  border: 1px solid rgba(255,255,255,0.03);
   padding: 1rem;
-  transition: transform .25s ease, box-shadow .25s ease, border-color .25s ease;
+  transition: transform .28s cubic-bezier(.2,.9,.2,1), box-shadow .28s, border-color .28s;
 }
-.card:hover{
-  transform: translateY(-6px);
-  box-shadow: 0 0 25px rgba(0,230,255,0.08);
-  border-color: rgba(0,230,255,0.18);
-}
+.card:hover{ transform: translateY(-6px); box-shadow: 0 18px 40px rgba(0,0,0,0.6); border-color: rgba(0,230,255,0.08); }
 
-/* Reveal animation */
+.btn {
+  border-radius: 8px;
+  padding: .6rem 1rem;
+  border: 1px solid rgba(0,255,255,0.2);
+  background: rgba(0,255,255,0.035);
+  color: var(--neon-cyan);
+  text-decoration: none;
+  transition: transform .18s ease, box-shadow .18s ease, background .18s;
+}
+.btn:hover{ transform: translateY(-3px); box-shadow: 0 10px 30px rgba(0,255,255,0.06); background: rgba(0,255,255,0.06); }
+
+/* ---------- REVEAL ON SCROLL (más suave) ---------- */
 .reveal-on-scroll {
   opacity: 0;
-  transform: translateY(20px);
-  transition: opacity 1s ease-out, transform 1s ease-out;
+  transform: translateY(18px) scale(.995);
+  transition: opacity .8s cubic-bezier(.2,.9,.2,1), transform .8s cubic-bezier(.2,.9,.2,1);
+  will-change: opacity, transform;
 }
 .reveal-on-scroll.revealed {
   opacity: 1;
-  transform: translateY(0);
+  transform: translateY(0) scale(1);
 }
 
-/* Section fade transition */
+/* ---------- TRANSICIONES ENTRE SECCIONES (MEJORADAS) ---------- */
+/* Por defecto, todas las secciones están ocultas (inactivas),
+   activamos solo la actual con .active-section */
+
 section {
-  position: relative;
-  transition: opacity 0.8s ease-in-out, transform 0.8s ease-in-out;
-  will-change: opacity, transform;
-  z-index: 2;
+  opacity: 0;
+  transform: translateY(12px);
+  transition: opacity .62s cubic-bezier(.2,.9,.2,1), transform .62s cubic-bezier(.2,.9,.2,1);
+  pointer-events: none;
 }
 section.active-section {
   opacity: 1;
   transform: translateY(0);
+  pointer-events: auto;
 }
-section.inactive-section {
+section.fading-out {
   opacity: 0;
-  transform: translateY(20px);
+  transform: translateY(8px);
+  pointer-events: none;
 }
 
-/* Buttons */
-.btn{
-  border: 1px solid rgba(0,255,255,0.4);
-  background: rgba(0,255,255,0.05);
-  color: var(--neon-cyan);
-  border-radius: 8px;
-  padding: 0.6rem 1rem;
-  text-decoration:none;
-  transition: all .25s ease;
-}
-.btn:hover{
-  background: rgba(0,255,255,0.1);
-  box-shadow: 0 0 16px rgba(0,255,255,0.2);
-  transform: translateY(-3px);
+/* pequeño delay visual para que el fade-out se note */
+.section-transition-shim {
+  transition: opacity .28s linear;
 }
 
-/* Images */
-img{
-  border-radius: 6px;
-  transition: transform .3s ease, box-shadow .3s ease;
-}
-img:hover{
-  transform: scale(1.03);
-  box-shadow: 0 0 20px rgba(0,255,255,0.08);
-}
+/* ---------- IMAGENES / FOOTER ---------- */
+img { transition: transform .28s ease, box-shadow .28s ease; }
+img:hover { transform: translateY(-6px) scale(1.02); box-shadow: 0 18px 40px rgba(0,0,0,0.6); }
 
-/* Footer */
-.footer{
-  background: rgba(0,0,0,0.85);
-  color: #888;
-  text-align: center;
-  padding: 1rem;
-  border-top: 1px solid rgba(255,255,255,0.05);
-}
+.footer { background: rgba(0,0,0,0.85); color: #8b98a0; padding: 1rem; text-align:center; border-top:1px solid rgba(255,255,255,0.03); }
