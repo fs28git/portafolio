@@ -1,44 +1,30 @@
-/* css/tech.css — versión avanzada: fondo negro, header azul brillante y animaciones tipo portal */
+/* tech.css — versión anterior restaurada */
 
+/* Fuente y colores base */
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;400;700&family=Inter:wght@300;400;600&display=swap');
 
-:root{
+:root {
   --bg: #000;
   --azul-tech: #00b7ff;
   --azul-claro: #4fd9ff;
-  --neon-cyan: #00f0ff;
-  --blanco-card: rgba(255,255,255,0.05);
-  --borde-card: rgba(0,183,255,0.4);
-  --texto: #d5e8ff;
+  --texto: #dff9ff;
+  --card-bg: rgba(255,255,255,0.05);
+  --borde: rgba(0,183,255,0.3);
 }
 
-/* ======== FONDO GENERAL ======== */
-html, body{
-  background-color: var(--bg) !important;
+/* ===== Fondo general ===== */
+html, body {
+  background-color: var(--bg);
   color: var(--texto);
   font-family: "Inter", "Roboto Mono", monospace;
   margin: 0;
-  min-height: 100%;
+  padding: 0;
   overflow-x: hidden;
-}
-body::before{
-  content:"";
-  position:fixed;
-  inset:0;
-  background: radial-gradient(circle at 15% 20%, rgba(0,183,255,0.06), transparent 40%),
-              radial-gradient(circle at 80% 90%, rgba(0,0,255,0.08), transparent 50%);
-  opacity:0.6;
-  pointer-events:none;
-  z-index:0;
-  animation: fondoPulse 12s ease-in-out infinite alternate;
-}
-@keyframes fondoPulse{
-  from {filter: hue-rotate(0deg);}
-  to {filter: hue-rotate(40deg);}
+  scroll-behavior: smooth;
 }
 
-/* ======== HEADER ======== */
-.navbar{
+/* ===== Navbar ===== */
+.navbar {
   background: linear-gradient(90deg, rgba(0,183,255,0.15), rgba(0,0,40,0.5));
   backdrop-filter: blur(8px);
   box-shadow: 0 0 18px rgba(0,183,255,0.1);
@@ -46,113 +32,153 @@ body::before{
   position: sticky;
   top: 0;
   z-index: 99;
-  transition: background 0.3s ease;
+  padding: 1rem 2rem;
 }
-.navbar .logo{
+
+.logo {
   color: var(--azul-claro);
   text-shadow: 0 0 10px rgba(0,183,255,0.4);
+  margin: 0;
 }
-.navbar nav a{
+
+.navbar nav a {
   color: var(--azul-claro);
   font-weight: 500;
   text-decoration: none;
   margin-left: 14px;
   transition: color 0.3s, text-shadow 0.3s;
 }
-.navbar nav a:hover{
+.navbar nav a:hover {
   color: #fff;
   text-shadow: 0 0 12px var(--azul-tech);
 }
 
-/* ======== TITULOS ======== */
-.neon{
-  color: var(--azul-tech);
-  text-shadow: 0 0 10px rgba(0,183,255,0.6), 0 0 25px rgba(0,183,255,0.2);
-  letter-spacing: 0.6px;
+/* ===== Secciones ===== */
+section {
+  padding: 2rem 0;
+  transition: opacity 0.9s ease, transform 0.9s ease;
 }
-.glitch{ position:relative; display:inline-block; }
-.glitch::before, .glitch::after{
-  content: attr(data-text);
-  position:absolute; left:0; top:0; width:100%;
-  overflow:hidden; clip:rect(0,9999px,0,0);
-}
-.glitch::before{ animation:g1 2.6s linear infinite; color:#4fd9ff; opacity:.7; transform:translateX(-1px);}
-.glitch::after{ animation:g2 3.1s linear infinite; color:#008cff; opacity:.7; transform:translateX(1px);}
-@keyframes g1{0%,100%{clip:rect(0,9999px,0,0);}10%{clip:rect(3px,9999px,16px,0);}20%{clip:rect(7px,9999px,36px,0);}}
-@keyframes g2{0%,100%{clip:rect(0,9999px,0,0);}15%{clip:rect(18px,9999px,40px,0);}30%{clip:rect(5px,9999px,32px,0);}}
 
-/* ======== TARJETAS ======== */
-.card{
-  background: var(--blanco-card);
-  border: 1px solid var(--borde-card);
+section.active-section {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+section.fading-out {
+  opacity: 0;
+  transform: translateY(25px);
+}
+
+/* ===== Titulares ===== */
+h1, h2 {
+  text-align: center;
+}
+
+.neon {
+  color: var(--azul-tech);
+  text-shadow: 0 0 10px rgba(0,183,255,0.6);
+}
+
+.glitch {
+  position: relative;
+  display: inline-block;
+}
+.glitch::before, .glitch::after {
+  content: attr(data-text);
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  overflow: hidden;
+  clip: rect(0,9999px,0,0);
+}
+.glitch::before {
+  animation: glitch1 2.6s linear infinite;
+  color: #4fd9ff;
+  opacity: 0.7;
+}
+.glitch::after {
+  animation: glitch2 3.1s linear infinite;
+  color: #008cff;
+  opacity: 0.7;
+}
+
+@keyframes glitch1 {
+  0%,100% {clip: rect(0,9999px,0,0);}
+  10% {clip: rect(3px,9999px,16px,0);}
+  20% {clip: rect(7px,9999px,36px,0);}
+}
+
+@keyframes glitch2 {
+  0%,100% {clip: rect(0,9999px,0,0);}
+  15% {clip: rect(18px,9999px,40px,0);}
+  30% {clip: rect(5px,9999px,32px,0);}
+}
+
+/* ===== Tarjetas ===== */
+.card {
+  background: var(--card-bg);
+  border: 1px solid var(--borde);
   border-radius: 10px;
   padding: 1.2rem;
-  transition: all .35s ease;
+  transition: all 0.35s ease;
   box-shadow: 0 0 10px rgba(0,183,255,0.05);
 }
-.card:hover{
-  box-shadow: 0 0 25px rgba(0,183,255,0.25), 0 0 6px rgba(0,183,255,0.6) inset;
+.card:hover {
+  box-shadow: 0 0 25px rgba(0,183,255,0.25);
   transform: translateY(-5px) scale(1.02);
 }
 
-/* ======== BOTONES ======== */
-.btn{
+/* ===== Botones ===== */
+.btn {
   border-radius: 8px;
   border: 1px solid rgba(0,183,255,0.5);
   background: rgba(0,183,255,0.1);
   color: var(--azul-claro);
-  text-decoration:none;
-  padding:.6rem 1rem;
-  transition: all .3s ease;
+  text-decoration: none;
+  padding: 0.6rem 1rem;
+  transition: all 0.3s ease;
 }
-.btn:hover{
+.btn:hover {
   background: rgba(0,183,255,0.3);
-  color:#fff;
+  color: #fff;
   box-shadow: 0 0 18px rgba(0,183,255,0.4);
 }
 
-/* ======== REVEAL ON SCROLL ======== */
-.reveal-on-scroll{
-  opacity:0;
-  transform: translateY(25px) scale(.97);
-  transition: opacity .9s cubic-bezier(.2,.9,.2,1), transform .9s cubic-bezier(.2,.9,.2,1);
+/* ===== Imágenes ===== */
+img {
+  border-radius: 8px;
+  transition: all 0.35s ease;
 }
-.reveal-on-scroll.revealed{
-  opacity:1;
-  transform: translateY(0) scale(1);
-}
-
-/* ======== ANIMACIÓN ENTRE SECCIONES ======== */
-section{
-  opacity:0;
-  transform: scale(0.98) translateY(20px);
-  transition: opacity 0.9s ease, transform 0.9s ease;
-  pointer-events:none;
-}
-section.active-section{
-  opacity:1;
-  transform: scale(1) translateY(0);
-  pointer-events:auto;
-}
-section.fading-out{
-  opacity:0;
-  transform: scale(1.02) translateY(-20px);
-  pointer-events:none;
-}
-
-/* ======== IMÁGENES / FOOTER ======== */
-img{
-  border-radius:8px;
-  transition: all .35s ease;
-}
-img:hover{
+img:hover {
   transform: scale(1.05);
   box-shadow: 0 0 18px rgba(0,183,255,0.25);
 }
-.footer{
+
+/* ===== Animación de aparición ===== */
+.reveal-on-scroll {
+  opacity: 0;
+  transform: translateY(25px);
+  transition: opacity 0.9s ease, transform 0.9s ease;
+}
+.reveal-on-scroll.revealed {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* ===== Footer ===== */
+.footer {
   background: rgba(0,0,30,0.8);
   border-top: 1px solid rgba(0,183,255,0.2);
   color: #8bb8ff;
   padding: 1rem;
-  text-align:center;
+  text-align: center;
+}
+
+/* ===== Medias ===== */
+@media (max-width: 768px) {
+  nav a {
+    display: inline-block;
+    margin: 6px 8px;
+  }
 }
