@@ -3,192 +3,61 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Horario Académico | Portafolio</title>
-
+  <title>Horario de Clases</title>
   <link rel="stylesheet" href="css/variables.css">
-  <link rel="stylesheet" href="css/tech.css">
-
-  <style>
-    body {
-      padding: 2rem;
-      text-align: center;
-      background-color: #000 !important;
-    }
-
-    h1 {
-      color: var(--azul-tech);
-      text-shadow: 0 0 15px rgba(0,183,255,0.7);
-      margin-bottom: 2rem;
-      animation: fadeIn 1.2s ease;
-    }
-
-    table {
-      width: 100%;
-      border-collapse: collapse;
-      background: rgba(255,255,255,0.03);
-      border: 1px solid rgba(0,183,255,0.3);
-      border-radius: 10px;
-      box-shadow: 0 0 20px rgba(0,183,255,0.15);
-      overflow: hidden;
-      animation: fadeInUp 1s ease;
-    }
-
-    th, td {
-      padding: 0.8rem;
-      border: 1px solid rgba(0,183,255,0.15);
-      color: #dff9ff;
-      text-align: center;
-      transition: background .3s ease, transform .3s ease;
-    }
-
-    th {
-      background: rgba(0,183,255,0.25);
-      color: #fff;
-      text-shadow: 0 0 8px rgba(0,183,255,0.7);
-      font-weight: 600;
-    }
-
-    td:hover {
-      background: rgba(0,183,255,0.1);
-      transform: scale(1.05);
-      box-shadow: 0 0 15px rgba(0,183,255,0.25);
-    }
-
-    .materia {
-      color: #fff;
-      font-weight: 600;
-    }
-    .aula {
-      font-size: 0.85rem;
-      color: var(--azul-claro);
-    }
-
-    @keyframes fadeIn {
-      from {opacity: 0;}
-      to {opacity: 1;}
-    }
-
-    @keyframes fadeInUp {
-      from {opacity: 0; transform: translateY(20px);}
-      to {opacity: 1; transform: translateY(0);}
-    }
-
-    a.volver {
-      display: inline-block;
-      margin-top: 2rem;
-      color: var(--azul-claro);
-      text-decoration: none;
-      border: 1px solid rgba(0,183,255,0.4);
-      padding: .6rem 1rem;
-      border-radius: 8px;
-      transition: all .3s ease;
-    }
-    a.volver:hover {
-      background: rgba(0,183,255,0.3);
-      color: #fff;
-      box-shadow: 0 0 15px rgba(0,183,255,0.3);
-    }
-
-    @media (max-width: 768px) {
-      th, td { padding: .6rem; font-size: .8rem; }
-    }
-  </style>
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/horario.css">
+  <link rel="stylesheet" href="css/responsive.css">
 </head>
-
 <body>
+  <header class="navbar">
+    <h2 class="logo">Portafolio</h2>
+    <nav>
+      <a href="index.html">Inicio</a>
+      <a href="horario.html">Horario</a>
+      <a href="organigrama.html">Organigrama</a>
+    </nav>
+  </header>
 
-  <h1>📘 Horario Académico</h1>
+  <main class="reveal-on-scroll">
+    <h1>📘 Horario Académico</h1>
 
-  <table class="reveal-on-scroll">
-    <thead>
-      <tr>
-        <th>Hora</th>
-        <th>Lunes</th>
-        <th>Martes</th>
-        <th>Miércoles</th>
-        <th>Jueves</th>
-        <th>Viernes</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td>03:00 - 04:00 pm</td>
-        <td>-</td>
-        <td>-</td>
-        <td>-</td>
-        <td>-</td>
-        <td>-</td>
-      </tr>
-      <tr>
-        <td>04:00 - 05:00 pm</td>
-        <td class="materia">INTELIGENCIA ARTIFICIAL<br><span class="aula">A413</span></td>
-        <td>-</td>
-        <td>-</td>
-        <td>-</td>
-        <td>-</td>
-      </tr>
-      <tr>
-        <td>05:00 - 06:00 pm</td>
-        <td class="materia">INTELIGENCIA ARTIFICIAL<br><span class="aula">A413</span></td>
-        <td>-</td>
-        <td>-</td>
-        <td>-</td>
-        <td class="materia">MODELAMIENTO ESTOCÁSTICO<br><span class="aula">A403</span></td>
-      </tr>
-      <tr>
-        <td>06:00 - 07:00 pm</td>
-        <td>-</td>
-        <td>-</td>
-        <td>-</td>
-        <td class="materia">MODELAMIENTO ESTOCÁSTICO<br><span class="aula">A403</span></td>
-        <td class="materia">GERENCIA DE PROYECTOS<br><span class="aula">A403</span></td>
-      </tr>
-      <tr>
-        <td>07:00 - 08:00 pm</td>
-        <td>-</td>
-        <td>-</td>
-        <td>-</td>
-        <td class="materia">MODELAMIENTO ESTOCÁSTICO<br><span class="aula">A403</span></td>
-        <td class="materia">GERENCIA DE PROYECTOS<br><span class="aula">A403</span></td>
-      </tr>
-      <tr>
-        <td>08:00 - 09:00 pm</td>
-        <td class="materia">INGENIERÍA WEB II<br><span class="aula">A406</span></td>
-        <td class="materia">LEGISLACIÓN INFORMÁTICA<br><span class="aula">A205</span></td>
-        <td>-</td>
-        <td>-</td>
-        <td class="materia">MODELAMIENTO ESTOCÁSTICO<br><span class="aula">A403</span></td>
-      </tr>
-      <tr>
-        <td>09:00 - 10:00 pm</td>
-        <td class="materia">INGENIERÍA WEB II<br><span class="aula">A406</span></td>
-        <td class="materia">LEGISLACIÓN INFORMÁTICA<br><span class="aula">A205</span></td>
-        <td>-</td>
-        <td>-</td>
-        <td>-</td>
-      </tr>
-      <tr>
-        <td>10:00 - 11:00 pm</td>
-        <td>-</td>
-        <td>-</td>
-        <td>-</td>
-        <td>-</td>
-        <td>-</td>
-      </tr>
-      <tr>
-        <td>11:00 - 12:00 pm</td>
-        <td>-</td>
-        <td>-</td>
-        <td>-</td>
-        <td>-</td>
-        <td>-</td>
-      </tr>
-    </tbody>
-  </table>
+    <div class="horario">
+      <div class="h-header">Hora</div>
+      <div class="h-header">Lunes</div>
+      <div class="h-header">Martes</div>
+      <div class="h-header">Miércoles</div>
+      <div class="h-header">Jueves</div>
+      <div class="h-header">Viernes</div>
 
-  <a href="index.html" class="volver">⬅ Volver al Portafolio</a>
+      <div class="h-cell">03:00–04:00 pm</div>
+      <div class="h-cell">–</div><div class="h-cell">–</div><div class="h-cell">–</div><div class="h-cell">–</div><div class="h-cell">–</div>
 
-  <script src="js/tech.js" defer></script>
+      <div class="h-cell">04:00–05:00 pm</div>
+      <div class="h-cell materia">INTELIGENCIA ARTIFICIAL<br><span class="aula">A413 · Prof. Ruiz</span><span class="estado">(Presencial)</span></div>
+      <div class="h-cell">–</div><div class="h-cell">–</div><div class="h-cell">–</div><div class="h-cell">–</div>
+
+      <div class="h-cell">05:00–06:00 pm</div>
+      <div class="h-cell materia">INTELIGENCIA ARTIFICIAL<br><span class="aula">A413 · Prof. Ruiz</span></div>
+      <div class="h-cell">–</div><div class="h-cell">–</div>
+      <div class="h-cell">–</div>
+      <div class="h-cell materia">MODELAMIENTO ESTOCÁSTICO<br><span class="aula">A403 · Prof. Silva</span></div>
+
+      <div class="h-cell">06:00–07:00 pm</div>
+      <div class="h-cell">–</div><div class="h-cell">–</div><div class="h-cell">–</div>
+      <div class="h-cell materia">MODELAMIENTO ESTOCÁSTICO<br><span class="aula">A403 · Prof. Silva</span></div>
+      <div class="h-cell materia">GERENCIA DE PROYECTOS<br><span class="aula">A403 · Prof. Gómez</span></div>
+
+      <div class="h-cell">08:00–09:00 pm</div>
+      <div class="h-cell materia">INGENIERÍA WEB II<br><span class="aula">A406 · Prof. Torres</span></div>
+      <div class="h-cell materia">LEGISLACIÓN INFORMÁTICA<br><span class="aula">A205 · Prof. Ochoa</span></div>
+      <div class="h-cell">–</div><div class="h-cell">–</div>
+      <div class="h-cell materia">MODELAMIENTO ESTOCÁSTICO<br><span class="aula">A403 · Prof. Silva</span></div>
+    </div>
+  </main>
+
+  <footer>© 2026 Pipe Solano</footer>
+  <script src="js/ui.js" defer></script>
 </body>
 </html>
-
