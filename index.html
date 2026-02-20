@@ -1,192 +1,298 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Portafolio Académico | Andres Felipe Solano Moreno</title>
-  <meta name="description" content="Portafolio académico de Andres Felipe Solano Moreno, estudiante de Ingeniería de Software.">
+  <meta name="description" content="Portafolio académico de Andres Felipe Solano Moreno. Horario y organigrama + proyectos y certificados." />
 
-  <!-- CSS del proyecto -->
-  <link rel="stylesheet" href="css/variables.css">
-  <link rel="stylesheet" href="css/layout.css">
-  <link rel="stylesheet" href="css/components.css">
-  <link rel="stylesheet" href="css/responsive.css">
+  <!-- Fuentes -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Orbitron:wght@500&display=swap" rel="stylesheet">
 
-  <!-- Efectos tecnológicos restaurados -->
+  <!-- CSS principal -->
   <link rel="stylesheet" href="css/tech.css">
-
-  <!-- Fuente -->
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 </head>
-
 <body>
 
-<!-- ===== NAVBAR ===== -->
-<header class="navbar reveal-on-scroll">
-  <div class="container nav-content" style="display:flex;align-items:center;justify-content:space-between;gap:1rem;">
-    <h2 class="logo">Portafolio</h2>
-
-    <nav>
-      <a href="#inicio">Inicio</a>
-      <a href="#perfil">Perfil</a>
-      <a href="#proyectos">Proyecto</a>
-      <a href="#certificados">Certificados</a>
-      <a href="#articulos">Artículos</a>
-      <a href="horario.html">Horario</a>
-      <a href="organigrama.html">Organigrama</a>
-      <a href="#contacto">Contacto</a>
-    </nav>
-  </div>
-</header>
-
-<!-- ===== HERO ===== -->
-<section id="inicio" class="hero reveal-on-scroll">
-  <div class="container hero-content" 
-       style="display:flex;flex-wrap:wrap;align-items:center;justify-content:center;gap:2rem;padding:3rem 1rem;flex-direction:row-reverse;">
-    
-    <!-- Imagen principal a la derecha -->
-    <div class="hero-image" style="flex:0 0 240px;max-width:260px;display:flex;align-items:center;justify-content:center;">
-      <img src="assets/img/perfil.jpg" alt="Foto de Andres Felipe Solano Moreno"
-           style="width:100%;max-width:260px;height:auto;border-radius:12px;box-shadow:0 8px 30px rgba(0,183,255,0.25);object-fit:cover;">
+  <!-- NAVBAR -->
+  <header class="navbar" id="site-navbar" role="banner">
+    <div class="nav-inner container">
+      <h2 class="logo">Portafolio</h2>
+      <nav aria-label="Principal">
+        <a href="#inicio">Inicio</a>
+        <a href="#perfil">Perfil</a>
+        <a href="#proyectos">Proyecto</a>
+        <a href="#certificados">Certificados</a>
+        <a href="#articulos">Artículos</a>
+        <a href="horario.html">Horario</a>
+        <a href="organigrama.html">Organigrama</a>
+        <a href="#contacto">Contacto</a>
+      </nav>
     </div>
+  </header>
 
-    <!-- Texto principal a la izquierda -->
-    <div class="hero-text" style="flex:1;min-width:280px;max-width:760px;text-align:left;">
-      <h1 class="neon glitch" data-text="Andres Felipe Solano Moreno">Andres Felipe Solano Moreno</h1>
-      <p class="tech-subtitle" style="margin-top:10px;color:var(--azul-claro);font-weight:500;">Desarrollo web · Redes · Linux · Ciberseguridad</p>
-      <p style="max-width:720px;margin:15px 0;color:rgba(223,249,255,0.92);line-height:1.6;">
-        Estudiante de Ingeniería de Software con formación en desarrollo web, redes, Linux y ciberseguridad.
-        Este portafolio académico integra un módulo con horario semanal y organigrama diario, además de proyectos y certificaciones.
-      </p>
+  <!-- HERO -->
+  <section id="inicio" class="hero section" data-parallax>
+    <div class="hero-wave" aria-hidden="true"></div>
 
-      <div style="margin-top:16px;display:flex;gap:12px;flex-wrap:wrap;">
-        <a class="btn" href="#proyectos">Ver proyecto académico</a>
-        <a class="btn" href="#contacto">Contactar</a>
-      </div>
-    </div>
-  </div>
-</section>
+    <div class="container hero-grid">
+      <!-- texto a la izquierda -->
+      <div class="hero-text">
+        <h1 id="hero-title" class="headline" data-text="Andres Felipe Solano Moreno">Andres Felipe Solano Moreno</h1>
+        <p id="hero-sub" class="subhead" aria-hidden="true"></p>
+        <p class="lead">
+          Estudiante de Ingeniería de Software. Desarrollo web · Redes · Linux · Ciberseguridad.
+          En este portafolio verás mi módulo académico (horario & organigrama), proyectos y certificados.
+        </p>
 
-<!-- ===== PERFIL ===== -->
-<section id="perfil" class="section reveal-on-scroll" style="padding:3rem 1rem;">
-  <div class="container" style="max-width:900px;margin:0 auto;text-align:left;">
-    <h2 class="neon" style="text-align:center;">Perfil Profesional</h2>
-    <div class="card" style="margin-top:1rem;">
-      <p>
-        Soy estudiante de Ingeniería de Software, apasionado por el desarrollo web y la seguridad informática.
-        Me enfoco en proyectos prácticos que integren buenas prácticas, accesibilidad y un diseño claro y moderno.
-      </p>
-    </div>
-  </div>
-</section>
-
-<!-- ===== PROYECTO ACADÉMICO ===== -->
-<section id="proyectos" class="section reveal-on-scroll" style="padding:3rem 1rem;">
-  <div class="container" style="max-width:1000px;margin:0 auto;">
-    <h2 class="neon" style="text-align:center;">Módulo Académico</h2>
-
-    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:16px;margin-top:20px;">
-      <div class="card">
-        <strong>Proyecto:</strong> Horario y Organigrama del módulo académico.<br>
-        <small>Incluye diseño responsive, animaciones y coherencia visual.</small>
+        <div class="hero-cta">
+          <a class="btn" href="#proyectos">Ver proyecto académico</a>
+          <a class="btn btn-outline" href="#contacto">Contactar</a>
+        </div>
       </div>
 
-      <div class="card">
-        <strong>Tecnologías:</strong> HTML, CSS, JavaScript, CSS Grid, IntersectionObserver.<br>
-        <small>Estructura modular y mantenimiento sencillo.</small>
-      </div>
-
-      <div class="card">
-        <strong>Entrega:</strong> Informe y presentación del módulo integrado en el portafolio.
+      <!-- imagen a la derecha -->
+      <div class="hero-image" aria-hidden="false">
+        <img src="assets/img/perfil.jpg" alt="Foto de Andres Felipe Solano Moreno" />
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
-<!-- ===== CERTIFICADOS ===== -->
-<section id="certificados" class="section reveal-on-scroll" style="padding:3rem 1rem;">
-  <div class="container" style="max-width:1100px;margin:0 auto;">
-    <h2 class="neon" style="text-align:center;">Certificados</h2>
-
-    <div class="certificados-grid" style="display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:20px;margin-top:20px;align-items:start;">
+  <!-- PERFIL -->
+  <section id="perfil" class="section reveal-on-scroll">
+    <div class="container">
+      <h2 class="section-title">Perfil Profesional</h2>
       <div class="card">
-        <h3 style="margin:0;color:var(--azul-claro);">CCNA: Introduction to Networks</h3>
-        <p style="margin:0;color:rgba(223,249,255,0.85);">Cisco Networking Academy</p>
-        <a class="btn" target="_blank" href="https://raw.githubusercontent.com/fs28git/portafolio/main/assets/img/pdf/CCNA-_Introduction_to_Networks_certificate_fsolano2509-gmail-com_5c511102-d5bf-4ec7-978e-9ccabe1e75b2.pdf">Ver certificado</a>
-      </div>
-
-      <div class="card">
-        <h3 style="margin:0;color:var(--azul-claro);">Ethical Hacker</h3>
-        <p style="margin:0;color:rgba(223,249,255,0.85);">Seguridad informática y hacking ético</p>
-        <a class="btn" target="_blank" href="https://raw.githubusercontent.com/fs28git/portafolio/main/assets/img/pdf/Ethical_Hacker_certificate_fsolano2509-gmail-com_c9e923dd-5d0a-4eef-b17f-f6ffc930d448.pdf">Ver certificado</a>
-      </div>
-
-      <div class="card">
-        <h3 style="margin:0;color:var(--azul-claro);">NDG Linux Essentials</h3>
-        <p style="margin:0;color:rgba(223,249,255,0.85);">Administración básica de sistemas Linux</p>
-        <a class="btn" target="_blank" href="https://raw.githubusercontent.com/fs28git/portafolio/main/assets/img/pdf/Partner-_NDG_Linux_Essentials_certificate_fsolano2509-gmail-com_4063a1d7-dfe4-4911-98d4-b33f71507573.pdf">Ver certificado</a>
-      </div>
-
-      <div class="card">
-        <h3 style="margin:0;color:var(--azul-claro);">NDG Linux Unhatched</h3>
-        <p style="margin:0;color:rgba(223,249,255,0.85);">Introducción a Linux</p>
-        <a class="btn" target="_blank" href="https://raw.githubusercontent.com/fs28git/portafolio/main/assets/img/pdf/Partner-_NDG_Linux_Unhatched_certificate_fsolano2509-gmail-com_6ed94c47-5bf4-4310-9c25-570e44241ce4.pdf">Ver certificado</a>
-      </div>
-
-      <div class="card">
-        <h3 style="margin:0;color:var(--azul-claro);">Ciberseguridad</h3>
-        <p style="margin:0;color:rgba(223,249,255,0.85);">Fundamentos de ciberseguridad</p>
-        <a class="btn" target="_blank" href="https://raw.githubusercontent.com/fs28git/portafolio/main/assets/img/pdf/ciber%20seguridad.pdf">Ver certificado</a>
-      </div>
-
-      <div class="card">
-        <h3 style="margin:0;color:var(--azul-claro);">Gestión de Amenazas Cibernéticas</h3>
-        <p style="margin:0;color:rgba(223,249,255,0.85);">Cisco Networking Academy</p>
-        <a class="btn" target="_blank" href="https://raw.githubusercontent.com/fs28git/portafolio/main/assets/img/pdf/gestion%20de%20amenazas%20ciberneticas.pdf">Ver certificado</a>
+        <p>
+          Soy estudiante de Ingeniería de Software con interés en desarrollo web, seguridad informática y redes.
+          Realizo proyectos prácticos con enfoque en accesibilidad, buenas prácticas y escalabilidad.
+        </p>
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
-<!-- ===== ARTÍCULOS ===== -->
-<section id="articulos" class="section reveal-on-scroll" style="padding:3rem 1rem;">
-  <div class="container" style="max-width:1000px;margin:0 auto;">
-    <h2 class="neon" style="text-align:center;">Artículos</h2>
-
-    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:18px;margin-top:20px;">
-      <article class="card">
-        <h3 style="margin:0 0 10px 0;">Cómo empecé con Linux</h3>
-        <p style="color:rgba(223,249,255,0.85);">Mi experiencia inicial con administración de servidores y shell.</p>
-        <a class="btn" href="#">Leer más</a>
-      </article>
-
-      <article class="card">
-        <h3 style="margin:0 0 10px 0;">Introducción a Redes</h3>
-        <p style="color:rgba(223,249,255,0.85);">Conceptos básicos de redes y prácticas recomendadas.</p>
-        <a class="btn" href="#">Leer más</a>
-      </article>
+  <!-- PROYECTO -->
+  <section id="proyectos" class="section reveal-on-scroll">
+    <div class="container">
+      <h2 class="section-title">Módulo Académico</h2>
+      <div class="grid-3">
+        <div class="card">
+          <strong>Proyecto:</strong>
+          <p>Horario y Organigrama del módulo académico.</p>
+        </div>
+        <div class="card">
+          <strong>Tecnologías:</strong>
+          <p>HTML, CSS, JavaScript, CSS Grid, IntersectionObserver.</p>
+        </div>
+        <div class="card">
+          <strong>Objetivo:</strong>
+          <p>Diseñar un módulo integrado y responsive para el portafolio.</p>
+        </div>
+      </div>
     </div>
-  </div>
-</section>
+  </section>
 
-<!-- ===== CONTACTO ===== -->
-<section id="contacto" class="section reveal-on-scroll" style="padding:3rem 1rem;">
-  <div class="container" style="max-width:800px;margin:0 auto;">
-    <h2 class="neon" style="text-align:center;">Contacto</h2>
+  <!-- CERTIFICADOS -->
+  <section id="certificados" class="section reveal-on-scroll">
+    <div class="container">
+      <h2 class="section-title">Certificados</h2>
 
-    <div class="card" style="margin-top:1rem;text-align:left;">
-      <p>📱 <a href="tel:+573246339042" style="color:var(--azul-claro);text-decoration:none;">+57 324 633 9042</a></p>
-      <p>✉️ <a href="mailto:fsolano2509@gmail.com" style="color:var(--azul-claro);text-decoration:none;">fsolano2509@gmail.com</a></p>
+      <div class="certificados-grid">
+        <div class="card cert">
+          <h3>CCNA: Introduction to Networks</h3>
+          <p class="muted">Cisco Networking Academy</p>
+          <a class="btn" target="_blank" rel="noopener" href="https://raw.githubusercontent.com/fs28git/portafolio/main/assets/img/pdf/CCNA-_Introduction_to_Networks_certificate_fsolano2509-gmail-com_5c511102-d5bf-4ec7-978e-9ccabe1e75b2.pdf">Ver certificado</a>
+        </div>
+
+        <div class="card cert">
+          <h3>Ethical Hacker</h3>
+          <p class="muted">Seguridad informática</p>
+          <a class="btn" target="_blank" rel="noopener" href="https://raw.githubusercontent.com/fs28git/portafolio/main/assets/img/pdf/Ethical_Hacker_certificate_fsolano2509-gmail-com_c9e923dd-5d0a-4eef-b17f-f6ffc930d448.pdf">Ver certificado</a>
+        </div>
+
+        <div class="card cert">
+          <h3>NDG Linux Essentials</h3>
+          <p class="muted">Partner NDG</p>
+          <a class="btn" target="_blank" rel="noopener" href="https://raw.githubusercontent.com/fs28git/portafolio/main/assets/img/pdf/Partner-_NDG_Linux_Essentials_certificate_fsolano2509-gmail-com_4063a1d7-dfe4-4911-98d4-b33f71507573.pdf">Ver certificado</a>
+        </div>
+
+        <div class="card cert">
+          <h3>NDG Linux Unhatched</h3>
+          <p class="muted">Introducción a Linux</p>
+          <a class="btn" target="_blank" rel="noopener" href="https://raw.githubusercontent.com/fs28git/portafolio/main/assets/img/pdf/Partner-_NDG_Linux_Unhatched_certificate_fsolano2509-gmail-com_6ed94c47-5bf4-4310-9c25-570e44241ce4.pdf">Ver certificado</a>
+        </div>
+
+        <div class="card cert">
+          <h3>Ciberseguridad</h3>
+          <p class="muted">Fundamentos de ciberseguridad</p>
+          <a class="btn" target="_blank" rel="noopener" href="https://raw.githubusercontent.com/fs28git/portafolio/main/assets/img/pdf/ciber%20seguridad.pdf">Ver certificado</a>
+        </div>
+
+        <div class="card cert">
+          <h3>Gestión de Amenazas Cibernéticas</h3>
+          <p class="muted">Cisco Networking Academy</p>
+          <a class="btn" target="_blank" rel="noopener" href="https://raw.githubusercontent.com/fs28git/portafolio/main/assets/img/pdf/gestion%20de%20amenazas%20ciberneticas.pdf">Ver certificado</a>
+        </div>
+      </div>
     </div>
-  </div>
-</section>
+  </section>
 
-<!-- ===== FOOTER ===== -->
-<footer class="footer" style="margin-top:2rem;">
-  © 2026 · Portafolio Académico de Andres Felipe Solano Moreno
-</footer>
+  <!-- ARTÍCULOS -->
+  <section id="articulos" class="section reveal-on-scroll">
+    <div class="container">
+      <h2 class="section-title">Artículos</h2>
+      <div class="grid-2">
+        <article class="card">
+          <h3>Cómo empecé con Linux</h3>
+          <p class="muted">Mi experiencia inicial con administración de servidores.</p>
+          <a class="btn btn-outline" href="#">Leer más</a>
+        </article>
 
-<!-- Script de efectos -->
-<script src="js/tech.js" defer></script>
+        <article class="card">
+          <h3>Introducción a Redes</h3>
+          <p class="muted">Conceptos básicos y prácticas recomendadas.</p>
+          <a class="btn btn-outline" href="#">Leer más</a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACTO -->
+  <section id="contacto" class="section reveal-on-scroll">
+    <div class="container">
+      <h2 class="section-title">Contacto</h2>
+      <div class="card contact-card">
+        <p>📱 <a href="tel:+573246339042">+57 324 633 9042</a></p>
+        <p>✉️ <a href="mailto:fsolano2509@gmail.com">fsolano2509@gmail.com</a></p>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <p>© 2026 · Portafolio Académico · Andres Felipe Solano Moreno</p>
+    </div>
+  </footer>
+
+  <!-- SCRIPTS (typing, reveal, navbar, parallax) -->
+  <script>
+  // --- Utility: select
+  const $ = s => document.querySelector(s);
+  const $$ = s => Array.from(document.querySelectorAll(s));
+
+  document.addEventListener('DOMContentLoaded', () => {
+    // Typing effect for name and subtitle
+    (function typing(){
+      const title = document.getElementById('hero-title');
+      const sub = document.getElementById('hero-sub');
+      if(!title) return;
+      const nameText = title.getAttribute('data-text') || title.textContent.trim();
+      const subtitleList = ['Desarrollo web · Redes · Linux · Ciberseguridad', 'Ingeniería de Software', 'Proyectos prácticos y Seguridad'];
+      title.textContent = '';
+      sub.textContent = '';
+
+      // type name
+      let i = 0;
+      function typeName(){
+        if(i < nameText.length){
+          title.textContent += nameText.charAt(i++);
+          setTimeout(typeName, 28 + Math.random()*22);
+        } else {
+          setTimeout(typeSub, 350);
+        }
+      }
+
+      // cycle subtitle typing (once)
+      let si = 0;
+      function typeSub(){
+        const txt = subtitleList[0];
+        let j = 0;
+        function step(){
+          if(j < txt.length){
+            sub.textContent += txt.charAt(j++);
+            setTimeout(step, 28 + Math.random()*18);
+          }
+        }
+        step();
+      }
+
+      setTimeout(typeName, 200);
+    })();
+
+    // IntersectionObserver reveal
+    (function revealObserver(){
+      const obs = new IntersectionObserver((entries, o) => {
+        entries.forEach(en=>{
+          if(en.isIntersecting){
+            en.target.classList.add('revealed');
+            o.unobserve(en.target);
+          }
+        });
+      }, { threshold: 0.15 });
+      document.querySelectorAll('.reveal-on-scroll').forEach(el=>obs.observe(el));
+    })();
+
+    // Navbar glow on scroll
+    (function navScroll(){
+      const nav = document.getElementById('site-navbar');
+      window.addEventListener('scroll', () => {
+        if(window.scrollY > 20) nav.classList.add('scrolled'); else nav.classList.remove('scrolled');
+      }, { passive: true });
+    })();
+
+    // Section transitions (click menu smooth + active toggles)
+    (function sectionNav(){
+      const sections = $$('section');
+      let isTransitioning = false;
+
+      function goTo(section){
+        if(!section || isTransitioning) return;
+        isTransitioning = true;
+        // fade out active
+        sections.forEach(s => s.classList.remove('active-section'));
+        section.classList.add('active-section');
+        section.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        setTimeout(()=> isTransitioning = false, 700);
+      }
+
+      $$('a[href^="#"]').forEach(a=>{
+        a.addEventListener('click', e => {
+          const href = a.getAttribute('href');
+          if(!href || href === '#') return;
+          const target = document.querySelector(href);
+          if(target){
+            e.preventDefault();
+            goTo(target);
+          }
+        });
+      });
+
+      // initial active
+      if(sections.length) sections[0].classList.add('active-section');
+
+      // sync on manual scroll
+      const observer = new IntersectionObserver((entries)=>{
+        entries.forEach(en=>{
+          if(en.isIntersecting) sections.forEach(s=>s.classList.remove('active-section')) , en.target.classList.add('active-section');
+        });
+      }, { threshold: 0.55 });
+
+      sections.forEach(s => observer.observe(s));
+    })();
+
+    // Parallax background subtle movement (based on scroll)
+    (function parallax(){
+      const parallaxNodes = $$('[data-parallax]');
+      window.addEventListener('scroll', () => {
+        const y = window.scrollY;
+        parallaxNodes.forEach(n => {
+          n.style.setProperty('--parallax-y', (y * 0.05) + 'px');
+        });
+      }, { passive: true });
+    })();
+
+  });
+  </script>
 </body>
 </html>
