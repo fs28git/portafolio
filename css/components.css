@@ -34,3 +34,37 @@
   box-shadow: 0 0 25px rgba(0,183,255,0.3);
   transform: translateY(-5px);
 }
+/* ===== ANIMACIONES DE SECCIÓN ===== */
+
+.section {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: all 0.8s ease;
+}
+
+.section.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* animación navbar links */
+.navbar a {
+  position: relative;
+  transition: 0.3s;
+}
+
+.navbar a::after {
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  background: var(--color-primario);
+  left: 0;
+  bottom: -4px;
+  transition: 0.3s;
+}
+
+.navbar a:hover::after {
+  width: 100%;
+}
+
