@@ -1,12 +1,9 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="css/tech.css">
-
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Portafolio Académico | Andres Felipe Solano Moreno</title>
-
   <meta name="description" content="Portafolio académico de Andres Felipe Solano Moreno, estudiante de Ingeniería de Software.">
 
   <!-- CSS del proyecto -->
@@ -14,6 +11,9 @@
   <link rel="stylesheet" href="css/layout.css">
   <link rel="stylesheet" href="css/components.css">
   <link rel="stylesheet" href="css/responsive.css">
+
+  <!-- NUEVO: efectos tecnológicos -->
+  <link rel="stylesheet" href="css/tech.css">
 
   <!-- Fuente -->
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
@@ -23,7 +23,7 @@
 
 <!-- ===== NAVBAR ===== -->
 <header class="navbar reveal-on-scroll">
-  <div class="container nav-content">
+  <div class="container nav-content" style="display:flex;align-items:center;justify-content:space-between;gap:1rem;">
     <h2 class="logo">Portafolio</h2>
 
     <nav>
@@ -39,169 +39,135 @@
   </div>
 </header>
 
-
 <!-- ===== HERO ===== -->
-<section id="inicio" class="hero">
-  <div class="container hero-content">
+<section id="inicio" class="hero reveal-on-scroll" style="padding:3rem 0;">
+  <div class="container hero-content" style="display:flex;gap:2rem;align-items:center;flex-wrap:wrap;z-index:2;position:relative;">
 
-    <div class="hero-text">
+    <div class="hero-text" style="flex:1;min-width:260px;">
       <h1 class="neon glitch" data-text="Andres Felipe Solano Moreno">Andres Felipe Solano Moreno</h1>
-      <p>
-        Estudiante de Ingeniería de Software con formación en desarrollo web,
-        redes, Linux y ciberseguridad.  
-        Este portafolio integra un módulo académico con horario semanal,
-        organigrama diario y arquitectura CSS modular responsive.
+      <p class="tech-subtitle">Desarrollo web · Redes · Linux · Ciberseguridad</p>
+      <p style="max-width:680px;margin-top:12px;color:rgba(223,249,255,0.9);">
+        Estudiante de Ingeniería de Software con formación en desarrollo web, redes, Linux y ciberseguridad.
+        Este portafolio integra un módulo académico con horario semanal y organigrama diario, además de proyectos y certificaciones.
       </p>
 
-      <a class="btn" href="#proyectos">Ver proyecto académico</a>
-      <a class="btn btn-outline" href="#contacto">Contactar</a>
+      <div style="margin-top:14px;display:flex;gap:10px;flex-wrap:wrap;">
+        <a class="btn" href="#proyectos">Ver proyecto académico</a>
+        <a class="btn" href="#contacto">Contactar</a>
+      </div>
     </div>
 
-    <div class="hero-image">
-      <img src="assets/img/perfil.jpg" alt="Foto de Andres Felipe Solano Moreno">
+    <div class="hero-image" style="width:220px;flex:0 0 220px;">
+      <img src="assets/img/perfil.jpg" alt="Foto de Andres Felipe Solano Moreno" style="width:100%;height:auto;border-radius:8px;"/>
     </div>
 
   </div>
 </section>
-
 
 <!-- ===== PERFIL ===== -->
-<section id="perfil" class="section">
-  <div class="container">
-    <h2>Perfil Profesional</h2>
+<section id="perfil" class="section reveal-on-scroll" style="padding:2rem 0;">
+  <div class="container" style="max-width:1000px;margin:0 auto;">
+    <h2 class="neon">Perfil Profesional</h2>
 
-    <div class="card">
-      Estudiante de Ingeniería de Software con interés en el desarrollo de
-      aplicaciones web, seguridad informática y tecnologías de red.
-      Me caracterizo por la responsabilidad, disciplina y aprendizaje continuo
-      orientado al crecimiento profesional en el sector tecnológico.
+    <div class="card" style="margin-top:12px;">
+      <p>
+        Soy estudiante de Ingeniería de Software, apasionado por el desarrollo web y la seguridad informática.
+        Me enfoco en proyectos prácticos que integren buenas prácticas, accesibilidad y un diseño claro.
+      </p>
     </div>
   </div>
 </section>
-
 
 <!-- ===== PROYECTO ACADÉMICO ===== -->
-<section id="proyectos" class="section">
-  <div class="container">
+<section id="proyectos" class="section reveal-on-scroll" style="padding:2rem 0;">
+  <div class="container" style="max-width:1100px;margin:0 auto;">
+    <h2 class="neon">Módulo Académico</h2>
 
-    <h2>Módulo Académico</h2>
-
-    <div class="grid">
-
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:16px;margin-top:14px;">
       <div class="card">
-        <h3>Horario de Clases</h3>
-        <p>
-          Visualización semanal estructurada con CSS Grid, diferenciación por
-          materias y adaptación responsive para dispositivos móviles.
-        </p>
-        <a class="btn" href="horario.html">Ver horario</a>
+        <strong>Proyecto:</strong> Horario y Organigrama del módulo académico.<br>
+        <small class="small-meta">Incluye diseño responsive, animaciones y accesibilidad.</small>
       </div>
 
       <div class="card">
-        <h3>Organigrama Diario</h3>
-        <p>
-          Representación del flujo académico diario mediante timeline,
-          categorías visuales y estructura flexible con CSS.
-        </p>
-        <a class="btn" href="organigrama.html">Ver organigrama</a>
+        <strong>Tecnologías:</strong> HTML, CSS, JavaScript, CSS Grid, IntersectionObserver.<br>
+        <small class="small-meta">Estructura modular y archivos separados para fácil mantenimiento.</small>
       </div>
 
+      <div class="card">
+        <strong>Entrega:</strong> Informe y presentación del módulo integrado en el portafolio.
+      </div>
     </div>
   </div>
 </section>
 
-
 <!-- ===== CERTIFICADOS ===== -->
-<section id="certificados" class="section">
-  <div class="container">
+<section id="certificados" class="section reveal-on-scroll" style="padding:2rem 0;">
+  <div class="container" style="max-width:1000px;margin:0 auto;">
+    <h2 class="neon">Certificados</h2>
 
-    <h2>Certificaciones Técnicas</h2>
-
-    <div class="grid">
-
+    <div style="display:flex;gap:12px;flex-wrap:wrap;margin-top:12px;">
       <div class="card">
-        CCNA – Introduction to Networks<br>
-        <a class="btn" target="_blank"
-        href="assets/img/pdf/CCNA-_Introduction_to_Networks_certificate_fsolano2509-gmail-com_5c511102-d5bf-4ec7-978e-9ccabe1e7512.pdf">
-        Ver PDF</a>
+        CCNA<br>
+        <a class="btn" target="_blank" href="assets/img/pdf/CCNA-_Introduction_to_Networks_certificate.pdf">Ver PDF</a>
       </div>
 
       <div class="card">
         Ethical Hacker<br>
-        <a class="btn" target="_blank"
-        href="assets/img/pdf/Ethical_Hacker_certificate_fsolano2509-gmail-com_c9e923dd-5d0a-4eef-b17f-f6ffc930d448.pdf">
-        Ver PDF</a>
+        <a class="btn" target="_blank" href="assets/img/pdf/Ethical_Hacker_certificate.pdf">Ver PDF</a>
       </div>
 
       <div class="card">
         NDG Linux Essentials<br>
-        <a class="btn" target="_blank"
-        href="assets/img/pdf/Partner-_NDG_Linux_Essentials_certificate_fsolano2509-gmail-com_4063a1d7-dfe4-4911-98d4-b33f71507573.pdf">
-        Ver PDF</a>
+        <a class="btn" target="_blank" href="assets/img/pdf/NDG_Linux_Essentials_certificate.pdf">Ver PDF</a>
       </div>
-
-      <div class="card">
-        NDG Linux Unhatched<br>
-        <a class="btn" target="_blank"
-        href="assets/img/pdf/Partner-_NDG_Linux_Unhatched_certificate_fsolano2509-gmail-com_6ed94c47-5bf4-4310-9c25-570e44241ce4.pdf">
-        Ver PDF</a>
-      </div>
-
     </div>
   </div>
 </section>
 
+<!-- ===== ARTÍCULOS / BLOG ===== -->
+<section id="articulos" class="section reveal-on-scroll" style="padding:2rem 0;">
+  <div class="container" style="max-width:1000px;margin:0 auto;">
+    <h2 class="neon">Artículos</h2>
 
-<!-- ===== ARTÍCULOS ===== -->
-<section id="articulos" class="section">
-  <div class="container">
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:12px;margin-top:12px;">
+      <article class="card">
+        <h3 style="margin:0 0 8px 0;">Cómo empecé con Linux</h3>
+        <p style="margin:0;color:rgba(223,249,255,0.85);">Mi experiencia inicial con administracion de servidores y shell.</p>
+        <div style="margin-top:8px;">
+          <a class="btn" href="#">Leer más</a>
+        </div>
+      </article>
 
-    <h2>Artículos Académicos</h2>
-
-    <div class="grid">
-
-      <div class="card">
-        <h3>Diseño Responsive</h3>
-        <p>Adaptación de interfaces web a distintos dispositivos mediante media queries y grid flexible.</p>
-      </div>
-
-      <div class="card">
-        <h3>Grid vs Flexbox</h3>
-        <p>Uso de Grid para estructura global y Flexbox para alineación interna de componentes.</p>
-      </div>
-
-      <div class="card">
-        <h3>Arquitectura CSS Modular</h3>
-        <p>Separación de estilos en variables, layout, componentes y responsive para escalabilidad.</p>
-      </div>
-
+      <article class="card">
+        <h3 style="margin:0 0 8px 0;">Introducción a Redes</h3>
+        <p style="margin:0;color:rgba(223,249,255,0.85);">Conceptos básicos de redes y prácticas recomendadas.</p>
+        <div style="margin-top:8px;">
+          <a class="btn" href="#">Leer más</a>
+        </div>
+      </article>
     </div>
   </div>
 </section>
-
 
 <!-- ===== CONTACTO ===== -->
-<section id="contacto" class="section">
-  <div class="container">
+<section id="contacto" class="section reveal-on-scroll" style="padding:2rem 0;">
+  <div class="container" style="max-width:800px;margin:0 auto;">
+    <h2 class="neon">Contacto</h2>
 
-    <h2>Contacto</h2>
-
-    <div class="card">
-      📍 Bogotá, Colombia<br><br>
-
-      📧 <a href="mailto:fsolano2509@gmail.com">fsolano2509@gmail.com</a><br><br>
-
-      📱 <a href="tel:+573246339042">+57 324 633 9042</a>
+    <div class="card" style="margin-top:12px;">
+      <p>📱 <a href="tel:+573246339042" style="color:var(--azul-claro);text-decoration:none;">+57 324 633 9042</a></p>
+      <p>✉️ <a href="mailto:fsolano2509@gmail.com" style="color:var(--azul-claro);text-decoration:none;">fsolano2509@gmail.com</a></p>
     </div>
-
   </div>
 </section>
 
-<script src="js/tech.js" defer></script>
 <!-- ===== FOOTER ===== -->
-<footer class="footer">
+<footer class="footer" style="margin-top:2rem;">
   © 2026 · Portafolio Académico de Andres Felipe Solano Moreno
 </footer>
 
+<!-- Script de efectos -->
+<script src="js/tech.js" defer></script>
 </body>
 </html>
