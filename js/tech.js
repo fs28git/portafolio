@@ -82,4 +82,3 @@ document.addEventListener('DOMContentLoaded', () => {
   },{threshold:0.55});
   sections.forEach(s=>activeObs.observe(s));
 });
-
