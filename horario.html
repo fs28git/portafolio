@@ -3,178 +3,98 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Horario Académico | Portafolio</title>
+<meta name="description" content="Horario académico semanal de Ingeniería de Software - Andres Felipe Solano Moreno">
+<title>Horario Académico | Andres Felipe Solano</title>
 
 <link rel="stylesheet" href="css/variables.css">
-<link rel="stylesheet" href="css/tech.css">
+<link rel="stylesheet" href="css/layout.css">
+<link rel="stylesheet" href="css/components.css">
+<link rel="stylesheet" href="css/horario.css">
+<link rel="stylesheet" href="css/responsive.css">
 
-<style>
-body {
-  padding: 2rem;
-  text-align: center;
-  background-color: #000;
-  font-family: 'Poppins', sans-serif;
-}
-
-/* TITULO */
-h1 {
-  color: var(--azul-tech);
-  text-shadow: 0 0 15px rgba(0,183,255,0.7);
-  margin-bottom: 2rem;
-  animation: fadeIn 1.2s ease;
-}
-
-/* TABLA */
-table {
-  width: 100%;
-  border-collapse: collapse;
-  background: rgba(255,255,255,0.03);
-  border: 1px solid rgba(0,183,255,0.3);
-  border-radius: 10px;
-  box-shadow: 0 0 20px rgba(0,183,255,0.15);
-  overflow: hidden;
-  animation: fadeInUp 1s ease;
-}
-
-th, td {
-  padding: 0.8rem;
-  border: 1px solid rgba(0,183,255,0.15);
-  color: #dff9ff;
-  text-align: center;
-  transition: background .3s ease;
-}
-
-th {
-  background: rgba(0,183,255,0.25);
-  color: #fff;
-  text-shadow: 0 0 8px rgba(0,183,255,0.7);
-  font-weight: 600;
-}
-
-/* hover mejorado (sin mover la tabla) */
-td:hover {
-  background: rgba(0,183,255,0.15);
-}
-
-/* materias */
-.materia {
-  color: #fff;
-  font-weight: 600;
-}
-
-.aula {
-  font-size: 0.85rem;
-  color: var(--azul-claro);
-}
-
-/* Animaciones */
-@keyframes fadeIn {
-  from {opacity: 0;}
-  to {opacity: 1;}
-}
-
-@keyframes fadeInUp {
-  from {opacity: 0; transform: translateY(20px);}
-  to {opacity: 1; transform: translateY(0);}
-}
-
-/* Botón volver */
-a.volver {
-  display: inline-block;
-  margin-top: 2rem;
-  color: var(--azul-claro);
-  text-decoration: none;
-  border: 1px solid rgba(0,183,255,0.4);
-  padding: .6rem 1rem;
-  border-radius: 8px;
-  transition: all .3s ease;
-}
-
-a.volver:hover {
-  background: rgba(0,183,255,0.3);
-  color: #fff;
-  box-shadow: 0 0 15px rgba(0,183,255,0.3);
-}
-</style>
+<script src="js/ui.js" defer></script>
 </head>
 
 <body>
 
-<h1>📘 Horario Académico</h1>
+<header class="page-header">
+  <h1>Horario Académico</h1>
+  <a href="index.html" class="btn">← Volver</a>
+</header>
 
-<table>
-<thead>
-<tr>
-<th>Hora</th>
-<th>Lunes</th>
-<th>Martes</th>
-<th>Miércoles</th>
-<th>Jueves</th>
-<th>Viernes</th>
-</tr>
-</thead>
+<main class="container">
 
-<tbody>
+<section class="card">
+  <h2>Horario Semanal</h2>
 
-<tr>
-<td>03:00 - 04:00 pm</td>
-<td>-</td><td>-</td><td>-</td><td>-</td><td>-</td>
-</tr>
+  <div class="horario-grid">
 
-<tr>
-<td>04:00 - 05:00 pm</td>
-<td class="materia">INTELIGENCIA ARTIFICIAL<br><span class="aula">A413</span></td>
-<td>-</td><td>-</td><td>-</td><td>-</td>
-</tr>
+    <!-- Encabezados -->
+    <div class="hora head"></div>
+    <div class="head">Lunes</div>
+    <div class="head">Martes</div>
+    <div class="head">Miércoles</div>
+    <div class="head">Jueves</div>
+    <div class="head">Viernes</div>
 
-<tr>
-<td>05:00 - 06:00 pm</td>
-<td class="materia">INTELIGENCIA ARTIFICIAL<br><span class="aula">A413</span></td>
-<td>-</td><td>-</td><td>-</td><td>-</td>
-</tr>
+    <!-- 4-5 pm -->
+    <div class="hora">4-5 pm</div>
+    <div class="materia ia">Inteligencia Artificial<br><span>A413</span></div>
+    <div class="vacio"></div>
+    <div class="vacio"></div>
+    <div class="vacio"></div>
+    <div class="vacio"></div>
 
-<tr>
-<td>06:00 - 07:00 pm</td>
-<td>-</td><td>-</td><td>-</td>
-<td class="materia">MODELAMIENTO ESTOCÁSTICO<br><span class="aula">A403</span></td>
-<td class="materia">GERENCIA DE PROYECTOS<br><span class="aula">A403</span></td>
-</tr>
+    <!-- 5-6 pm -->
+    <div class="hora">5-6 pm</div>
+    <div class="materia ia">Inteligencia Artificial<br><span>A413</span></div>
+    <div class="vacio"></div>
+    <div class="vacio"></div>
+    <div class="vacio"></div>
+    <div class="vacio"></div>
 
-<tr>
-<td>07:00 - 08:00 pm</td>
-<td>-</td><td>-</td><td>-</td>
-<td class="materia">MODELAMIENTO ESTOCÁSTICO<br><span class="aula">A403</span></td>
-<td class="materia">GERENCIA DE PROYECTOS<br><span class="aula">A403</span></td>
-</tr>
+    <!-- 6-7 pm -->
+    <div class="hora">6-7 pm</div>
+    <div class="vacio"></div>
+    <div class="vacio"></div>
+    <div class="vacio"></div>
+    <div class="materia model">Modelamiento Estocástico<br><span>A403</span></div>
+    <div class="materia gp">Gerencia de Proyectos<br><span>A403</span></div>
 
-<tr>
-<td>08:00 - 09:00 pm</td>
-<td class="materia">INGENIERÍA WEB II<br><span class="aula">A406</span></td>
-<td class="materia">LEGISLACIÓN INFORMÁTICA<br><span class="aula">A205</span></td>
-<td>-</td>
-<td class="materia">MODELAMIENTO ESTOCÁSTICO<br><span class="aula">A403</span></td>
-<td>-</td>
-</tr>
+    <!-- 7-8 pm -->
+    <div class="hora">7-8 pm</div>
+    <div class="vacio"></div>
+    <div class="vacio"></div>
+    <div class="vacio"></div>
+    <div class="materia model">Modelamiento Estocástico<br><span>A403</span></div>
+    <div class="materia gp">Gerencia de Proyectos<br><span>A403</span></div>
 
-<tr>
-<td>09:00 - 10:00 pm</td>
-<td class="materia">INGENIERÍA WEB II<br><span class="aula">A406</span></td>
-<td class="materia">LEGISLACIÓN INFORMÁTICA<br><span class="aula">A205</span></td>
-<td>-</td>
-<td>-</td>
-<td>-</td>
-</tr>
+    <!-- 8-9 pm -->
+    <div class="hora">8-9 pm</div>
+    <div class="materia web">Ingeniería Web II<br><span>A406</span></div>
+    <div class="materia leg">Legislación Informática<br><span>A205</span></div>
+    <div class="vacio"></div>
+    <div class="materia model">Modelamiento Estocástico<br><span>A403</span></div>
+    <div class="vacio"></div>
 
-<tr>
-<td>10:00 - 11:00 pm</td>
-<td>-</td><td>-</td><td>-</td><td>-</td><td>-</td>
-</tr>
+    <!-- 9-10 pm -->
+    <div class="hora">9-10 pm</div>
+    <div class="materia web">Ingeniería Web II<br><span>A406</span></div>
+    <div class="materia leg">Legislación Informática<br><span>A205</span></div>
+    <div class="vacio"></div>
+    <div class="vacio"></div>
+    <div class="vacio"></div>
 
-</tbody>
-</table>
+  </div>
+</section>
 
-<a href="index.html" class="volver">⬅ Volver al Portafolio</a>
+</main>
 
-<script src="js/tech.js" defer></script>
+<!-- ===== FOOTER ===== -->
+<footer class="footer">
+  © 2026 · Portafolio Académico de Andres Felipe Solano Moreno
+</footer>
+
 </body>
 </html>
+
