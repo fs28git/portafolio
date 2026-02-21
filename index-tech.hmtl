@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portafolio académico de Andres Felipe Solano Moreno, estudiante de Ingeniería de Software con certificaciones en CCNA, Ethical Hacking y Linux.">
+  <meta name="keywords" content="portafolio, ingeniería software, desarrollo web, ciberseguridad, redes, Linux">
+  <meta name="author" content="Andres Felipe Solano Moreno">
+  
+  <title>Portafolio Tech | Andres Felipe Solano Moreno</title>
+
+  <!-- CSS Tech Theme -->
+  <link rel="stylesheet" href="css/tech.css">
+
+  <!-- Fuentes -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Orbitron:wght@400;700;900&display=swap" rel="stylesheet">
+
+  <!-- JavaScript -->
+  <script src="js/tech.js" defer></script>
+</head>
+
+<body>
+
+<!-- Background animado -->
+<div class="hero-wave"></div>
+
+<!-- ===== NAVBAR ===== -->
+<header class="navbar">
+  <div class="container">
+    <div class="nav-inner">
+      <h2 class="logo">TECH PORTFOLIO</h2>
+      <nav>
+        <a href="#inicio">Inicio</a>
+        <a href="#perfil">Perfil</a>
+        <a href="#proyectos">Proyectos</a>
+        <a href="#certificados">Certificados</a>
+        <a href="#contacto">Contacto</a>
+      </nav>
+    </div>
+  </div>
+</header>
+
+<!-- ===== HERO ===== -->
+<section id="inicio" class="hero">
+  <div class="container">
+    <div class="hero-grid">
+      
+      <div class="hero-text">
+        <h1 class="headline">Andres Felipe Solano Moreno</h1>
+        <p class="subhead">Ingeniería de Software · Ciberseguridad · Desarrollo Web</p>
+        <p class="lead">
+          Estudiante de Ingeniería de Software con formación especializada en 
+          desarrollo web, redes, Linux y ciberseguridad. Enfocado en crear 
+          soluciones tecnológicas innovadoras y seguras.
+        </p>
+        <div style="margin-top: 20px;">
+          <a class="btn" href="#proyectos">Ver Proyectos</a>
+          <a class="btn btn-outline" href="#contacto">Contactar</a>
+        </div>
+      </div>
+
+      <div class="hero-image">
+        <img src="assets/img/perfil.jpg" alt="Andres Felipe Solano Moreno">
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ===== PERFIL ===== -->
+<section id="perfil" class="section reveal-on-scroll">
+  <div class="container">
+    <h2 class="section-title">Perfil Profesional</h2>
+
+    <div class="card" style="max-width: 800px; margin: 0 auto;">
+      <p>
+        Estudiante de Ingeniería de Software con sólida formación en desarrollo 
+        de aplicaciones web, seguridad informática y tecnologías de red. 
+        Me caracterizo por la responsabilidad, disciplina y aprendizaje continuo 
+        orientado al crecimiento profesional en el sector tecnológico.
+      </p>
+      <p style="margin-top: 12px;">
+        Experiencia práctica en HTML, CSS, JavaScript, redes CCNA, sistemas Linux 
+        y técnicas de hacking ético. Apasionado por la ciberseguridad y el 
+        desarrollo de soluciones innovadoras.
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- ===== PROYECTOS ===== -->
+<section id="proyectos" class="section reveal-on-scroll">
+  <div class="container">
+    <h2 class="section-title">Módulo Académico</h2>
+
+    <div class="grid-2">
+      
+      <div class="card">
+        <h3>Horario de Clases</h3>
+        <p>
+          Visualización semanal estructurada con CSS Grid, diferenciación por
+          materias y adaptación responsive para dispositivos móviles.
+        </p>
+        <a class="btn" href="horario.html">Ver horario</a>
+      </div>
+
+      <div class="card">
+        <h3>Organigrama Diario</h3>
+        <p>
+          Representación del flujo académico diario mediante timeline,
+          categorías visuales y estructura flexible con CSS.
+        </p>
+        <a class="btn" href="organigrama.html">Ver organigrama</a>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ===== CERTIFICADOS ===== -->
+<section id="certificados" class="section reveal-on-scroll">
+  <div class="container">
+    <h2 class="section-title">Certificaciones Técnicas</h2>
+
+    <div class="certificados-grid">
+
+      <div class="card cert">
+        <h3>CCNA – Introduction to Networks</h3>
+        <p class="muted">Fundamentos de redes y protocolos TCP/IP</p>
+        <a class="btn" target="_blank" href="assets/img/pdf/ccna-networks.pdf">
+          Ver certificado
+        </a>
+      </div>
+
+      <div class="card cert">
+        <h3>Ethical Hacker</h3>
+        <p class="muted">Técnicas de hacking ético y seguridad ofensiva</p>
+        <a class="btn" target="_blank" href="assets/img/pdf/ethical-hacker.pdf">
+          Ver certificado
+        </a>
+      </div>
+
+      <div class="card cert">
+        <h3>NDG Linux Essentials</h3>
+        <p class="muted">Fundamentos de sistemas operativos Linux</p>
+        <a class="btn" target="_blank" href="assets/img/pdf/linux-essentials.pdf">
+          Ver certificado
+        </a>
+      </div>
+
+      <div class="card cert">
+        <h3>NDG Linux Unhatched</h3>
+        <p class="muted">Introducción a la línea de comandos Linux</p>
+        <a class="btn" target="_blank" href="assets/img/pdf/linux-unhatched.pdf">
+          Ver certificado
+        </a>
+      </div>
+
+      <div class="card cert">
+        <h3>Ciberseguridad</h3>
+        <p class="muted">Principios de seguridad informática</p>
+        <a class="btn" target="_blank" href="assets/img/pdf/ciberseguridad.pdf">
+          Ver certificado
+        </a>
+      </div>
+
+      <div class="card cert">
+        <h3>Gestión de Amenazas Cibernéticas</h3>
+        <p class="muted">Identificación y mitigación de amenazas</p>
+        <a class="btn" target="_blank" href="assets/img/pdf/gestion-amenazas.pdf">
+          Ver certificado
+        </a>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ===== CONTACTO ===== -->
+<section id="contacto" class="section reveal-on-scroll">
+  <div class="container">
+    <h2 class="section-title">Contacto</h2>
+
+    <div class="contact-card">
+      📍 Bogotá, Colombia<br><br>
+      📧 <a href="mailto:fsolano2509@gmail.com">fsolano2509@gmail.com</a><br><br>
+      📱 <a href="tel:+573246339042">+57 324 633 9042</a>
+    </div>
+
+  </div>
+</section>
+
+<!-- ===== FOOTER ===== -->
+<footer class="footer">
+  © 2026 · Portafolio Tecnológico de Andres Felipe Solano Moreno
+</footer>
+
+</body>
+</html>
