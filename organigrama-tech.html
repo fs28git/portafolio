@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Organigrama y flujo diario académico - Andres Felipe Solano Moreno">
+<title>Organigrama Diario Tech | Andres Felipe Solano</title>
+
+<!-- CSS Tech Theme -->
+<link rel="stylesheet" href="css/tech.css">
+<link rel="stylesheet" href="css/organigrama.css">
+
+<!-- Fuentes -->
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Orbitron:wght@400;700;900&display=swap" rel="stylesheet">
+
+<!-- JavaScript -->
+<script src="js/tech.js" defer></script>
+
+<style>
+  /* Override para organigrama tech */
+  .timeline::before {
+    background: linear-gradient(180deg, var(--accent), var(--accent-2));
+    box-shadow: 0 0 20px var(--accent);
+  }
+  
+  .event {
+    background: rgba(0, 183, 255, 0.05);
+    border: 1px solid rgba(0, 183, 255, 0.2);
+    color: #dff9ff;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.6);
+  }
+  
+  .event:hover {
+    background: rgba(0, 183, 255, 0.08);
+    box-shadow: 0 12px 40px rgba(0, 183, 255, 0.2);
+    border-color: rgba(0, 183, 255, 0.4);
+  }
+  
+  .event h3 {
+    color: var(--accent-2);
+    text-shadow: 0 0 10px rgba(0, 183, 255, 0.3);
+  }
+  
+  .event::before {
+    background: var(--bg);
+    border-color: var(--accent);
+    box-shadow: 0 0 20px var(--accent);
+  }
+</style>
+</head>
+
+<body>
+
+<!-- Background animado -->
+<div class="hero-wave"></div>
+
+<!-- ===== NAVBAR ===== -->
+<header class="navbar">
+  <div class="container">
+    <div class="nav-inner">
+      <h2 class="logo">PORTAFOLIO</h2>
+      <nav>
+        <a href="index-tech.html#inicio">Inicio</a>
+        <a href="index-tech.html#perfil">Perfil</a>
+        <a href="index-tech.html#proyectos">Proyectos</a>
+        <a href="index-tech.html#certificados">Certificados</a>
+        <a href="horario-tech.html">Horario</a>
+        <a href="organigrama-tech.html">Organigrama</a>
+        <a href="index-tech.html#contacto">Contacto</a>
+      </nav>
+    </div>
+  </div>
+</header>
+
+<main class="container" style="position: relative; z-index: 2; margin-top: 40px;">
+
+<section class="timeline">
+
+  <div class="event academia">
+    <h3>Inicio de jornada</h3>
+    <p>Preparación para clases de la tarde.</p>
+  </div>
+
+  <div class="event clase">
+    <h3>Bloque de clases principales</h3>
+    <p>Inteligencia Artificial, Web II y Legislación.</p>
+  </div>
+
+  <div class="event investigacion">
+    <h3>Modelamiento y proyectos</h3>
+    <p>Trabajo analítico y gestión de proyectos de software.</p>
+  </div>
+
+  <div class="event personal">
+    <h3>Estudio autónomo</h3>
+    <p>Refuerzo de contenidos y desarrollo personal.</p>
+  </div>
+
+  <div class="event cierre">
+    <h3>Cierre del día</h3>
+    <p>Organización de tareas y planificación.</p>
+  </div>
+
+</section>
+
+</main>
+
+<!-- ===== FOOTER ===== -->
+<footer class="footer">
+  © 2026 · Portafolio Tecnológico de Andres Felipe Solano Moreno
+</footer>
+
+</body>
+</html>

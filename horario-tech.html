@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Horario académico semanal de Ingeniería de Software - Andres Felipe Solano Moreno">
+<title>Horario Académico Tech | Andres Felipe Solano</title>
+
+<!-- CSS Tech Theme -->
+<link rel="stylesheet" href="css/tech.css">
+<link rel="stylesheet" href="css/horario.css">
+
+<!-- Fuentes -->
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Orbitron:wght@400;700;900&display=swap" rel="stylesheet">
+
+<!-- JavaScript -->
+<script src="js/tech.js" defer></script>
+
+<style>
+  /* Override para horario tech */
+  .horario-grid {
+    background: rgba(0, 183, 255, 0.02);
+    padding: 20px;
+    border-radius: 16px;
+    border: 1px solid rgba(0, 183, 255, 0.15);
+  }
+  
+  .head {
+    background: linear-gradient(135deg, var(--accent), var(--accent-2));
+    box-shadow: 0 4px 20px rgba(0, 183, 255, 0.3);
+  }
+  
+  .hora {
+    background: rgba(0, 183, 255, 0.08);
+    border: 1px solid rgba(0, 183, 255, 0.2);
+    color: var(--accent-2);
+  }
+  
+  .materia {
+    background: rgba(0, 183, 255, 0.05);
+    border: 1px solid rgba(0, 183, 255, 0.15);
+    color: #dff9ff;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+  }
+  
+  .materia:hover {
+    background: rgba(0, 183, 255, 0.1);
+    box-shadow: 0 8px 30px rgba(0, 183, 255, 0.3);
+  }
+</style>
+</head>
+
+<body>
+
+<!-- Background animado -->
+<div class="hero-wave"></div>
+
+<!-- ===== NAVBAR ===== -->
+<header class="navbar">
+  <div class="container">
+    <div class="nav-inner">
+      <h2 class="logo">PORTAFOLIO</h2>
+      <nav>
+        <a href="index-tech.html#inicio">Inicio</a>
+        <a href="index-tech.html#perfil">Perfil</a>
+        <a href="index-tech.html#proyectos">Proyectos</a>
+        <a href="index-tech.html#certificados">Certificados</a>
+        <a href="horario-tech.html">Horario</a>
+        <a href="organigrama-tech.html">Organigrama</a>
+        <a href="index-tech.html#contacto">Contacto</a>
+      </nav>
+    </div>
+  </div>
+</header>
+
+<main class="container" style="position: relative; z-index: 2; margin-top: 40px;">
+
+<section class="card">
+  <h2 class="section-title" style="font-size: 28px;">Horario Semanal</h2>
+
+  <div class="horario-grid">
+
+    <!-- Encabezados -->
+    <div class="hora head"></div>
+    <div class="head">Lunes</div>
+    <div class="head">Martes</div>
+    <div class="head">Miércoles</div>
+    <div class="head">Jueves</div>
+    <div class="head">Viernes</div>
+
+    <!-- 4-5 pm -->
+    <div class="hora">4-5 pm</div>
+    <div class="materia ia">Inteligencia Artificial<br><span>A413</span></div>
+    <div class="vacio"></div>
+    <div class="vacio"></div>
+    <div class="vacio"></div>
+    <div class="vacio"></div>
+
+    <!-- 5-6 pm -->
+    <div class="hora">5-6 pm</div>
+    <div class="materia ia">Inteligencia Artificial<br><span>A413</span></div>
+    <div class="vacio"></div>
+    <div class="vacio"></div>
+    <div class="vacio"></div>
+    <div class="vacio"></div>
+
+    <!-- 6-7 pm -->
+    <div class="hora">6-7 pm</div>
+    <div class="vacio"></div>
+    <div class="vacio"></div>
+    <div class="vacio"></div>
+    <div class="materia model">Modelamiento Estocástico<br><span>A403</span></div>
+    <div class="materia gp">Gerencia de Proyectos<br><span>A403</span></div>
+
+    <!-- 7-8 pm -->
+    <div class="hora">7-8 pm</div>
+    <div class="vacio"></div>
+    <div class="vacio"></div>
+    <div class="vacio"></div>
+    <div class="materia model">Modelamiento Estocástico<br><span>A403</span></div>
+    <div class="materia gp">Gerencia de Proyectos<br><span>A403</span></div>
+
+    <!-- 8-9 pm -->
+    <div class="hora">8-9 pm</div>
+    <div class="materia web">Ingeniería Web II<br><span>A406</span></div>
+    <div class="materia leg">Legislación Informática<br><span>A205</span></div>
+    <div class="vacio"></div>
+    <div class="materia model">Modelamiento Estocástico<br><span>A403</span></div>
+    <div class="vacio"></div>
+
+    <!-- 9-10 pm -->
+    <div class="hora">9-10 pm</div>
+    <div class="materia web">Ingeniería Web II<br><span>A406</span></div>
+    <div class="materia leg">Legislación Informática<br><span>A205</span></div>
+    <div class="vacio"></div>
+    <div class="vacio"></div>
+    <div class="vacio"></div>
+
+  </div>
+</section>
+
+</main>
+
+<!-- ===== FOOTER ===== -->
+<footer class="footer">
+  © 2026 · Portafolio Tecnológico de Andres Felipe Solano Moreno
+</footer>
+
+</body>
+</html>
