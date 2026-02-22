@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Selector de Tema - Portafolio</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+    }
+
+    .container {
+      max-width: 800px;
+      width: 100%;
+    }
+
+    h1 {
+      text-align: center;
+      color: white;
+      margin-bottom: 40px;
+      font-size: 2.5rem;
+      text-shadow: 0 4px 20px rgba(0,0,0,0.3);
+    }
+
+    .themes {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 30px;
+    }
+
+    .theme-card {
+      background: white;
+      border-radius: 20px;
+      padding: 30px;
+      box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      text-align: center;
+    }
+
+    .theme-card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 30px 80px rgba(0,0,0,0.4);
+    }
+
+    .theme-icon {
+      font-size: 4rem;
+      margin-bottom: 20px;
+    }
+
+    .theme-title {
+      font-size: 1.8rem;
+      margin-bottom: 15px;
+      color: #333;
+    }
+
+    .theme-description {
+      color: #666;
+      margin-bottom: 25px;
+      line-height: 1.6;
+    }
+
+    .theme-features {
+      text-align: left;
+      margin-bottom: 25px;
+      padding-left: 20px;
+    }
+
+    .theme-features li {
+      color: #555;
+      margin-bottom: 8px;
+      font-size: 0.9rem;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 15px 40px;
+      border-radius: 50px;
+      text-decoration: none;
+      font-weight: 600;
+      transition: all 0.3s ease;
+      font-size: 1.1rem;
+    }
+
+    .btn-classic {
+      background: linear-gradient(135deg, #2563eb, #1e40af);
+      color: white;
+      box-shadow: 0 10px 30px rgba(37, 99, 235, 0.3);
+    }
+
+    .btn-classic:hover {
+      background: linear-gradient(135deg, #1e40af, #1e3a8a);
+      box-shadow: 0 15px 40px rgba(37, 99, 235, 0.5);
+      transform: scale(1.05);
+    }
+
+    .btn-tech {
+      background: linear-gradient(135deg, #00b7ff, #0088cc);
+      color: white;
+      box-shadow: 0 10px 30px rgba(0, 183, 255, 0.3);
+    }
+
+    .btn-tech:hover {
+      background: linear-gradient(135deg, #0088cc, #006699);
+      box-shadow: 0 15px 40px rgba(0, 183, 255, 0.5);
+      transform: scale(1.05);
+    }
+
+    .classic-preview {
+      background: linear-gradient(135deg, #f5f7fb, #e2e8f0);
+      border: 3px solid #2563eb;
+    }
+
+    .tech-preview {
+      background: linear-gradient(135deg, #000000, #1a1a1a);
+      border: 3px solid #00b7ff;
+      color: #dff9ff;
+    }
+
+    .tech-preview .theme-title,
+    .tech-preview .theme-description,
+    .tech-preview .theme-features li {
+      color: #dff9ff;
+    }
+
+    @media (max-width: 700px) {
+      h1 {
+        font-size: 1.8rem;
+      }
+
+      .themes {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <h1>🎨 Elige tu Tema</h1>
+
+    <div class="themes">
+      
+      <!-- Tema Clásico -->
+      <div class="theme-card classic-preview">
+        <div class="theme-icon">📄</div>
+        <h2 class="theme-title">Tema Clásico</h2>
+        <p class="theme-description">
+          Diseño profesional y limpio, ideal para presentaciones académicas formales.
+        </p>
+        <ul class="theme-features">
+          <li>✓ Fondo claro y profesional</li>
+          <li>✓ Colores azul corporativo</li>
+          <li>✓ Animaciones sutiles</li>
+          <li>✓ Perfecto para CV online</li>
+        </ul>
+        <a href="index.html" class="btn btn-classic">Ver Tema Clásico</a>
+      </div>
+
+      <!-- Tema Tech -->
+      <div class="theme-card tech-preview">
+        <div class="theme-icon">🚀</div>
+        <h2 class="theme-title">Tema Tech</h2>
+        <p class="theme-description">
+          Diseño futurista con efectos neón, perfecto para portafolios tecnológicos.
+        </p>
+        <ul class="theme-features">
+          <li>✓ Fondo negro con neón</li>
+          <li>✓ Efectos parallax y ondas</li>
+          <li>✓ Tipeo animado</li>
+          <li>✓ Ideal para tech/cyber</li>
+          <li>✓ Horario y organigrama tech</li>
+        </ul>
+        <a href="index-tech.html" class="btn btn-tech">Ver Tema Tech</a>
+      </div>
+
+    </div>
+  </div>
+
+</body>
+</html>
